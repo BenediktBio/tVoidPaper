@@ -1,0 +1,513 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{none/global/}
+  \entry{Wahlund2013}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WKG}{%
+         family={Wahlund},
+         familyi={W\bibinitperiod},
+         given={Karl-Gustav},
+         giveni={K\bibinitperiod-G\bibinitperiod},
+      }}%
+    }
+    \keyw{Fractionation, Field Flow, methods; Membranes, Artificial; Proteins,
+  isolation & purification; Ultrafiltration}
+    \strng{namehash}{WKG1}
+    \strng{fullhash}{WKG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    This overview regards some critical issues in performing flow field-flow
+  fractionation (flow FFF, FlFFF, AF4, HF-FlFFF, HF5). It includes the channel
+  thickness, void time, channel-flow parabolic profile, channel-flow velocity
+  gradient, uniformity of the cross-flow, sample injection time,
+  relaxation/focusing time, width of sample starting zone, retention level,
+  theoretical and experimental zone broadening, hydrodynamic threshold
+  immobilisation/re-mobilisation, sample loss and adsorption, membrane fouling,
+  sample mass overloading, problems with symmetrical channels, non-spherical
+  sample particles, and method development. Good method development practice
+  (GMDP) and good fractogram practice (GFP) is suggested.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.chroma.2013.02.028
+    \endverb
+    \field{issn}{1873-3778}
+    \field{pages}{97\bibrangedash 112}
+    \field{title}{Flow field-flow fractionation: critical overview.}
+    \field{volume}{1287}
+    \verb{file}
+    \verb :FFF_Theory/Wahlund2013.pdf:PDF
+    \endverb
+    \field{journaltitle}{Journal of chromatography. A}
+    \field{month}{04}
+    \field{year}{2013}
+    \warn{\item Can't use 'journaltitle' + 'journal'}
+  \endentry
+
+  \entry{Magnusson2012}{article}{}
+    \name{author}{5}{}{%
+      {{hash=ME}{%
+         family={Magnusson},
+         familyi={M\bibinitperiod},
+         given={Emma},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={H{\r{a}}kansson},
+         familyi={H\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=JJ}{%
+         family={Janiak},
+         familyi={J\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BB}{%
+         family={Bergenst{\r{a}}hl},
+         familyi={B\bibinitperiod},
+         given={Björn},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=NL}{%
+         family={Nilsson},
+         familyi={N\bibinitperiod},
+         given={Lars},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \keyw{Animals; Cattle; Fractionation, Field Flow; Hydrodynamics; Light;
+  Particle Size; Proteins, chemistry, isolation & purification; Scattering,
+  Radiation}
+    \strng{namehash}{ME+1}
+    \strng{fullhash}{MEHAJJBBNL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    In this study we investigate the effect of programmed cross-flows on the
+  error in the hydrodynamic radii (r(h)) determination with asymmetrical flow
+  field-flow fractionation (AsFlFFF). Three different standard polystyrene
+  particles (nominal radii of 30 and 40 and 50 nm) are fractionated with
+  exponentially and linearly decaying cross-flows with different decay rates.
+  Hydrodynamic radii are calculated according to retention theory including
+  steric effects. Rapid decay is expected to give rise to systematic deviations
+  in r(h) determination. The error in r(h) was found to be small when decay
+  rates with half-lives longer than 6 min were used, whereas steeper decays
+  could give rise to errors as high as 16\% of the particle size. The error is
+  often explained in terms of secondary relaxation. However, comparisons show
+  that experimental errors are significantly larger than what would be expected
+  due to secondary relaxation, suggesting that other factors also have to be
+  considered in order to fully understand deviations for rapidly decaying
+  cross-flow.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.chroma.2012.07.005
+    \endverb
+    \field{issn}{1873-3778}
+    \field{pages}{127\bibrangedash 133}
+    \field{title}{Hydrodynamic radius determination with asymmetrical flow
+  field-flow fractionation using decaying cross-flows. Part II. Experimental
+  evaluation.}
+    \field{volume}{1253}
+    \verb{file}
+    \verb :FFF_Theory/MagnussonNilsson2012.pdf:PDF
+    \endverb
+    \field{journaltitle}{Journal of chromatography. A}
+    \field{month}{08}
+    \field{year}{2012}
+  \endentry
+
+  \entry{Bolinsson2018}{article}{}
+    \name{author}{5}{}{%
+      {{hash=BH}{%
+         family={Bolinsson},
+         familyi={B\bibinitperiod},
+         given={Hans},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Yi},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Hall},
+         familyi={H\bibinitperiod},
+         given={Stephen},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=NL}{%
+         family={Nilsson},
+         familyi={N\bibinitperiod},
+         given={Lars},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Hakansson},
+         familyi={H\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{Calibration; Emulsions, chemistry; Fractionation, Field Flow;
+  Hydrodynamics; Light; Nanotechnology, methods; Radius; Scattering, Radiation;
+  Tomography, X-Ray Computed; AF4; Channel height; Flow field-flow
+  fractionation; Multi angle light scattering; Nanoemulsion; X-ray computed
+  tomography}
+    \strng{namehash}{BH+1}
+    \strng{fullhash}{BHLYHSNLHA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    This study suggests a novel method for determination of the channel height
+  in asymmetrical flow field-flow fractionation (AF4), which can be used for
+  calibration of the channel for hydrodynamic radius determinations. The novel
+  method uses an oil-in-water nanoemulsion together with multi angle light
+  scattering (MALS) and elution theory to determine channel height from an AF4
+  experiment. The method is validated using two orthogonal methods; first, by
+  using standard particle elution experiments and, secondly, by imaging an
+  assembled and carrier liquid filled channel by x-ray computed tomography
+  (XCT). It is concluded that the channel height can be determined with
+  approximately the same accuracy as with the traditional channel height
+  determination technique. However, the nanoemulsion method can be used under
+  more challenging conditions than standard particles, as the nanoemulsion
+  remains stable in a wider pH range than the previously used standard
+  particles. Moreover, the novel method is also more cost effective.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.chroma.2017.12.026
+    \endverb
+    \field{issn}{1873-3778}
+    \field{pages}{155\bibrangedash 163}
+    \field{title}{An alternative method for calibration of flow field flow
+  fractionation channels for hydrodynamic radius determination: The
+  nanoemulsion method (featuring multi angle light scattering).}
+    \field{volume}{1533}
+    \verb{file}
+    \verb :FFF_Theory/Bolinsson_Hakansson2018.pdf:PDF
+    \endverb
+    \field{journaltitle}{Journal of chromatography. A}
+    \field{month}{01}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Haakansson2012}{article}{}
+    \name{author}{4}{}{%
+      {{hash=HA}{%
+         family={H{\r{a}}kansson},
+         familyi={H\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ME}{%
+         family={Magnusson},
+         familyi={M\bibinitperiod},
+         given={Emma},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=BB}{%
+         family={Bergenst{\r{a}}hl},
+         familyi={B\bibinitperiod},
+         given={Björn},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=NL}{%
+         family={Nilsson},
+         familyi={N\bibinitperiod},
+         given={Lars},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \keyw{Calibration; Fractionation, Field Flow; Hydrodynamics; Models,
+  Theoretical}
+    \strng{namehash}{HA+1}
+    \strng{fullhash}{HAMEBBNL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Direct determination of hydrodynamic radius from retention time is an
+  advantage of the field-flow fractionation techniques. However, this is not
+  always completely straight forward since non-idealities exist and assumptions
+  have been made in deriving the retention equations. In this study we
+  investigate the effect on accuracy from two factors: (1) level of
+  sophistication of the equations used to determine channel height from a
+  calibration experiment and (2) the influence of secondary relaxation on the
+  accuracy of hydrodynamic radius determination. A new improved technique for
+  estimating the channel height from calibration experiments is suggested. It
+  is concluded that severe systematic error can arise if the most common
+  channel height equations are used and an alternative more rigorous approach
+  is described. For secondary relaxation it is concluded that this effect
+  increases with the cross-flow decay rate. The secondary relaxation effect is
+  quantified for different conditions. This is part one of two. In the second
+  part the determination of hydrodynamic radius are evaluated experimentally
+  under similar conditions.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.chroma.2012.07.029
+    \endverb
+    \field{issn}{1873-3778}
+    \field{pages}{120\bibrangedash 126}
+    \field{title}{Hydrodynamic radius determination with asymmetrical flow
+  field-flow fractionation using decaying cross-flows. Part I. A theoretical
+  approach.}
+    \field{volume}{1253}
+    \verb{file}
+    \verb :FFF_Theory/HakanssonNilsson2012.pdf:PDF
+    \endverb
+    \field{journaltitle}{Journal of chromatography. A}
+    \field{month}{08}
+    \field{year}{2012}
+  \endentry
+
+  \entry{Wahlund1987}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WKG}{%
+         family={Wahlund},
+         familyi={W\bibinitperiod},
+         given={K.\bibnamedelima G.},
+         giveni={K\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=GJC}{%
+         family={Giddings},
+         familyi={G\bibinitperiod},
+         given={J.\bibnamedelima C.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \keyw{Chemical Fractionation, instrumentation; Chemistry Techniques,
+  Analytical, instrumentation; Mathematics; Membranes, Artificial;
+  Permeability; Proteins, isolation /&/ purification; Ultrafiltration}
+    \strng{namehash}{WKGGJC1}
+    \strng{fullhash}{WKGGJC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{9}
+    \field{pages}{1332\bibrangedash 1339}
+    \field{title}{{Properties of an asymmetrical flow field-flow fractionation
+  channel having one permeable wall.}}
+    \field{volume}{59}
+    \verb{file}
+    \verb :/home/bluemage/MasterThesis/Literature/analytics/wahlundGiddings.pdf
+    \verb :PDF
+    \endverb
+    \field{journaltitle}{Anal Chem}
+    \field{year}{1987}
+    \warn{\item Can't use 'journaltitle' + 'journal' \item Invalid format of
+  field 'month'}
+  \endentry
+
+  \entry{Litzen1991}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LA}{%
+         family={Litz\'{e}n},
+         familyi={L\bibinitperiod},
+         given={Anne},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WKG}{%
+         family={Wahlund},
+         familyi={W\bibinitperiod},
+         given={Karl-Gustav},
+         giveni={K\bibinitperiod-G\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=JPA}{%
+         family={Jansson},
+         familyi={J\bibinitperiod},
+         given={Peter\bibnamedelima A.},
+         giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Academic Press, Inc.}%
+    }
+    \strng{namehash}{LAWKG1}
+    \strng{fullhash}{LAWKG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A new trapezoidal geometry of the asymmetrical flow field- flow
+  fractionation (FFF) channel Introduces an additional means to regulate the
+  longitudinal flow veloclty. The trape- zoidal geometry, where the breadth
+  decreases on going to- ward the channel outlet, makes It possible to level
+  out the steep linear veloclty gradients that can appear In the rec- tangular
+  channels. Equations for the channel flow velocity gradient and the void time
+  are derived. I n addition, an equatlon for the nonequillbrlum plate height Is
+  derlved for asymmetrical channels. The equation suggests that the same
+  efficiencies should be obtained In asymmetrical as In the original
+  symmetrical channels under similar flow conditions. The relative peak
+  dllutlon occurring In channels of different designs Is evaluated. The results
+  favor the trapezoidal versus the rectangular channel and asymmetrical versus
+  symmetrical channels. The plate numbers calculated from the derived equations
+  were compared with those found experimentally. The latter were found to
+  deviate from the calculated numbers at hlgh retention levels. Approximately
+  2600 plates have been reached.%
+    }
+    \field{pages}{1001\bibrangedash 1007}
+    \field{title}{{Zone Broadening and Dilution in Rectangular and Trapezoidal
+  -- Asymmetrical Flow Field-Flow Fractionation Channels}}
+    \field{volume}{63}
+    \verb{file}
+    \verb :/home/bluemage/MasterThesis/Literature/analytics/broadening_litzen_w
+    \verb ahlund.pdf:PDF
+    \endverb
+    \field{journaltitle}{Anal. Chem.}
+    \field{year}{1991}
+    \warn{\item Can't use 'journaltitle' + 'journal'}
+  \endentry
+
+  \entry{Bronstein2008}{incollection}{}
+    \name{author}{5}{}{%
+      {{hash=BI}{%
+         family={Bronstein},
+         familyi={B\bibinitperiod},
+         given={I.N.},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Semendjajew},
+         familyi={S\bibinitperiod},
+         given={K.A.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=}{%
+      }}%
+      {{hash=MG}{%
+         family={Musiol},
+         familyi={M\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MH}{%
+         family={M\"{u}hlig},
+         familyi={M\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Harri Deutsch}%
+    }
+    \strng{namehash}{BI+1}
+    \strng{fullhash}{BISKMGMH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Taschenbuch der Mathematik}
+    \field{chapter}{21.7.1.2}
+    \field{isbn}{978-3-8171-2007-9}
+    \field{pages}{1077}
+    \field{title}{"Tabellen","Unbestimmte Integrale","No. 44"}
+    \field{year}{2008}
+    \warn{\item Can't use 'date' + 'year'}
+  \endentry
+
+  \entry{Bronstein2008a}{incollection}{}
+    \name{author}{5}{}{%
+      {{hash=BI}{%
+         family={Bronstein},
+         familyi={B\bibinitperiod},
+         given={I.N.},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Semendjajew},
+         familyi={S\bibinitperiod},
+         given={K.A.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=}{%
+      }}%
+      {{hash=MG}{%
+         family={Musiol},
+         familyi={M\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MH}{%
+         family={M\"{u}hlig},
+         familyi={M\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Harri Deutsch}%
+    }
+    \strng{namehash}{BI+1}
+    \strng{fullhash}{BISKMGMH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Taschenbuch der Mathematik}
+    \field{chapter}{21.7.1.2}
+    \field{isbn}{978-3-8171-2007-9}
+    \field{pages}{1076}
+    \field{title}{"Tabellen","Unbestimmte Integrale","No. 40"}
+    \field{year}{2008}
+    \warn{\item Can't use 'date' + 'year'}
+  \endentry
+
+  \entry{Bronstein2008b}{incollection}{}
+    \name{author}{5}{}{%
+      {{hash=BI}{%
+         family={Bronstein},
+         familyi={B\bibinitperiod},
+         given={I.N.},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Semendjajew},
+         familyi={S\bibinitperiod},
+         given={K.A.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=}{%
+      }}%
+      {{hash=MG}{%
+         family={Musiol},
+         familyi={M\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MH}{%
+         family={M\"{u}hlig},
+         familyi={M\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Harri Deutsch}%
+    }
+    \strng{namehash}{BI+1}
+    \strng{fullhash}{BISKMGMH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Taschenbuch der Mathematik}
+    \field{chapter}{21.7.1.3}
+    \field{isbn}{978-3-8171-2007-9}
+    \field{pages}{1078}
+    \field{title}{"Tabellen","Unbestimmte Integrale","No. 61"}
+    \field{year}{2008}
+    \warn{\item Can't use 'date' + 'year'}
+  \endentry
+\endsortlist
+\endinput

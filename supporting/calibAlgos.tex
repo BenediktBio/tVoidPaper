@@ -1,0 +1,399 @@
+\subsection*{Classical Calibration}
+
+\subsubsection*{Inputs:}
+\begin{multicols}{3}
+  \begin{packed_item}
+  \item void peak $\tvoid$
+  \item elution flow $\Ve$
+  \item elution time $\te$
+  \item cross flow $\Vc$
+  \item \small diffusion coefficient \normalsize $D$
+  \item relative focus $\zP$;
+   % \item channelLength $L$
+  \end{packed_item}
+\end{multicols}
+
+\subsubsection*{Outputs:}
+\begin{multicols}{3}
+  \begin{packed_item}
+  \item channel width $w$
+    % \item volume $V^{hyd}$
+  \item channel volume $V^0$
+  \end{packed_item}
+\end{multicols}
+
+\subsubsection*{Constants:}
+\begin{multicols}{3}
+  \begin{packed_item}
+    % \item volume $V^0$
+    \item $\wmin \leftarrow 10^{-4}$
+    \item  $\wmax \leftarrow 10$
+  \end{packed_item}
+\end{multicols}
+
+\subsubsection*{Temporary variables:}
+\begin{multicols}{3}
+  \begin{packed_item}
+    % \item volume $V^0$
+  \item measured\enspace retention $\Rmeas$
+  \item variation $δ_w$
+  \item $\lambda$
+  \end{packed_item}
+\end{multicols}
+
+\subsubsection*{Calculations:}
+
+\subparagraph{1}
+Calculate volume:
+
+      %       \[ \Vgeo \leftarrow \frac{\Vc \cdot \tvoid}{ \ln{ \left( \dfrac{ \zP  - \nicefrac{(\Ve + \Vc)}{\Vc}      }{ 1 - \nicefrac{(\Ve + \Vc)}{\Vc}          } \right) }} \]
+
+\begin{algorithmic}
+  \State  \[V^0 \leftarrow \frac{V_c \cdot \tvoid}{ \ln{ \left( \dfrac{ z_\% - \nicefrac{(V_e + V_c)}{V_c}      }{ 1 - 
+  \nicefrac{(V_E + V_c)}{V_c}          } \right) }} \]
+\end{algorithmic}
+
+\subparagraph{2}
+Calculate \Rmeas:
+\begin{algorithmic}
+  \State  \[ \Rmeas \leftarrow \frac{\tvoid}{\te} \]
+\end{algorithmic}
+\subparagraph{3}
+Initialize $w$ and $δ$:
+\[ w \leftarrow \frac{\wmax + \wmin}{2} \]
+\[ δ_w \leftarrow \frac{\wmax - \wmin}{4} \]
+\subparagraph{4}
+Find $w$ such that $|\Rmeas - \Rcalc| \stackrel{!}{=}\text{min}$ by bisection:
+\begin{algorithmic}
+  \For{$i \leftarrow 0$ to $50$}
+  \State $\lambda \leftarrow  \frac{D \cdot V^0}{V_C \cdot w^2}$     
+  \State $ \Rcalc \leftarrow 6 \lambda \left(\frac{1}{\tanh(1 / 2 \lambda)} - 2 \lambda \right)$  \# $\nicefrac{1}{\tanh{(x)}} = \coth(x) $
+  \If{$ \Rcalc > \Rmeas$}
+  \State  $w \leftarrow w + δ_w$
+  \Else
+  \State $w \leftarrow w - δ_w$
+  \EndIf
+  \State $δ_w \leftarrow δ_w / 2$
+  \EndFor
+\end{algorithmic}
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Calibration of channel height by $\bm{V^{\text{geo}}}$}
+\newcommand{\lamMin}{\ensuremath{\lambda_\text{min}}}
+\newcommand{\lamMax}{\ensuremath{\lambda_\text{max}}}
+\subsubsection*{Inputs:}
+\begin{multicols}{3}
+  \begin{packed_item}
+    \item void peak $\tvoid$
+%    \item elution flow $\Ve$ 
+    \item elution time $\te$
+    \item cross flow $\Vc$
+    \item \small diffusion coefficient \normalsize $D$
+    \item relative focus $\zP$;
+    \item $L_1, L_2, L_3$
+    \item $b_0, \bL$
+    % \item channelLength $L$
+  \end{packed_item}
+\end{multicols}
+
+\subsubsection*{Outputs:}
+\begin{multicols}{3}
+  \begin{packed_item}
+    \item channel height $w$ 
+    \item channel volume $\Vgeo$    
+  \end{packed_item}
+\end{multicols}
+
+\subsubsection*{Temporary variables:}
+\begin{multicols}{3}
+  \begin{packed_item}
+    % \item volume $V^0$
+    \item measured\enspace retention $\Rmeas$
+    \item calculated\enspace retention $\Rcalc$
+    \item variation $δ_λ$
+    \item $λ$
+    \item $S$
+    \item $L_{12}, L$
+    \item $z_0$
+    \item $m_1, m_2$
+    \item $t_2$
+    \item $A_z$
+    \item $A_3$
+  \end{packed_item}
+\end{multicols}
+
+\subsubsection*{Constants:}
+\begin{multicols}{3}
+  \begin{packed_item}
+    \item $\lamMin \leftarrow 10^{-5}$
+    \item  $\lamMax \leftarrow 100$ 
+    \end{packed_item}
+  \end{multicols}
+\subsubsection*{Calculations:}
+
+\subparagraph{1}
+Calculate $\Rmeas$:\vspace*{-4ex}
+\begin{algorithmic}
+  \State  \[ \Rmeas \leftarrow \frac{\tvoid}{\te} \]
+\end{algorithmic}
+
+\subparagraph{2}
+Initialize $λ$ and $δ_λ$:\vspace*{-4ex}
+\[ λ \leftarrow \frac{\lamMin + \lamMax}{2} \]\vspace*{-1.55ex}
+\[ δ_λ \leftarrow \frac{\lamMax - \lamMin}{4} \]
+\vspace*{-1ex}
+\subparagraph{3}
+Find $λ$ such that $|\Rmeas - \Rcalc| \stackrel{!}{=}\text{min}$ by bisection:
+\begin{spacing}{1.1}
+\begin{algorithmic}
+  \For{$i \leftarrow 0$ to $50$}
+  \State $ \Rcalc \leftarrow 6 \lambda \left(\frac{1}{\tanh(1 / 2 \lambda)} - 2 \lambda \right)$  \# 
+  $\nicefrac{1}{\tanh{(x)}} = \coth(x) $
+  \If{$ \Rcalc > \Rmeas$}
+  \State  $λ \leftarrow λ + δ_λ$
+  \Else
+  \State $λ \leftarrow λ - δ_λ$
+  \EndIf
+  \State $δ_λ \leftarrow δ_λ / 2$
+  \EndFor
+\end{algorithmic}
+\end{spacing}
+\vspace*{-2ex}
+
+\subparagraph{4}
+Calculate substitution term $S$:\vspace*{-7.5ex}
+\begin{algorithmic}
+  \State  \[ S \leftarrow \ddfrac{λ \cdot \Vc }{D} \]
+\end{algorithmic}\vspace*{-3.5ex}
+\subparagraph{5} Calculate passed channel area $A_z$:
+\begin{algorithmic}
+  \State $\displaystyle A_3 \leftarrow \frac{1}{2}\cdot \bL L_3
+   \qquad L_{12} \leftarrow L_1 + L_2 
+   \qquad L \leftarrow L_{12} + L_3 
+   \qquad z_0 \leftarrow z_\% \cdot L $\vspace*{.5ex}
+  \If{$ z_0 \geqq L_1$}
+  \State $\displaystyle m_2 \leftarrow \frac{b_0 - \bL}{2\cdot L_2}
+           \qquad \bDelta \leftarrow b_0 - \bL
+           \qquad t_2 \leftarrow \frac{1}{2}\left(b_0 + \frac{L_1}{L_2} \bDelta \right) 
+           $\vspace*{.5ex}
+  \State  $ A_z \leftarrow (L_{12} - z_0)\cdot( m_2  (L_{12} + z_0) + t_2 ) +  A_3$
+  \Else
+  \State $m_1 \leftarrow \frac{b_0}{2 L_1}$
+  \State  $ A_z \leftarrow  m_1 \cdot (L_1^2 - z_0^2) + \frac{1}{2}(b_0 + b_L)L_2  + A_3 $
+  \EndIf
+\end{algorithmic}
+\subparagraph{6} Calculate $w$:\vspace*{-6.5ex}
+\begin{algorithmic}
+  \State  \[ w \leftarrow \ddfrac{A_z}{S} \]
+\end{algorithmic}
+
+\subparagraph{7} Calculate $\Vgeo$:\vspace*{-6.5ex}
+\begin{algorithmic}
+  \State  \[ \Vgeo \leftarrow A_z \cdot w \]
+\end{algorithmic}
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Calibration of channel height by $\bm{\Vhyd}$}
+\subsubsection*{Inputs:}
+\label{sec:CalibVhyd}
+\begin{multicols}{3}
+  \begin{packed_item}
+    \item void peak \tvoid
+    \item elution flow \Ve
+%    \item elution time $\te$
+    \item cross flow \Vc
+%    \item \small diffusion coefficient \normalsize $D$
+    \item relative focus \zP;
+    \item $L_1, L_2, L_3$
+    \item $b_0$, \bL
+    % \item channelLength $L$
+  \end{packed_item}
+\end{multicols}
+
+\subsubsection*{Outputs:}
+\begin{multicols}{3}
+  \begin{packed_item}
+    \item channel width $w$
+    \item channel volume $\Vhyd$
+  \end{packed_item}
+\end{multicols}
+
+\subsubsection*{Temporary variables:}
+%\newcommand{\vartmp}[1]{\ensuremath{\text{tmp}_{#1}}}
+\begin{multicols}{3}
+  \begin{packed_item}
+  \item $z_0$
+  \item $\Vin$
+  \item $L_{12}, L$  
+  \item $\bDelta$
+  \item $m_1, m_2, m_3$
+  \item $t_2, t_3$
+  \item $α_2, α_3$
+  \item $β_1, β_2, β_3$
+  \item $γ_2, γ_3$
+  \item $δ_1, δ_2, δ_3$
+  \item $Δ_2, Δ_3$
+  \item $\CFone, \CFtwo, \CFthree, \CF$
+ \item $\tmp1, \tmp2$
+  \end{packed_item}
+\end{multicols}
+\subsubsection*{Calculations:}
+\subparagraph{1}
+Calculate "derived" parameters:
+\begin{algorithmic}
+\State $L_{12} \leftarrow L_1 + L_2
+        \qquad L \leftarrow L_{12} + L_3
+        \qquad z_0 \leftarrow \zP \cdot L
+        \qquad \bDelta \leftarrow  b_0 - \bL
+        \qquad \Vin \leftarrow \Ve + \Vc
+        $
+\end{algorithmic}
+\subparagraph{2}
+Calculate slopes and offsets of the border lines of the channel plain:
+\begin{algorithmic}
+  \State $       m_1 \leftarrow   \frac{b_0}{2L_1}
+          \qquad m_2 \leftarrow - \frac{\bDelta}{2L_2}
+          \qquad m_3 \leftarrow - \frac{\bL}{2L_3}
+         $\vspace*{.5ex}
+  \State $           t_2 \leftarrow \frac{1}{2} \left( b_0 +  \frac{L_1}{L_2}\bDelta \right)
+              \qquad t_3 \leftarrow \frac{L \bL}{2 L_3 }
+         $\vspace*{.5ex}
+\end{algorithmic}
+\subparagraph{3}
+Calculate area sections of the channel plain:
+\begin{algorithmic}
+  \State $       A_1 \leftarrow \frac{1}{2} b_0  L_1  
+          \qquad A_2 \leftarrow  \frac{1}{2} (b_0 + b_L) L_2  
+          \qquad A_3 \leftarrow \frac{1}{2} L_3\bL  
+         $\vspace*{.5ex}
+  \State $  \AL \leftarrow A_1 + A_2 + A_3
+  $\vspace*{.5ex}
+\end{algorithmic}
+\subparagraph{4}
+Calculate substitution parameters and discriminants:\\\textbf{}
+$ \begin{array}{llll}
+  &α_2 \leftarrow \frac{t_2}{m_2}
+  &α_3 \leftarrow \frac{t_3}{m_3}
+  \\\addlinespace[.75ex]
+  %\State $   
+  β_1 \leftarrow -\frac{\Vc m_1}{ \AL }
+  &β_2 \leftarrow -\frac{\Vc m_2}{ \AL }
+  &β_3 \leftarrow -\frac{\Vc m_3}{ \AL }
+      \\\addlinespace[.75ex]
+  %\State $   
+  &γ_2 \leftarrow -\frac{2 \Vc t_2}{\AL}
+  &γ_3 \leftarrow -\frac{2 \Vc t_3}{\AL}
+      \\\addlinespace[.75ex]
+  δ_1 \leftarrow \Vin
+  &\multicolumn{2}{l}{δ_2 \leftarrow \Vin - \frac{\Vc}{\AL} \left( A_1 - m_2L_1^2 - 2t_2L_1  \right)}
+  &\\
+  &\multicolumn{2}{l}{δ_3 \leftarrow \Vin - \frac{\Vc}{\AL} \left( A_1 + A_2 - m_3L_{12}^2 - 2t_3L_{12} \right) }
+    \\\addlinespace[.75ex]
+%  \State $   
+  &Δ_2 \leftarrow 4β_2 δ_2 - γ_2^2
+  &Δ_3 \leftarrow 4β_3 δ_3 - γ_3^2
+  \end{array} $\clearpage
+\subparagraph{5}
+Calculate conversion factor \CF:
+\begin{algorithmic}
+    \If{$ Δ_3 > 0 $}
+      \State $ \CFthree \leftarrow \text{IntPosDisc}\left( α_3,β_3,γ_3,δ_3,Δ_3,L_{12},L,m_3 \right)$
+    \Else
+     \State $ \CFthree \leftarrow \text{IntNegDisc}\left( α_3,β_3,γ_3,δ_3,Δ_3,L_{12},L,m_3 \right)$
+    \EndIf\vspace*{1.5ex}
+  \If{$z_0 \geqq L_1$}
+    \If{$ Δ_2 > 0 $}
+      \State $ \CFtwo \leftarrow \text{IntPosDisc}\left( α_2,β_2,γ_2,δ_2,Δ_2,z_0,L_{12},m_2 \right)$
+    \Else
+      \State $ \CFtwo \leftarrow \text{IntNegDisc}\left( α_2,β_2,γ_2,δ_2,Δ_2,z_0,L_{12},m_2 \right)$
+    \EndIf
+    \State $\CF \leftarrow \CFtwo + \CFthree$
+  \Else    
+    \If{$ Δ_2 > 0 $}    
+      \State $ \CFtwo \leftarrow \text{IntPosDisc}\left( α_2,β_2,γ_2,δ_2,Δ_2,L_1,L_{12},m_2 \right)$
+    \Else
+      \State $ \CFtwo \leftarrow \text{IntNegDisc}\left( α_2,β_2,γ_2,δ_2,Δ_2,L_1,L_{12},m_2 \right)$
+    \EndIf
+      \State $\CFone \leftarrow \text{IntOne}\left( β_1,δ_1,z_0,L_1,m_1 \right)$
+    \State $\CF \leftarrow \CFone + \CFtwo + \CFthree$
+  \EndIf
+\end{algorithmic}
+\subparagraph{6}
+Calculate $w$:
+\begin{algorithmic}
+\State $w \leftarrow \ddfrac{\tvoid}{2\cdot\CF} $
+\end{algorithmic}
+
+\subparagraph{7}
+Calculate passed channel area $A$:
+\begin{algorithmic}
+  \If{$ z_0 \geqq L_1$}
+\State  $ A_z \leftarrow (L_{12} - z_0)\cdot( m_2  (L_{12} + z_0) + t_2 ) +  A_3$
+\Else
+\State  $ A_z \leftarrow  m_1 \cdot (L_1^2 - z_0^2) + A_2 + A_3 $
+\EndIf
+\end{algorithmic}
+
+
+\subparagraph{8}
+Calculate $\Vhyd$:
+\begin{algorithmic}
+  \State $\Vhyd \leftarrow A_z \cdot w$
+\end{algorithmic}
+\clearpage
+
+\subsubsection*{S\quad subroutines}
+\subparagraph{S1}
+Polynomial $P$:
+\begin{algorithmic}
+\State $P(β,γ,δ,ξ) \coloneqq βξ^2+γξ+δ$
+\end{algorithmic}
+\subparagraph{S2}\textbf{}
+\begin{algorithmic}
+  \State $\text{IntPosDisc}(α,β,γ,δ,Δ,s_0,s_1,m_i) \coloneqq$\vspace*{1ex}
+  \State $\CFi  \leftarrow \ln(\frac{P(β, γ, δ, s_1) }{  P(β, γ, δ, s_0)})$\vspace*{1ex}
+  \State $\CFi  \leftarrow \frac{\CFi}{2β} $\vspace*{1ex}
+  \State $\tmp0 \leftarrow \sqrt{Δ}$\vspace*{1ex}
+  \State $\tmp1 \leftarrow \text{arctan}\left(\frac{2βs_1+γ}{\tmp0} \right) $\vspace*{1ex}
+  \State $\tmp2 \leftarrow \text{arctan}\left(\frac{2βs_0+γ}{\tmp0} \right)$\vspace*{1ex}
+  \State $\tmp3 \leftarrow \left(\frac{2}{\tmp0} \right)\cdot \left( α - \frac{γ}{β} \right) \cdot 
+  \left(\tmp1-\tmp2\right) $\vspace*{1ex}
+  \State $\CFi \leftarrow \left( \CFi + \tmp3 \right)  \cdot m_i $\vspace*{1ex}
+  \State \Return \CFi
+\end{algorithmic}
+\subparagraph{S3}
+\begin{algorithmic}
+  \State $\text{IntNegDisc}(α,β,γ,δ,Δ,s_0,s_1,m_i) \coloneqq $  \vspace*{1ex}
+  \State $\CFi \leftarrow \ln(\frac{P(β, γ, δ, s_1) }{  P(β, γ, δ, s_0)})$\vspace*{1ex}
+  \State $\CFi \leftarrow \frac{\CFi}{2β} $\vspace*{1ex}
+  \State $\tmp0 \leftarrow \sqrt{-Δ}$ \vspace*{1ex}
+  \State $\tmp1 \leftarrow \left( 2 \cdot β \cdot s_1 + γ \right)\left( 2 \cdot β \cdot s_0 + γ \right) $ \vspace*{1ex}
+  \State $\tmp1 \leftarrow \tmp0 - \frac{\tmp1}{\tmp0}  $ \vspace*{1ex}
+  \State $\tmp1 \leftarrow \frac{2 \cdot β \cdot (s_1 - s_0)}{\tmp1} $ \vspace*{1ex}
+  \State $\tmp1 \leftarrow \text{artanh}(\tmp1)$ \vspace*{1ex}
+  \State $\tmp1 \leftarrow \left(\frac{2}{\tmp0} \right)\cdot \left( α - \frac{γ}{β} \right) \cdot \tmp1 $
+  \vspace*{1ex}
+  \State $\CFi \leftarrow \left( \CFi - \tmp1 \right) \cdot m_i $  \vspace*{1ex}
+  \State \Return \CFi
+\end{algorithmic}
+\subparagraph{S4}
+\begin{algorithmic}
+  \State $\text{IntOne}(β,δ,s_0,s_1,m_1) \coloneqq $  \vspace*{1ex}
+  \State $\tmp0 \leftarrow \frac{δ}{β}$
+  \State $ \CFone \leftarrow \ln \left| \tmp0 +  s_1^2\right| $
+  \State $ \CFone \leftarrow \CFone - \ln \left| \tmp0 +  s_0^2\right| $
+  \State $ \CFone \leftarrow \frac{m_1}{2 β} \cdot \CFone $
+
+  \State \Return \CFone
+\end{algorithmic}
+%\subparagraph{S2}
+%\begin{algorithmic}
+%\State $\text{Delta}(β,γ,δ) \coloneqq 4βδ-γ^2$
+%\end{algorithmic}
+\clearpage
+%xxxxxxxxxxxxxxxxxxxxxxxxxx
