@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.21)  10 MAY 2020 18:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.21)  10 MAY 2020 23:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3672,9 +3672,6 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 \@quotereset=\count482
 (./suppInfoTVoid.aux
 
-LaTeX Warning: Label `fig:fffApprox1' multiply defined.
-
-
 LaTeX Warning: Label `sec:CalibVhyd' multiply defined.
 
 )
@@ -4162,10 +4159,10 @@ Package logreq Info: Writing requests to 'suppInfoTVoid.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 53139 strings out of 493013
- 1027955 string characters out of 6135682
+ 53144 strings out of 493013
+ 1028023 string characters out of 6135682
  1567555 words of memory out of 5000000
- 55614 multiletter control sequences out of 15000+600000
+ 55615 multiletter control sequences out of 15000+600000
  97583 words of font info for 97 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  65i,22n,77p,10413b,1730s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4186,10 +4183,10 @@ ts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/symbols/msam10.pfb>
-Output written on suppInfoTVoid.pdf (22 pages, 433600 bytes).
+Output written on suppInfoTVoid.pdf (22 pages, 433911 bytes).
 PDF statistics:
- 448 PDF objects out of 1000 (max. 8388607)
- 378 compressed objects within 4 object streams
- 162 named destinations out of 1000 (max. 500000)
+ 455 PDF objects out of 1000 (max. 8388607)
+ 385 compressed objects within 4 object streams
+ 166 named destinations out of 1000 (max. 500000)
  17456 words of extra memory for PDF output out of 20736 (max. 10000000)
 

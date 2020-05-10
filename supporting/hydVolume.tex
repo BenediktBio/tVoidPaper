@@ -924,7 +924,7 @@ A much shorter version has already been derived  with the assumptions $L_{23} = 
     \vspace*{-3ex}    
   \end{center}
   \caption[Passed area section - distal focussing, simplified approximation]{xxx}
-  \label{fig:fffApprox1} 
+  \label{fig:fffApprox2} 
 \end{figure}
 
 Here, 
@@ -968,8 +968,27 @@ Here,
 \end{array}
 \end{equation}
 $Y$ is the enclosed area of the elongation from,
-$e_2(x)$ y-axis and $e_1(x)$ and its symmetrical counterpart (Fig.XXX and XXX). 
-It can be calculated as 
+$e_2(x)$ y-axis and $e_1(x)$ and its symmetrical counterpart 
+(Fig. \ref{fig:fffApprox1} and \ref{fig:fffApprox2}). 
+It can be calculated by simple geometrical considerations as 
 \begin{equation}
 Y = 2 \cdot \frac{1}{2} e_2(0) L_1 = \frac{1}{2}\left( b_0 + \frac{L_1}{L_{23}} \bDelta \right) L_1
+\end{equation}
+
+The area, which is relevant for separation, can be calculated according to the geometrical considerations from above.
+In the simplified formula, the the proximal and distal focusing cases have to be distinguished:
+\paragraph{Proximal focusing with \bm{$z_0  \geqq L_1$}}
+\begin{equation}
+  A_L -  \int_{0}^{z_0} b(z) \diff z = 
+  \frac{1}{2}
+  \left( b_0 - b_L  \right)
+  \left( L_{23} - z_0 \right) 
+\end{equation}
+
+\paragraph{Proximal focusing with \bm{$z_0 < L_1$}}
+\begin{equation}
+  A_L -  \int_{0}^{z_0} b(z) \diff z = 
+  \frac{1}{2}
+ \left( b_0 - b_L  \right)  L_{23}
+  + \frac{b_0}{2 L_1}  (L_1^2-z_0^2)
 \end{equation}
