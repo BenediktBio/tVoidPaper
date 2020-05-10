@@ -907,9 +907,27 @@ has to be applied for the evaluation of $\CF$:\clearpage
 It turns out that the sign of the discriminant cannot be determined exactly without prior knowledge about the 
 parameters. and the sign of the discriminants have to be determined ``at runtime''.
 \section*{Simplified formalism}
-A much shorter version has already been derived  with the assumptions $L_2 \approx L_2 
-+ L_3$ and $b(L) \approx b(L_{12}) = b_L$.\scite{Litzen1991}.
-This leads to the expression:
+
+A much shorter version has already been derived  with the assumptions $L_{23} = L_2 
++ L_3$ and $b(L) \approx b(L_{12}) = b_L$.\scite{Litzen1991}
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=\linewidth]{./images/fffApprox1.pdf}
+    \vspace*{-3ex}    
+  \end{center}
+  \caption[Passed area section - distal focussing, simplified approximation]{xxx}
+  \label{fig:fffApprox1} 
+\end{figure}
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=\linewidth]{./images/fffApprox2.pdf}
+    \vspace*{-3ex}    
+  \end{center}
+  \caption[Passed area section - distal focussing, simplified approximation]{xxx}
+  \label{fig:fffApprox1} 
+\end{figure}
+
+Here, 
 \begin{equation}
 \begin{array}{lll}
 \tvoid &= & \frac{\Vappgeo}{\Vc} \ln{
@@ -924,7 +942,7 @@ This leads to the expression:
       z_0^2 \bDelta
     }{
       2L} 
-    - \int_{0}^{z_0} b(z) \diff z
+    - Y
     \right)
   }{\Vappgeo}
   \right)
@@ -941,13 +959,17 @@ This leads to the expression:
     }{
       2L
     } 
-    - \int_{0}^{z_0} b(z) \diff z
+    -  Y
   }{
-  A_L - \int_{0}^{z_0} b(z) \diff z
+  A_L -  \int_{0}^{z_0} b(z) \diff z
 }
   \right)
   \right)}
 \end{array}
 \end{equation}
-
-
+$Y$ is the enclosed area of the elongation from,
+$e_2(x)$ y-axis and $e_1(x)$ and its symmetrical counterpart (Fig.XXX and XXX). 
+It can be calculated as 
+\begin{equation}
+Y = 2 \cdot \frac{1}{2} e_2(0) L_1 = \frac{1}{2}\left( b_0 + \frac{L_1}{L_{23}} \bDelta \right) L_1
+\end{equation}
