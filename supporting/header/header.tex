@@ -104,6 +104,7 @@ fontsize=11pt, expansion=false]{scrreprt}
 \definecolor{intGreen}{HTML}{008000}
 \definecolor{intBlue}{HTML}{0088AA}
 \definecolor{intPurple}{HTML}{800080}
+\definecolor{intOrange}{HTML}{FF6600}
 \definecolor{mGreen}{HTML}{C1FFE0}
 \definecolor{mPurple}{HTML}{E0CCFF}
 \definecolor{mRed}{HTML}{FF6666}
@@ -122,6 +123,8 @@ fontsize=11pt, expansion=false]{scrreprt}
 \newtcbox{\intBlueBox}{nobeforeafter,colframe=intBlue,colback=intBlue!25!white,boxrule=1.2pt,arc=2pt,
   boxsep=0pt,left=6pt,right=6pt,top=6pt,bottom=6pt,tcbox raise base}
 \newtcbox{\intPurpleBox}{nobeforeafter,colframe=intPurple,colback=intPurple!25!white,boxrule=1.2pt,arc=2pt,
+  boxsep=0pt,left=6pt,right=6pt,top=6pt,bottom=6pt,tcbox raise base}
+\newtcbox{\intOrangeBox}{nobeforeafter,colframe=intOrange,colback=intOrange!25!white,boxrule=1.2pt,arc=2pt,
   boxsep=0pt,left=6pt,right=6pt,top=6pt,bottom=6pt,tcbox raise base}
 %\newcommand{\intGreenBox}[1]{\colorbox{intGreen}{\ensuremath{#1}}}
 %\newcommand{\intBlueBox}[1]{\colorbox{alintBlue}{\ensuremath{#1}}}
@@ -145,6 +148,7 @@ fontsize=11pt, expansion=false]{scrreprt}
 \usepackage{physics}
 \usepackage{chemarrow}
 \usepackage{ogonek}    %% polski letters; install manually
+\usepackage{placeins}
 \usepackage{bibentry}
 %\usepackage{achemso}
 %\usepackage{tocbasic}

@@ -80,6 +80,111 @@ Find $w$ such that $|\Rmeas - \Rcalc| \stackrel{!}{=}\text{min}$ by bisection:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Classical Calibration under consideration of the simpiflied trapezoidal
+shape model}
+
+\subsubsection*{Inputs:}
+\begin{multicols}{3}
+  \begin{packed_item}
+    \item void peak $\tvoid$
+    \item elution flow $\Ve$
+    \item elution time $\te$
+    \item cross flow $\Vc$
+    \item \small diffusion coefficient \normalsize $D$
+    \item relative focus $\zP$;
+    \item $L_1, L_2, L_3$
+    \item $b_0, \bL$
+    % \item channelLength $L$
+  \end{packed_item}
+\end{multicols}
+
+\subsubsection*{Outputs:}
+\begin{multicols}{3}
+  \begin{packed_item}
+    \item channel width $w$
+    % \item volume $V^{hyd}$
+    \item channel volume $\Vappgeo$
+  \end{packed_item}
+\end{multicols}
+
+\subsubsection*{Constants:}
+\begin{multicols}{3}
+  \begin{packed_item}
+    % \item volume $V^0$
+    \item $\wmin \leftarrow 10^{-4}$
+    \item  $\wmax \leftarrow 10$
+  \end{packed_item}
+\end{multicols}
+
+\subsubsection*{Temporary variables:}
+\begin{multicols}{3}
+  \begin{packed_item}
+    % \item volume $V^0$
+    \item measured\enspace retention $\Rmeas$
+    \item variation $δ_w$
+    \item $\lambda$
+    \item $\tmp1$
+  \end{packed_item}
+\end{multicols}
+
+\subsubsection*{Calculations:}
+
+\subparagraph{1}
+Calculate volume:
+
+%       \[ \Vgeo \leftarrow \frac{\Vc \cdot \tvoid}{ \ln{ \left( \dfrac{ \zP  - \nicefrac{(\Ve + \Vc)}{\Vc}      }{ 1 - 
+%\nicefrac{(\Ve + \Vc)}{\Vc}          } \right) }} \]
+
+\begin{algorithmic}
+  \State $L_{23} \leftarrow L_2 + L_3$,\qquad $\bDelta \leftarrow b_0 - \bL$
+  \State $ Y \leftarrow \frac{1}{2} \left( b_0 +\frac{L_1}{L_{23}} \right) L_1$
+  \State $\tmp1 \leftarrow b_0 z_0 
+  - \frac{ z_0^2 \bDelta  }{  2L} - Y $
+  \If {$z_0 \geqq L_1$}
+  \State $\tmp1 \leftarrow \frac{ \tmp1}{ 
+    \frac{1}{2} 
+  \bDelta
+    \left( L_{23} - z_0 \right)
+  } $
+  \Else 
+  \State $\tmp1 \leftarrow \frac{ \tmp1}{ 
+    \frac{b_0}{2L_1}\left( L_1^2 - z_0^2 \right)
+    + \frac{1}{2} \bDelta L_23  
+  } $
+  \EndIf
+  \State $\tmp1 \leftarrow 1 - \tmp1$
+  \State $\tmp1 \leftarrow \ln{\left( 1 + \frac{\Vc}{\Vc} \tmp1 \right)}$
+  \State $\Vappgeo \leftarrow \frac{\Vc\tvoid}{\tmp1}$
+\end{algorithmic}
+
+\subparagraph{2}
+Calculate \Rmeas:
+\begin{algorithmic}
+  \State  \[ \Rmeas \leftarrow \frac{\tvoid}{\te} \]
+\end{algorithmic}
+\subparagraph{3}
+Initialize $w$ and $δ$:
+\[ w \leftarrow \frac{\wmax + \wmin}{2} \]
+\[ δ_w \leftarrow \frac{\wmax - \wmin}{4} \]
+\subparagraph{4}
+Find $w$ such that $|\Rmeas - \Rcalc| \stackrel{!}{=}\text{min}$ by bisection:
+\begin{algorithmic}
+  \For{$i \leftarrow 0$ to $50$}
+  \State $\lambda \leftarrow  \frac{D \cdot \Vappgeo}{V_C \cdot w^2}$     
+  \State $ \Rcalc \leftarrow 6 \lambda \left(\frac{1}{\tanh(1 / 2 \lambda)} - 2 \lambda \right)$  \# 
+  $\nicefrac{1}{\tanh{(x)}} = \coth(x) $
+  \If{$ \Rcalc > \Rmeas$}
+  \State  $w \leftarrow w + δ_w$
+  \Else
+  \State $w \leftarrow w - δ_w$
+  \EndIf
+  \State $δ_w \leftarrow δ_w / 2$
+  \EndFor
+\end{algorithmic}
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Calibration of channel height by $\bm{V^{\text{geo}}}$}
 \newcommand{\lamMin}{\ensuremath{\lambda_\text{min}}}
 \newcommand{\lamMax}{\ensuremath{\lambda_\text{max}}}
