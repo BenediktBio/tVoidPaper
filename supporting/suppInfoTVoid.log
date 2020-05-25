@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.21)  23 MAY 2020 19:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.21)  25 MAY 2020 21:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3677,6 +3677,9 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 LaTeX Warning: Label `sec:CalibVhyd' multiply defined.
 
+
+LaTeX Warning: Label `sec:CalibVhyd' multiply defined.
+
 )
 \openout1 = `suppInfoTVoid.aux'.
 
@@ -4002,19 +4005,19 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--88
+Underfull \hbox (badness 10000) in paragraph at lines 74--89
 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 90.
+(Font)              <12> on input line 91.
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 90.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 91.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 90.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 91.
 
 (./geoVolume.tex
 <./images/fffChannelMeasures.pdf, id=7, 702.47632pt x 158.43466pt>
@@ -4068,26 +4071,26 @@ Package pdftex.def Info: ./images/XiCrossSection.pdf used on input line 3.
  [4
 
  <./images/XiCrossSection.pdf>] [5]
-Overfull \hbox (61.10985pt too wide) detected at line 409
+Overfull \hbox (61.10985pt too wide) detected at line 410
 [][][]
  []
 
 [6
 
 ]
-Overfull \hbox (27.9229pt too wide) detected at line 525
+Overfull \hbox (27.9229pt too wide) detected at line 526
 [][][]
  []
 
 [7] [8
 
 ]
-Overfull \hbox (31.21419pt too wide) detected at line 720
+Overfull \hbox (31.21419pt too wide) detected at line 721
 [][][]
  []
 
 
-Overfull \hbox (27.9229pt too wide) detected at line 769
+Overfull \hbox (27.9229pt too wide) detected at line 770
 [][][]
  []
 
@@ -4095,18 +4098,19 @@ Overfull \hbox (27.9229pt too wide) detected at line 769
 
 ] [10
 
-] <./images/fffSimplified.pdf, id=161, 702.47632pt x 158.43466pt>
+]) (./simpleVolume.tex
+<./images/fffSimplified.pdf, id=161, 702.47632pt x 158.43466pt>
 File: ./images/fffSimplified.pdf Graphic file (type pdf)
 
 <use ./images/fffSimplified.pdf>
-Package pdftex.def Info: ./images/fffSimplified.pdf used on input line 956.
+Package pdftex.def Info: ./images/fffSimplified.pdf used on input line 47.
 (pdftex.def)             Requested size: 489.38742pt x 110.37405pt.
 
 <./images/fffApprox1.pdf, id=165, 702.47632pt x 158.43466pt>
 File: ./images/fffApprox1.pdf Graphic file (type pdf)
 
 <use ./images/fffApprox1.pdf>
-Package pdftex.def Info: ./images/fffApprox1.pdf used on input line 990.
+Package pdftex.def Info: ./images/fffApprox1.pdf used on input line 81.
 (pdftex.def)             Requested size: 489.38742pt x 110.37405pt.
 
 
@@ -4119,50 +4123,58 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: ./images/fffApprox2.pdf Graphic file (type pdf)
 
 <use ./images/fffApprox2.pdf>
-Package pdftex.def Info: ./images/fffApprox2.pdf used on input line 1012.
+Package pdftex.def Info: ./images/fffApprox2.pdf used on input line 103.
 (pdftex.def)             Requested size: 489.38742pt x 110.37405pt.
-) [13
+) (./tvoidSub.tex) [13
 
- <./images/fffApprox2.pdf>] (./calibAlgos.tex
+ <./images/fffApprox2.pdf>]
+(./calibAlgos.tex
 LaTeX Font Info:    Try loading font information for TS1+lmr on input line 6.
-(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+ (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [14
 
 ] [15
 
-] [16] [17
+] [16]
+[17
 
-] [18] [19
+] [18]
+LaTeX Font Info:    Try loading font information for LGR+lmr on input line 450.
 
-]
-[20
+ (/usr/share/texlive/texmf-dist/tex/latex/cbfonts-fd/lgrlmr.fd
+File: lgrlmr.fd 2016/03/04 v1.1 Scalable Greek Latin Modern Regular
+)
+[19
 
-] [21
+] [20] [21
 
-]) (./axisConvAlgos.tex [22
+] [22] [23
 
-] [23
+] [24]) (./axisConvAlgos.tex [25
 
-]) (./directAlgo.tex [24
+] [26
 
 ])
-Underfull \hbox (badness 10000) in paragraph at lines 111--132
+(./directAlgo.tex [27
+
+])
+Underfull \hbox (badness 10000) in paragraph at lines 119--140
 
  []
 
-[25
+[28
 
 ] 
 AED: lastpage setting LastPage
-[26
+[29
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
  (./suppInfoTVoid.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 133.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 133.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 141.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 141.
 Package rerunfilecheck Info: File `suppInfoTVoid.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -4174,34 +4186,36 @@ Package logreq Info: Writing requests to 'suppInfoTVoid.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 53197 strings out of 493013
- 1028964 string characters out of 6135682
+ 53292 strings out of 493013
+ 1031674 string characters out of 6135682
  1567900 words of memory out of 5000000
- 55647 multiletter control sequences out of 15000+600000
- 97583 words of font info for 97 fonts, out of 8000000 for 9000
+ 55714 multiletter control sequences out of 15000+600000
+ 98279 words of font info for 98 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  65i,22n,77p,10413b,1730s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/shar
-e/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
-m-mathit.enc}</usr/share/texmf/fonts/type1/public/lm/lmbsy10.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-bx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fo
-nts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pf
-b></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri
-10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/symbols/msam10.pfb>
-Output written on suppInfoTVoid.pdf (26 pages, 461433 bytes).
+c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/shar
+e/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
+m-mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn0600
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf/font
+s/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr5.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/symbols/msam10.pfb>
+Output written on suppInfoTVoid.pdf (29 pages, 500214 bytes).
 PDF statistics:
- 517 PDF objects out of 1000 (max. 8388607)
- 433 compressed objects within 5 object streams
- 182 named destinations out of 1000 (max. 500000)
+ 561 PDF objects out of 1000 (max. 8388607)
+ 471 compressed objects within 5 object streams
+ 200 named destinations out of 1000 (max. 500000)
  17461 words of extra memory for PDF output out of 20736 (max. 10000000)
 

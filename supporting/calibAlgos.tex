@@ -269,7 +269,6 @@ Find $λ$ such that $|\Rmeas - \Rcalc| \stackrel{!}{=}\text{min}$ by bisection:
 \end{algorithmic}
 \end{spacing}
 \vspace*{-2ex}
-
 \subparagraph{4}
 Calculate substitution term $S$:\vspace*{-7.5ex}
 \begin{algorithmic}
@@ -382,7 +381,18 @@ Calculate area sections of the channel plain:
   \State $  \AL \leftarrow A_1 + A_2 + A_3
   $\vspace*{.5ex}
 \end{algorithmic}
+
+\begin{comment}
+
+%%%%
+% The analytical solution is omitted and substituted by the numerical procedure below
+%%%
+
+
 \subparagraph{4}
+
+
+
 Calculate substitution parameters and discriminants:\\\textbf{}
 $ \begin{array}{llll}
   &α_2 \leftarrow \frac{t_2}{m_2}
@@ -431,12 +441,50 @@ Calculate conversion factor \CF:
     \State $\CF \leftarrow \CFone + \CFtwo + \CFthree$
   \EndIf
 \end{algorithmic}
+
+\end{comment}
+
+\subparagraph{4}
+Numerical integration via trapezoidal rule:
+\begin{algorithmic}
+  \State \tiny \# initialize \xi near $z_0$ on the \xi-grid \normalsize
+  \State $\Delta\xi \leftarrow \frac{L}{n}$
+  \State $\xi < z_0$
+  \While{ $\xi < z_0$ }
+  \State $\xi \leftarrow \xi + \Delta\xi$
+  \EndWhile
+  \State \#\#\#
+  \While{ $\xi < z_0$ }
+  \State  $A_\xi \leftarrow m_1 \xi^2 $
+  \State $ \Vxi \leftarrow \Vin - \Vc \frac{A_\xi}{\AL} $ 
+  \State $E_{\dot{V}\xi} \leftarrow \frac{m_1\xi}{\Vxi} $
+  \State $\CF1 \leftarrow \CF1 + E_{\dot{V}\xi} \Delta\xi$
+  \State $\xi \leftarrow \xi + \Delta\xi$
+  \EndWhile
+  \State \#\#\#
+  \While{ $\xi < L_{12}$ }
+  \State $A_\xi \leftarrow A_1 + m_2 \left( \xi^2 - L_1^2 \right) + 2 t_2\left(\xi - L_1\right) $
+  \State $ \Vxi \leftarrow \Vin - \Vc \frac{A_\xi}{\AL} $ 
+  \State $E_{\dot{V}\xi} \leftarrow \frac{m_2\xi + t_2}{\Vxi} $
+  \State $\CF2 \leftarrow \CF2 + E_{\dot{V}\xi} \Delta\xi$
+  \State $\xi \leftarrow \xi + \Delta\xi$
+  \EndWhile
+  \State \#\#\#
+  \While{ $\xi < L$ }
+  \State $A_\xi \leftarrow A_1 + A_2 + m_3 \left( \xi^2 - L_{12}^2 \right) + 2 t_3\left(\xi - L_{12}\right) $
+  \State $ \Vxi \leftarrow \Vin - \Vc \frac{A_\xi}{\AL} $ 
+  \State $E_{\dot{V}\xi} \leftarrow \frac{m_3\xi + t_3}{\Vxi} $
+  \State $\CF3 \leftarrow \CF3 + E_{\dot{V}\xi} \Delta\xi $
+  \State $\xi \leftarrow \xi + \Delta\xi $
+  \EndWhile
+\end{algorithmic}
+
 \subparagraph{6}
 Calculate $w$:
 \begin{algorithmic}
 \State $w \leftarrow \ddfrac{\tvoid}{2\cdot\CF} $
 \end{algorithmic}
-
+\begin{comment}
 \subparagraph{7}
 Calculate passed channel area $A$:
 \begin{algorithmic}
@@ -446,14 +494,31 @@ Calculate passed channel area $A$:
 \State  $ A_z \leftarrow  m_1 \cdot (L_1^2 - z_0^2) + A_2 + A_3 $
 \EndIf
 \end{algorithmic}
-
+\end{comment}
 
 \subparagraph{8}
-Calculate $\Vhyd$:
+Calculate $\Vhyd$ with passed area:
 \begin{algorithmic}
-  \State $\Vhyd \leftarrow A_z \cdot w$
+  \State $\Vhyd \leftarrow A_\xi \cdot w$
 \end{algorithmic}
 \clearpage
+
+
+\subsubsection*{General formulation of numerical CF integration for arbitrary channel shapes}
+The integration process above for three channel sections could also be generalized by the following formalism:
+%% optimal shapes \scite{CarinasDiss, Wahlund etc. }
+\begin{algorithmic}
+\For{$s \leftarrow 1 $ to $S$}
+\While{ $\xi < L$ }
+\State $A_\xi \leftarrow \displaystyle\sum_{\sigma=1}^{s}A_\sigma + \displaystyle\int_{L1s}^\xi e_s(x) \diff x $
+\State $ \Vxi \leftarrow \Vin - \Vc \frac{A_\xi}{\AL} $ 
+\State $E_{\dot{V}\xi} \leftarrow \frac{e_s(\xi)}{\Vxi} $
+\State $\CF \leftarrow \CF + E_{\dot{V}\xi} \Delta\xi $
+\State $\xi \leftarrow \xi + \Delta\xi $
+\EndWhile
+\EndFor
+\end{algorithmic}
+
 
 \subsubsection*{S\quad subroutines}
 \subparagraph{S1}
@@ -505,3 +570,165 @@ Polynomial $P$:
 %\end{algorithmic}
 \clearpage
 %xxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+
+
+\subsection*{Calibration of channel height by $\bm{\Vhyd}$}
+\subsubsection*{Inputs:}
+\label{sec:CalibVhyd}
+\begin{multicols}{3}
+  \begin{packed_item}
+    \item void peak \tvoid
+    \item elution flow \Ve
+    %    \item elution time $\te$
+    \item cross flow \Vc
+    %    \item \small diffusion coefficient \normalsize $D$
+    \item relative focus \zP;
+    \item $L_1, L_2, L_3$
+    \item $b_0$, \bL
+    % \item channelLength $L$
+  \end{packed_item}
+\end{multicols}
+
+\subsubsection*{Outputs:}
+\begin{multicols}{3}
+  \begin{packed_item}
+    \item channel width $w$
+    \item channel volume $\Vhyd$
+  \end{packed_item}
+\end{multicols}
+
+\subsubsection*{Temporary variables:}
+%\newcommand{\vartmp}[1]{\ensuremath{\text{tmp}_{#1}}}
+\begin{multicols}{3}
+  \begin{packed_item}
+    \item $z_0$
+    \item $\Vin$
+    \item $L_{12}, L$  
+    \item $\bDelta$
+    \item $m_1, m_2, m_3$
+    \item $t_2, t_3$
+    \item $α_2, α_3$
+    \item $β_1, β_2, β_3$
+    \item $γ_2, γ_3$
+    \item $δ_1, δ_2, δ_3$
+    \item $Δ_2, Δ_3$
+    \item $\CFone, \CFtwo, \CFthree, \CF$
+    \item $\tmp1, \tmp2$
+  \end{packed_item}
+\end{multicols}
+\subsubsection*{Calculations:}
+\subparagraph{1}
+Calculate "derived" parameters:
+\begin{algorithmic}
+  \State $L_{12} \leftarrow L_1 + L_2
+  \qquad L \leftarrow L_{12} + L_3
+  \qquad z_0 \leftarrow \zP \cdot L
+  \qquad \bDelta \leftarrow  b_0 - \bL
+  \qquad \Vin \leftarrow \Ve + \Vc
+  $
+\end{algorithmic}
+\subparagraph{2}
+Calculate slopes and offsets of the border lines of the channel plain:
+\begin{algorithmic}
+  \State $       m_1 \leftarrow   \frac{b_0}{2L_1}
+  \qquad m_2 \leftarrow - \frac{\bDelta}{2L_2}
+  \qquad m_3 \leftarrow - \frac{\bL}{2L_3}
+  $\vspace*{.5ex}
+  \State $           t_2 \leftarrow \frac{1}{2} \left( b_0 +  \frac{L_1}{L_2}\bDelta \right)
+  \qquad t_3 \leftarrow \frac{L \bL}{2 L_3 }
+  $\vspace*{.5ex}
+\end{algorithmic}
+\subparagraph{3}
+Calculate area sections of the channel plain:
+\begin{algorithmic}
+  \State $       A_1 \leftarrow \frac{1}{2} b_0  L_1  
+  \qquad A_2 \leftarrow  \frac{1}{2} (b_0 + b_L) L_2  
+  \qquad A_3 \leftarrow \frac{1}{2} L_3\bL  
+  $\vspace*{.5ex}
+  \State $  \AL \leftarrow A_1 + A_2 + A_3
+  $\vspace*{.5ex}
+\end{algorithmic}
+
+\subparagraph{4}
+Numerical integration for $\CF$ via trapezoidal rule:
+\begin{algorithmic}
+  \State \tiny \# initialize \xi near $z_0$ on the \xi-grid \normalsize
+  \State $\Delta\xi \leftarrow \frac{L}{n}$
+  \State $\xi < z_0$
+  \While{ $\xi < z_0$ }
+  \State $\xi \leftarrow \xi + \Delta\xi$
+  \EndWhile
+  \State \#\#\#
+  \While{ $\xi < z_0$ }
+  \State  $A_\xi \leftarrow m_1 \xi^2 $
+  \State $ \Vxi \leftarrow \Vin - \Vc \frac{A_\xi}{\AL} $ 
+  \State $E_{\dot{V}\xi} \leftarrow \frac{m_1\xi}{\Vxi} $
+  \State $\CF \leftarrow \CF + E_{\dot{V}\xi} \Delta\xi$
+  \State $\xi \leftarrow \xi + \Delta\xi$
+  \EndWhile
+  \State \#\#\#
+  \While{ $\xi < L_{12}$ }
+  \State $A_\xi \leftarrow A_1 + m_2 \left( \xi^2 - L_1^2 \right) + 2 t_2\left(\xi - L_1\right) $
+  \State $ \Vxi \leftarrow \Vin - \Vc \frac{A_\xi}{\AL} $ 
+  \State $E_{\dot{V}\xi} \leftarrow \frac{m_2\xi + t_2}{\Vxi} $
+  \State $\CF \leftarrow \CF + E_{\dot{V}\xi} \Delta\xi$
+  \State $\xi \leftarrow \xi + \Delta\xi$
+  \EndWhile
+  \State \#\#\#
+  \While{ $\xi < L$ }
+  \State $A_\xi \leftarrow A_1 + A_2 + m_3 \left( \xi^2 - L_{12}^2 \right) + 2 t_3\left(\xi - L_{12}\right) $
+  \State $ \Vxi \leftarrow \Vin - \Vc \frac{A_\xi}{\AL} $ 
+  \State $E_{\dot{V}\xi} \leftarrow \frac{m_3\xi + t_3}{\Vxi} $
+  \State $\CF \leftarrow \CF + E_{\dot{V}\xi} \Delta\xi $
+  \State $\xi \leftarrow \xi + \Delta\xi $
+  \EndWhile
+\end{algorithmic}
+
+\subparagraph{6}
+Calculate $w$ by minimizing $\Delta^2 = \left( R_{\te} - R_D \right)^2$:
+
+\newcommand{\wL}{\ensuremath{w_\text{L}}}
+\newcommand{\wR}{\ensuremath{w_\text{R}}}
+\newcommand{\wM}{\ensuremath{w_\text{M}}}
+
+\newcommand{\DwL}{\ensuremath{\Delta_{w_\text{L}}}}
+\newcommand{\DwR}{\ensuremath{\Delta_{w_\text{R}}}}
+\newcommand{\DwM}{\ensuremath{\Delta_{w_\text{M}}}}
+\newcommand{\RDiff}{\ensuremath{\text{RDiff}}}
+
+\begin{algorithmic}
+\State \scriptsize \# Initialize: \normalsize
+\State $\wL \leftarrow 1, \wR\leftarrow 1000, \wM \leftarrow \frac{\wL + \wR}{2} $
+\State $\DwL \leftarrow \RDiff(\DwL), \DwR \leftarrow \RDiff(\DwR), \DwM \leftarrow \RDiff(\DwM) $
+\While{$\text{conv} < 10^{-8}$}
+\If{ $\DwL > \DwM$ and $\DwM > \DwR$  } 
+  \scriptsize \# "Leap" right along gradient descent \normalsize
+  \State $ \wL \leftarrow \wM, \DwL \leftarrow \DwM$
+  \State $ \wM \leftarrow \wR, \DwM \leftarrow \DwR$
+  \State $ \wR \leftarrow \wR + \left| \wL-\wM \right|$
+  \State $\DwR \leftarrow \RDiff(\wR)$
+\ElsIf{ $\DwL < \DwM$ and $\DwM < \DwR$ } 
+  \scriptsize \#"Leap" left along gradient descent\normalsize
+  \State $ \wR \leftarrow \wM, \DwR \leftarrow \DwM$
+  \State $ \wM \leftarrow \wL, \DwM \leftarrow \DwL$
+  \State $ \wL \leftarrow \wL - \left| \wR-\wM \right|$
+  \State $ \DwL \leftarrow \RDiff(\wL)$
+\ElsIf{ $\DwL > \DwM$ and $\DwM < \DwR$ }
+\scriptsize \#Shrink both distances about half \normalsize
+  \State $ \wL \leftarrow \frac{\wL + \wM}{2},\RDiff(\wL) $
+  \State $ \wR \leftarrow \frac{\wR + \wM}{2},\RDiff(\wR) $
+\EndIf
+\EndWhile
+\end{algorithmic}
+\subsubsection*{S\quad subroutines}
+\subparagraph{S1}
+$\RDiff \\ \text{calculate}~\Delta^2 = \left(  R_{\te} - R_D\right)^2$:
+\begin{algorithmic}
+  \State $R_{\te} \leftarrow \frac{2 \CF w}{t_e} $
+  \State $\lambda \leftarrow \frac{D A_z}{\Vc w}$
+  \State $R_D \leftarrow 6\lambda \left( \coth{\left( \frac{1}{2\lambda} \right) } - 2\lambda \right)$
+  \State \Return $\left(R_{\te} - R_D\right)^2$
+\end{algorithmic}
+\clearpage
