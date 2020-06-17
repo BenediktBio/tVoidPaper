@@ -65,9 +65,7 @@
 %\newcommand{\phantItem}{}
 % \newcommand{\phantSize}{}
 
-\chapter*{Automated batch evaluation of diffusion coefficients from Asymmetrical Flow 
-  Field-Flow Fractionation data via void peak determination I -- Theory and measurement 
-uncertainties (Supplementary information)}
+\chapter*{Revision of the AF4 calibration experiment (Supplementary information)}
   
   %Precise batch evaluation of Asymmetrical Flow Field-Flow Fractionation data via automatized void peak determination 
   %%%-- Supplementary information}
@@ -77,15 +75,16 @@ uncertainties (Supplementary information)}
 % \end{center}
 \textbf{Abstract}\\
 % \bΔ
-Asymmetrical field-flow fractionation is a versatile chromatographic method of fractionation. In combination it is used 
+
+Asymmetrical field-flow fractionation is a versatile chromatographic fractionation method. In combination it is used 
 for size-based separation of colloids, biomolecules and polymers. Although used often as pure separation method, a 
-well-elaborated theory is available that allows precise quantification of the analysis results. A conversion from the 
-time domain to the domain of hydrodynamic radius yields size distribution directly from the fractogram. However, up to 
-now, this is an error-prone procedure requiring some effort as the fractrograms have to be pre-processed manually to 
-gain all information required for the conversion. In this work, we present a software-based evaluation work flow which 
-circumvents these pitfalls allowing to calculate reliable distributions. Providing a small graphical user interface 
-minimizes the manual effort of evaluation which turns out to be useful especially for method development, extensive 
-parameter studies and multi-detection methods.
+well-elaborated theory is available that allows precise quantification of the translational diffusion coefficient $D$. 
+Still, current literature suggests different ways to transform this theory into applicable experimental procedures and 
+no “gold standard” for correct data processing exists. While some sources report a direct way to extract diffusion 
+information from the fractogram, others suggest the necessity of an external calibration measurement. In this work, we 
+compare the different approaches and calibration algorithms based on original and literature data using our own 
+open-source AF4 evaluation software. Based on the results, we conclude that available AF4 setups do not fulfill the 
+requirements for absolute measurements of $D$ yet and direct meaurements of $w$.
 
 \noindent\hrulefill
 \section*{Determination of geometrical channel Volume $\bm{\Vgeo}$}
@@ -114,6 +113,7 @@ Perhaps, but not mandatory
 \input{./axisConvAlgos.tex}
 \input{./directAlgo.tex}    
 \section*{Complete data sets}
+\input{./dataSets.tex}
 \subsection*{Detailed measurement method}
 \subsection*{Sequence order}
 3xBSA VC3\\
