@@ -149,6 +149,7 @@ fontsize=11pt, expansion=false]{scrreprt}
 \usepackage{chemarrow}
 \usepackage{ogonek}    %% polski letters; install manually
 \usepackage{placeins}
+%\usepackage[maxfloats=50]{morefloats}
 \usepackage{bibentry}
 %\usepackage{achemso}
 %\usepackage{tocbasic}
@@ -159,7 +160,7 @@ fontsize=11pt, expansion=false]{scrreprt}
 \makeatletter
 \patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
 \makeatother
-
+\usepackage{afterpage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%### macros ###%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\slfrac}[2]{\left.\ensuremath\raisebox{1.5ex}{$#1$}\kern-.8em\ensuremath\rotatebox[origin=c]{-15}{$\Bigg/$}\kern-.8em\ensuremath\raisebox{-1.5ex}{$#2$}\right.}
 
@@ -297,6 +298,9 @@ fontsize=11pt, expansion=false]{scrreprt}
    bottom=15mm,
    includefoot
 }
+\setcounter{totalnumber}{50}
+\setcounter{topnumber}{50}
+\setcounter{bottomnumber}{50}
 %\usepackage[page]{totcount}
 \usepackage{lastpage}
 \clearscrheadfoot %% clear all 6 column fields
@@ -338,7 +342,6 @@ fontsize=11pt, expansion=false]{scrreprt}
   \setlength{\parskip}{0pt}
   \setlength{\parsep}{0pt}
 }{\end{itemize}}
-
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: t

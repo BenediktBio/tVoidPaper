@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.21)  24 JUN 2020 23:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.21)  30 JUN 2020 22:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3483,9 +3483,15 @@ Package: bibentry 2007/10/30 1.5 (PWD)
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box115
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks60
+\AP@partial=\box116
+\AP@footins=\box117
+)
 (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2017/01/01 v2.7a A comprehensive (SI) units package
-\l__siunitx_tmp_box=\box116
+\l__siunitx_tmp_box=\box118
 \l__siunitx_tmp_dim=\dimen365
 \l__siunitx_tmp_int=\count464
 \l__siunitx_number_mantissa_length_int=\count465
@@ -3497,8 +3503,8 @@ Package: siunitx 2017/01/01 v2.7a A comprehensive (SI) units package
 \l__siunitx_process_integer_min_int=\count471
 \l__siunitx_process_precision_int=\count472
 \l__siunitx_group_min_int=\count473
-\l__siunitx_angle_marker_box=\box117
-\l__siunitx_angle_unit_box=\box118
+\l__siunitx_angle_marker_box=\box119
+\l__siunitx_angle_unit_box=\box120
 \l__siunitx_angle_marker_dim=\dimen366
 \l__siunitx_angle_unit_dim=\dimen367
 \l__siunitx_unit_int=\count474
@@ -3519,10 +3525,10 @@ Package: siunitx 2017/01/01 v2.7a A comprehensive (SI) units package
 \l__siunitx_table_fill_pre_dim=\dimen374
 \l__siunitx_table_fill_post_dim=\dimen375
 \l__siunitx_table_fill_mid_dim=\dimen376
-\l__siunitx_table_pre_box=\box119
-\l__siunitx_table_post_box=\box120
-\l__siunitx_table_mantissa_box=\box121
-\l__siunitx_table_result_box=\box122
+\l__siunitx_table_pre_box=\box121
+\l__siunitx_table_post_box=\box122
+\l__siunitx_table_mantissa_box=\box123
+\l__siunitx_table_result_box=\box124
 \l__siunitx_table_number_align_skip=\skip120
 \l__siunitx_table_text_align_skip=\skip121
 .................................................
@@ -3677,9 +3683,6 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 LaTeX Warning: Label `sec:CalibVhyd' multiply defined.
 
-
-LaTeX Warning: Label `sec:CalibVhyd' multiply defined.
-
 )
 \openout1 = `suppInfoTVoid.aux'.
 
@@ -3764,15 +3767,15 @@ File: alphabeta-lgr 2014/09/04 0.11.2 Composite definitions for 8-bit TeX
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count483
 \scratchdimen=\dimen377
-\scratchbox=\box123
+\scratchbox=\box125
 \nofMPsegments=\count484
 \nofMParguments=\count485
-\everyMPshowfont=\toks60
+\everyMPshowfont=\toks61
 \MPscratchCnt=\count486
 \MPscratchDim=\dimen378
 \MPnumerator=\count487
 \makeMPintoPDFobject=\count488
-\everyMPtoPDFconversion=\toks61
+\everyMPtoPDFconversion=\toks62
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -3881,7 +3884,7 @@ Package biblatex Warning: Biber reported the following issues
 )
 Package biblatex Info: Reference section=0 on input line 8.
 Package biblatex Info: Reference segment=0 on input line 8.
-\AtBeginShipoutBox=\box124
+\AtBeginShipoutBox=\box126
 Package hyperref Info: Link coloring OFF on input line 8.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -4123,250 +4126,176 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [11
 
- <./images/fffSimplified.pdf>] [12 <./images/fffApprox1.pdf>]
-<./images/fffApprox2.pdf, id=226, 702.47632pt x 158.43466pt>
+ <./images/fffSimplified.pdf>]
+<./images/fffApprox2.pdf, id=202, 702.47632pt x 158.43466pt>
 File: ./images/fffApprox2.pdf Graphic file (type pdf)
 
 <use ./images/fffApprox2.pdf>
 Package pdftex.def Info: ./images/fffApprox2.pdf used on input line 103.
 (pdftex.def)             Requested size: 489.38742pt x 110.37405pt.
-) (./tvoidSub.tex) [13
+) (./tvoidSub.tex) [12 <./images/fffApprox1.pdf> <./images/fffApprox2.pdf
 
- <./images/fffApprox2.pdf>]
-(./calibAlgos.tex
+pdfTeX warning: /usr/bin/pdflatex (file ./images/fffApprox2.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
+>] (./calibAlgos.tex
 LaTeX Font Info:    Try loading font information for TS1+lmr on input line 6.
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [14
+) [13
 
-] [15
+] [14
 
-] [16]
-[17
+]
+[15
 
-] [18]
-LaTeX Font Info:    Try loading font information for LGR+lmr on input line 450.
+] [16
 
- (/usr/share/texlive/texmf-dist/tex/latex/cbfonts-fd/lgrlmr.fd
+] [17
+
+] [18] [19
+
+]
+LaTeX Font Info:    Try loading font information for LGR+lmr on input line 480.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/cbfonts-fd/lgrlmr.fd
 File: lgrlmr.fd 2016/03/04 v1.1 Scalable Greek Latin Modern Regular
-)
-[19
+) [20
 
-] [20] [21
+] [21
 
-] [22] [23
-
-] [24]) (./axisConvAlgos.tex [25
-
-] [26
-
-])
-(./directAlgo.tex [27
-
-]) (./dataSets.tex
-<./images/data/img_BSA_VC_2_5_r1_te.pdf, id=423, 990.70125pt x 660.4675pt>
+]
+[22]) (./dataSets.tex
+<./images/data/img_BSA_VC_2_5_r1_te.pdf, id=363, 990.70125pt x 660.4675pt>
 File: ./images/data/img_BSA_VC_2_5_r1_te.pdf Graphic file (type pdf)
 
 <use ./images/data/img_BSA_VC_2_5_r1_te.pdf>
 Package pdftex.def Info: ./images/data/img_BSA_VC_2_5_r1_te.pdf used on input l
-ine 8.
+ine 17.
 (pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
 
-<./images/data/img_BSA_VC_2_5_r1_t0.pdf, id=424, 991.2816pt x 661.20482pt>
+<./images/data/img_BSA_VC_2_5_r1_t0.pdf, id=364, 991.2816pt x 661.20482pt>
 File: ./images/data/img_BSA_VC_2_5_r1_t0.pdf Graphic file (type pdf)
 
 <use ./images/data/img_BSA_VC_2_5_r1_t0.pdf>
 Package pdftex.def Info: ./images/data/img_BSA_VC_2_5_r1_t0.pdf used on input l
-ine 13.
+ine 22.
 (pdftex.def)             Requested size: 239.80252pt x 159.95354pt.
 
-<./images/data/img_BSA_VC_2_5_r2_te.pdf, id=427, 990.70125pt x 660.4675pt>
+<./images/data/img_BSA_VC_2_5_r2_te.pdf, id=367, 990.70125pt x 660.4675pt>
 File: ./images/data/img_BSA_VC_2_5_r2_te.pdf Graphic file (type pdf)
 
 <use ./images/data/img_BSA_VC_2_5_r2_te.pdf>
 Package pdftex.def Info: ./images/data/img_BSA_VC_2_5_r2_te.pdf used on input l
-ine 20.
+ine 29.
 (pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
 
-<./images/data/img_BSA_VC_2_5_r2_t0.pdf, id=428, 990.70125pt x 660.4675pt>
+<./images/data/img_BSA_VC_2_5_r2_t0.pdf, id=368, 990.70125pt x 660.4675pt>
 File: ./images/data/img_BSA_VC_2_5_r2_t0.pdf Graphic file (type pdf)
 
 <use ./images/data/img_BSA_VC_2_5_r2_t0.pdf>
 Package pdftex.def Info: ./images/data/img_BSA_VC_2_5_r2_t0.pdf used on input l
-ine 25.
+ine 34.
 (pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
 
-<./images/data/img_BSA_VC_2_5_r3_te.pdf, id=431, 990.70125pt x 660.4675pt>
+<./images/data/img_BSA_VC_2_5_r3_te.pdf, id=371, 990.70125pt x 660.4675pt>
 File: ./images/data/img_BSA_VC_2_5_r3_te.pdf Graphic file (type pdf)
 
 <use ./images/data/img_BSA_VC_2_5_r3_te.pdf>
 Package pdftex.def Info: ./images/data/img_BSA_VC_2_5_r3_te.pdf used on input l
-ine 32.
+ine 41.
 (pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
 
-<./images/data/img_BSA_VC_2_5_r3_t0.pdf, id=432, 990.70125pt x 660.4675pt>
+<./images/data/img_BSA_VC_2_5_r3_t0.pdf, id=372, 990.70125pt x 660.4675pt>
 File: ./images/data/img_BSA_VC_2_5_r3_t0.pdf Graphic file (type pdf)
 
 <use ./images/data/img_BSA_VC_2_5_r3_t0.pdf>
 Package pdftex.def Info: ./images/data/img_BSA_VC_2_5_r3_t0.pdf used on input l
-ine 37.
+ine 46.
 (pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./images/data/img_BSA_VC_3_5_r1_te.pdf, id=435, 990.70125pt x 660.4675pt>
+<./images/data/img_BSA_VC_3_5_r1_te.pdf, id=375, 990.70125pt x 660.4675pt>
 File: ./images/data/img_BSA_VC_3_5_r1_te.pdf Graphic file (type pdf)
 
 <use ./images/data/img_BSA_VC_3_5_r1_te.pdf>
 Package pdftex.def Info: ./images/data/img_BSA_VC_3_5_r1_te.pdf used on input l
-ine 53.
+ine 63.
 (pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
 File: ./images/data/img_BSA_VC_2_5_r1_t0.pdf Graphic file (type pdf)
 
 <use ./images/data/img_BSA_VC_2_5_r1_t0.pdf>
 Package pdftex.def Info: ./images/data/img_BSA_VC_2_5_r1_t0.pdf used on input l
-ine 58.
+ine 68.
 (pdftex.def)             Requested size: 239.80252pt x 159.95354pt.
 
-<./images/data/img_BSA_VC_3_5_r2_te.pdf, id=438, 990.70125pt x 660.4675pt>
+<./images/data/img_BSA_VC_3_5_r2_te.pdf, id=378, 990.70125pt x 660.4675pt>
 File: ./images/data/img_BSA_VC_3_5_r2_te.pdf Graphic file (type pdf)
 
 <use ./images/data/img_BSA_VC_3_5_r2_te.pdf>
 Package pdftex.def Info: ./images/data/img_BSA_VC_3_5_r2_te.pdf used on input l
-ine 65.
+ine 75.
 (pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
 
-<./images/data/img_BSA_VC_3_5_r2_t0.pdf, id=439, 990.70125pt x 660.4675pt>
+<./images/data/img_BSA_VC_3_5_r2_t0.pdf, id=379, 990.70125pt x 660.4675pt>
 File: ./images/data/img_BSA_VC_3_5_r2_t0.pdf Graphic file (type pdf)
 
 <use ./images/data/img_BSA_VC_3_5_r2_t0.pdf>
 Package pdftex.def Info: ./images/data/img_BSA_VC_3_5_r2_t0.pdf used on input l
-ine 70.
+ine 80.
 (pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
 
-<./images/data/img_BSA_VC_3_5_r3_te.pdf, id=442, 990.70125pt x 660.4675pt>
+<./images/data/img_BSA_VC_3_5_r3_te.pdf, id=382, 990.70125pt x 660.4675pt>
 File: ./images/data/img_BSA_VC_3_5_r3_te.pdf Graphic file (type pdf)
 
 <use ./images/data/img_BSA_VC_3_5_r3_te.pdf>
 Package pdftex.def Info: ./images/data/img_BSA_VC_3_5_r3_te.pdf used on input l
-ine 77.
+ine 87.
 (pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
 File: ./images/data/img_BSA_VC_2_5_r3_t0.pdf Graphic file (type pdf)
 
 <use ./images/data/img_BSA_VC_2_5_r3_t0.pdf>
 Package pdftex.def Info: ./images/data/img_BSA_VC_2_5_r3_t0.pdf used on input l
-ine 82.
+ine 92.
 (pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./images/data/img_PS_VC_05_rep1_te_UV.pdf, id=445, 990.70125pt x 660.4675pt>
+<./images/data/img_PS_VC_05_rep1_te_UV.pdf, id=385, 990.70125pt x 660.4675pt>
 File: ./images/data/img_PS_VC_05_rep1_te_UV.pdf Graphic file (type pdf)
 
 <use ./images/data/img_PS_VC_05_rep1_te_UV.pdf>
 Package pdftex.def Info: ./images/data/img_PS_VC_05_rep1_te_UV.pdf used on inpu
-t line 98.
+t line 108.
 (pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
 
-<./images/data/img_PS_VC_05_rep1_t0_UV.pdf, id=446, 990.70125pt x 660.4675pt>
+<./images/data/img_PS_VC_05_rep1_t0_UV.pdf, id=386, 990.70125pt x 660.4675pt>
 File: ./images/data/img_PS_VC_05_rep1_t0_UV.pdf Graphic file (type pdf)
 
 <use ./images/data/img_PS_VC_05_rep1_t0_UV.pdf>
 Package pdftex.def Info: ./images/data/img_PS_VC_05_rep1_t0_UV.pdf used on inpu
-t line 103.
+t line 113.
 (pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
 
-<./images/data/img_PS_VC_05_rep1_te_RI.pdf, id=449, 990.70125pt x 660.4675pt>
+<./images/data/img_PS_VC_05_rep1_te_RI.pdf, id=389, 990.70125pt x 660.4675pt>
 File: ./images/data/img_PS_VC_05_rep1_te_RI.pdf Graphic file (type pdf)
 
 <use ./images/data/img_PS_VC_05_rep1_te_RI.pdf>
 Package pdftex.def Info: ./images/data/img_PS_VC_05_rep1_te_RI.pdf used on inpu
-t line 111.
+t line 121.
 (pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
 
-<./images/data/img_PS_VC_05_rep1_t0_RI.pdf, id=450, 990.70125pt x 660.4675pt>
+<./images/data/img_PS_VC_05_rep1_t0_RI.pdf, id=390, 990.70125pt x 660.4675pt>
 File: ./images/data/img_PS_VC_05_rep1_t0_RI.pdf Graphic file (type pdf)
 
 <use ./images/data/img_PS_VC_05_rep1_t0_RI.pdf>
 Package pdftex.def Info: ./images/data/img_PS_VC_05_rep1_t0_RI.pdf used on inpu
-t line 116.
+t line 126.
 (pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+ [23
 
-<./images/data/img_PS_VC_05_rep2_te_UV.pdf, id=453, 990.70125pt x 660.4675pt>
-File: ./images/data/img_PS_VC_05_rep2_te_UV.pdf Graphic file (type pdf)
-
-<use ./images/data/img_PS_VC_05_rep2_te_UV.pdf>
-Package pdftex.def Info: ./images/data/img_PS_VC_05_rep2_te_UV.pdf used on inpu
-t line 133.
-(pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
-
-<./images/data/img_PS_VC_05_rep2_t0_UV.pdf, id=454, 990.30548pt x 660.75427pt>
-File: ./images/data/img_PS_VC_05_rep2_t0_UV.pdf Graphic file (type pdf)
-
-<use ./images/data/img_PS_VC_05_rep2_t0_UV.pdf>
-Package pdftex.def Info: ./images/data/img_PS_VC_05_rep2_t0_UV.pdf used on inpu
-t line 138.
-(pdftex.def)             Requested size: 239.80252pt x 159.99577pt.
-
-<./images/data/img_PS_VC_05_rep2_te_RI.pdf, id=457, 990.70125pt x 660.4675pt>
-File: ./images/data/img_PS_VC_05_rep2_te_RI.pdf Graphic file (type pdf)
-
-<use ./images/data/img_PS_VC_05_rep2_te_RI.pdf>
-Package pdftex.def Info: ./images/data/img_PS_VC_05_rep2_te_RI.pdf used on inpu
-t line 146.
-(pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
-
-<./images/data/img_PS_VC_05_rep2_t0_RI.pdf, id=458, 990.70125pt x 660.4675pt>
-File: ./images/data/img_PS_VC_05_rep2_t0_RI.pdf Graphic file (type pdf)
-
-<use ./images/data/img_PS_VC_05_rep2_t0_RI.pdf>
-Package pdftex.def Info: ./images/data/img_PS_VC_05_rep2_t0_RI.pdf used on inpu
-t line 151.
-(pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: ./images/data/img_PS_VC_05_rep2_te_UV.pdf Graphic file (type pdf)
-<use ./images/data/img_PS_VC_05_rep2_te_UV.pdf>
-Package pdftex.def Info: ./images/data/img_PS_VC_05_rep2_te_UV.pdf used on inpu
-t line 168.
-(pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
-File: ./images/data/img_PS_VC_05_rep2_t0_UV.pdf Graphic file (type pdf)
-
-<use ./images/data/img_PS_VC_05_rep2_t0_UV.pdf>
-Package pdftex.def Info: ./images/data/img_PS_VC_05_rep2_t0_UV.pdf used on inpu
-t line 173.
-(pdftex.def)             Requested size: 239.80252pt x 159.99577pt.
-
-<./images/data/img_PS_VC_05_rep3_te_RI.pdf, id=463, 990.70125pt x 660.4675pt>
-File: ./images/data/img_PS_VC_05_rep3_te_RI.pdf Graphic file (type pdf)
-
-<use ./images/data/img_PS_VC_05_rep3_te_RI.pdf>
-Package pdftex.def Info: ./images/data/img_PS_VC_05_rep3_te_RI.pdf used on inpu
-t line 181.
-(pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
-
-<./images/data/img_PS_VC_05_rep3_t0_RI.pdf, id=464, 990.70125pt x 660.4675pt>
-File: ./images/data/img_PS_VC_05_rep3_t0_RI.pdf Graphic file (type pdf)
-
-<use ./images/data/img_PS_VC_05_rep3_t0_RI.pdf>
-Package pdftex.def Info: ./images/data/img_PS_VC_05_rep3_t0_RI.pdf used on inpu
-t line 186.
-(pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[28
-
-] [29 <./images/data/img_BSA_VC_2_5_r1_te.pdf> <./images/data/img_BSA_VC_2_5_r1
-_t0.pdf
+ <./images/data/img_BSA_VC_2_5_r1_te.pdf> <./images/data/img_BSA_VC_2_5_r1_t0.p
+df
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/data/img_BSA_VC_2_5_r1_t0.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
@@ -4386,8 +4315,43 @@ pdfTeX warning: /usr/bin/pdflatex (file ./images/data/img_BSA_VC_2_5_r3_te.pdf)
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/data/img_BSA_VC_2_5_r3_t0.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
->] [30 <./images/data/img_BSA_VC_3_5_r1_te.pdf> <./images/data/img_BSA_VC_3_5_r
-2_te.pdf
+>]
+<./images/data/img_PS_VC_05_rep2_te_UV.pdf, id=470, 990.70125pt x 660.4675pt>
+File: ./images/data/img_PS_VC_05_rep2_te_UV.pdf Graphic file (type pdf)
+
+<use ./images/data/img_PS_VC_05_rep2_te_UV.pdf>
+Package pdftex.def Info: ./images/data/img_PS_VC_05_rep2_te_UV.pdf used on inpu
+t line 143.
+(pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
+
+<./images/data/img_PS_VC_05_rep2_t0_UV.pdf, id=471, 990.30548pt x 660.75427pt>
+File: ./images/data/img_PS_VC_05_rep2_t0_UV.pdf Graphic file (type pdf)
+
+<use ./images/data/img_PS_VC_05_rep2_t0_UV.pdf>
+Package pdftex.def Info: ./images/data/img_PS_VC_05_rep2_t0_UV.pdf used on inpu
+t line 148.
+(pdftex.def)             Requested size: 239.80252pt x 159.99577pt.
+
+<./images/data/img_PS_VC_05_rep2_te_RI.pdf, id=474, 990.70125pt x 660.4675pt>
+File: ./images/data/img_PS_VC_05_rep2_te_RI.pdf Graphic file (type pdf)
+
+<use ./images/data/img_PS_VC_05_rep2_te_RI.pdf>
+Package pdftex.def Info: ./images/data/img_PS_VC_05_rep2_te_RI.pdf used on inpu
+t line 156.
+(pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
+
+<./images/data/img_PS_VC_05_rep2_t0_RI.pdf, id=475, 990.70125pt x 660.4675pt>
+File: ./images/data/img_PS_VC_05_rep2_t0_RI.pdf Graphic file (type pdf)
+
+<use ./images/data/img_PS_VC_05_rep2_t0_RI.pdf>
+Package pdftex.def Info: ./images/data/img_PS_VC_05_rep2_t0_RI.pdf used on inpu
+t line 161.
+(pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24 <./images/data/img_BSA_VC_3_5_r1_te.pdf> <./images/data/img_BSA_VC_3_5_r2_
+te.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/data/img_BSA_VC_3_5_r2_te.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
@@ -4399,8 +4363,39 @@ pdfTeX warning: /usr/bin/pdflatex (file ./images/data/img_BSA_VC_3_5_r2_t0.pdf)
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/data/img_BSA_VC_3_5_r3_te.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
->] [31 <./images/data/img_PS_VC_05_rep1_te_UV.pdf> <./images/data/img_PS_VC_05_
-rep1_t0_UV.pdf
+>]
+File: ./images/data/img_PS_VC_05_rep2_te_UV.pdf Graphic file (type pdf)
+ <use ./images/data/img_PS_VC_05_rep2_te_UV.pdf>
+Package pdftex.def Info: ./images/data/img_PS_VC_05_rep2_te_UV.pdf used on inpu
+t line 178.
+(pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
+File: ./images/data/img_PS_VC_05_rep2_t0_UV.pdf Graphic file (type pdf)
+
+<use ./images/data/img_PS_VC_05_rep2_t0_UV.pdf>
+Package pdftex.def Info: ./images/data/img_PS_VC_05_rep2_t0_UV.pdf used on inpu
+t line 183.
+(pdftex.def)             Requested size: 239.80252pt x 159.99577pt.
+
+<./images/data/img_PS_VC_05_rep3_te_RI.pdf, id=530, 990.70125pt x 660.4675pt>
+File: ./images/data/img_PS_VC_05_rep3_te_RI.pdf Graphic file (type pdf)
+
+<use ./images/data/img_PS_VC_05_rep3_te_RI.pdf>
+Package pdftex.def Info: ./images/data/img_PS_VC_05_rep3_te_RI.pdf used on inpu
+t line 191.
+(pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
+
+<./images/data/img_PS_VC_05_rep3_t0_RI.pdf, id=531, 990.70125pt x 660.4675pt>
+File: ./images/data/img_PS_VC_05_rep3_t0_RI.pdf Graphic file (type pdf)
+
+<use ./images/data/img_PS_VC_05_rep3_t0_RI.pdf>
+Package pdftex.def Info: ./images/data/img_PS_VC_05_rep3_t0_RI.pdf used on inpu
+t line 196.
+(pdftex.def)             Requested size: 239.80252pt x 159.86588pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25 <./images/data/img_PS_VC_05_rep1_te_UV.pdf> <./images/data/img_PS_VC_05_re
+p1_t0_UV.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/data/img_PS_VC_05_rep1_t0_UV.p
 df): PDF inclusion: multiple pdfs with page group included in a single page
@@ -4412,8 +4407,11 @@ df): PDF inclusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/data/img_PS_VC_05_rep1_t0_RI.p
 df): PDF inclusion: multiple pdfs with page group included in a single page
->] [32 <./images/data/img_PS_VC_05_rep2_te_UV.pdf> <./images/data/img_PS_VC_05_
-rep2_t0_UV.pdf
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26 <./images/data/img_PS_VC_05_rep2_te_UV.pdf> <./images/data/img_PS_VC_05_re
+p2_t0_UV.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/data/img_PS_VC_05_rep2_t0_UV.p
 df): PDF inclusion: multiple pdfs with page group included in a single page
@@ -4425,70 +4423,60 @@ df): PDF inclusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/data/img_PS_VC_05_rep2_t0_RI.p
 df): PDF inclusion: multiple pdfs with page group included in a single page
->] [33 <./images/data/img_PS_VC_05_rep3_te_RI.pdf> <./images/data/img_PS_VC_05_
+>] [27 <./images/data/img_PS_VC_05_rep3_te_RI.pdf> <./images/data/img_PS_VC_05_
 rep3_t0_RI.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/data/img_PS_VC_05_rep3_t0_RI.p
 df): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<./images/data/img_calibW_BSA_VC_2_5.pdf, id=729, 476.78125pt x 328.22626pt>
+<./images/data/img_calibW_BSA_VC_2_5.pdf, id=663, 476.78125pt x 328.22626pt>
 File: ./images/data/img_calibW_BSA_VC_2_5.pdf Graphic file (type pdf)
 
 <use ./images/data/img_calibW_BSA_VC_2_5.pdf>
 Package pdftex.def Info: ./images/data/img_calibW_BSA_VC_2_5.pdf used on input 
-line 205.
+line 221.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 
-<./images/data/img_calibV_BSA_VC_2_5.pdf, id=730, 476.78125pt x 328.22626pt>
+<./images/data/img_calibV_BSA_VC_2_5.pdf, id=664, 476.78125pt x 328.22626pt>
 File: ./images/data/img_calibV_BSA_VC_2_5.pdf Graphic file (type pdf)
 
 <use ./images/data/img_calibV_BSA_VC_2_5.pdf>
 Package pdftex.def Info: ./images/data/img_calibV_BSA_VC_2_5.pdf used on input 
-line 210.
+line 226.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 
-<./images/data/img_calibW_BSA_VC_3_5.pdf, id=731, 476.78125pt x 328.22626pt>
+<./images/data/img_calibW_BSA_VC_3_5.pdf, id=665, 476.78125pt x 328.22626pt>
 File: ./images/data/img_calibW_BSA_VC_3_5.pdf Graphic file (type pdf)
 
 <use ./images/data/img_calibW_BSA_VC_3_5.pdf>
 Package pdftex.def Info: ./images/data/img_calibW_BSA_VC_3_5.pdf used on input 
-line 228.
+line 244.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 
-<./images/data/img_calibV_BSA_VC_3_5.pdf, id=732, 476.78125pt x 328.22626pt>
+<./images/data/img_calibV_BSA_VC_3_5.pdf, id=666, 476.78125pt x 328.22626pt>
 File: ./images/data/img_calibV_BSA_VC_3_5.pdf Graphic file (type pdf)
 
 <use ./images/data/img_calibV_BSA_VC_3_5.pdf>
 Package pdftex.def Info: ./images/data/img_calibV_BSA_VC_3_5.pdf used on input 
-line 233.
+line 249.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 
-<./images/data/img_calibW_PS_VC_0_5.pdf, id=733, 476.98201pt x 328.39488pt>
+<./images/data/img_calibW_PS_VC_0_5.pdf, id=667, 476.98201pt x 328.39488pt>
 File: ./images/data/img_calibW_PS_VC_0_5.pdf Graphic file (type pdf)
 
 <use ./images/data/img_calibW_PS_VC_0_5.pdf>
 Package pdftex.def Info: ./images/data/img_calibW_PS_VC_0_5.pdf used on input l
-ine 251.
+ine 267.
 (pdftex.def)             Requested size: 239.80252pt x 165.104pt.
 
-<./images/data/img_calibV_PS_VC_0_5.pdf, id=734, 476.78125pt x 328.22626pt>
+<./images/data/img_calibV_PS_VC_0_5.pdf, id=668, 476.78125pt x 328.22626pt>
 File: ./images/data/img_calibV_PS_VC_0_5.pdf Graphic file (type pdf)
 
 <use ./images/data/img_calibV_PS_VC_0_5.pdf>
 Package pdftex.def Info: ./images/data/img_calibV_PS_VC_0_5.pdf used on input l
-ine 256.
+ine 272.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./images/deltaAnalysis.pdf, id=735, 4321.99458pt x 6272.85132pt>
-File: ./images/deltaAnalysis.pdf Graphic file (type pdf)
-
-<use ./images/deltaAnalysis.pdf>
-Package pdftex.def Info: ./images/deltaAnalysis.pdf used on input line 275.
-(pdftex.def)             Requested size: 489.38742pt x 710.21184pt.
-) [34
+ [28
 
  <./images/data/img_calibW_BSA_VC_2_5.pdf> <./images/data/img_calibV_BSA_VC_2_5
 .pdf
@@ -4503,30 +4491,68 @@ pdfTeX warning: /usr/bin/pdflatex (file ./images/data/img_calibW_BSA_VC_3_5.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/data/img_calibV_BSA_VC_3_5.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
->] [35 <./images/data/img_calibW_PS_VC_0_5.pdf> <./images/data/img_calibV_PS_VC
-_0_5.pdf
+> <./images/data/img_calibW_PS_VC_0_5.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./images/data/img_calibW_PS_VC_0_5.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+> <./images/data/img_calibV_PS_VC_0_5.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/data/img_calibV_PS_VC_0_5.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Overfull \vbox (49.82309pt too high) has occurred while \output is active []
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(36.98866pt, 523.53055pt, 36.98866pt)
+* v-part:(T,H,B)=(36.98866pt, 771.06952pt, 36.98866pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=523.53055pt
+* \textheight=771.06952pt
+* \oddsidemargin=-35.28133pt
+* \evensidemargin=-35.28133pt
+* \topmargin=-72.68134pt
+* \headheight=17.0pt
+* \headsep=20.40001pt
+* \topskip=11.0pt
+* \footskip=47.6pt
+* \marginparwidth=74.68849pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+ <./images/deltaAnalysis.pdf, id=1041, 4321.99458pt x 6272.85132pt>
+File: ./images/deltaAnalysis.pdf Graphic file (type pdf)
 
-[36 <./images/deltaAnalysis.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 119--140
+<use ./images/deltaAnalysis.pdf>
+Package pdftex.def Info: ./images/deltaAnalysis.pdf used on input line 292.
+(pdftex.def)             Requested size: 484.26735pt x 702.84172pt.
+ [29
 
- []
+ <./images/deltaAnalysis.pdf>])
+(./AF4program.tex [30
 
-[37] 
+]) 
 AED: lastpage setting LastPage
-[38
+[31
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 142.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 142.
  (./suppInfoTVoid.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 141.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 141.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 142.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 142.
 Package rerunfilecheck Info: File `suppInfoTVoid.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -4538,37 +4564,37 @@ Package logreq Info: Writing requests to 'suppInfoTVoid.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 53499 strings out of 493013
- 1038563 string characters out of 6135682
- 1567900 words of memory out of 5000000
- 55869 multiletter control sequences out of 15000+600000
+ 53469 strings out of 493013
+ 1038302 string characters out of 6135682
+ 1568377 words of memory out of 5000000
+ 55884 multiletter control sequences out of 15000+600000
  98279 words of font info for 98 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  65i,22n,77p,10413b,1730s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/shar
-e/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/shar
+e/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
 m-mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn0600
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf/font
-s/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type
-1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr5.pfb></usr/share/texmf/fo
-nts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/tex-g
-yre/qcsr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qcsri.pfb>
-Output written on suppInfoTVoid.pdf (38 pages, 2420632 bytes).
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+r5.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/tex
+mf/fonts/type1/public/tex-gyre/qcsr.pfb></usr/share/texmf/fonts/type1/public/te
+x-gyre/qcsri.pfb>
+Output written on suppInfoTVoid.pdf (31 pages, 2400736 bytes).
 PDF statistics:
- 1860 PDF objects out of 2073 (max. 8388607)
- 1343 compressed objects within 14 object streams
- 221 named destinations out of 1000 (max. 500000)
+ 1773 PDF objects out of 2073 (max. 8388607)
+ 1265 compressed objects within 13 object streams
+ 176 named destinations out of 1000 (max. 500000)
  17596 words of extra memory for PDF output out of 20736 (max. 10000000)
 

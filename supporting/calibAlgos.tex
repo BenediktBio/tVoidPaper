@@ -62,6 +62,7 @@ Calculate \Rmeas:
 Initialize $w$ and $δ$:
 \[ w \leftarrow \frac{\wmax + \wmin}{2} \]
 \[ δ_w \leftarrow \frac{\wmax - \wmin}{4} \]
+\clearpage
 \subparagraph{4}
 Find $w$ such that $|\Rmeas - \Rcalc| \stackrel{!}{=}\text{min}$ by bisection:
 \begin{algorithmic}
@@ -169,6 +170,7 @@ Calculate \Rmeas:
 Initialize $w$ and $δ$:
 \[ w \leftarrow \frac{\wmax + \wmin}{2} \]
 \[ δ_w \leftarrow \frac{\wmax - \wmin}{4} \]
+\clearpage
 \subparagraph{4}
 Find $w$ such that $|\Rmeas - \Rcalc| \stackrel{!}{=}\text{min}$ by bisection:
 \begin{algorithmic}
@@ -445,41 +447,11 @@ Calculate conversion factor \CF:
 \end{comment}
 
 \subparagraph{4}
-Numerical integration via trapezoidal rule:
+Simple numerical integration via Riemann sum (see subroutines):
 \begin{algorithmic}
-  \State \tiny \# initialize \xi near $z_0$ on the \xi-grid \normalsize
-  \State $\Delta\xi \leftarrow \frac{L}{n}$
-  \State $\xi < z_0$
-  \While{ $\xi < z_0$ }
-  \State $\xi \leftarrow \xi + \Delta\xi$
-  \EndWhile
-  \State \#\#\#
-  \While{ $\xi < z_0$ }
-  \State  $A_\xi \leftarrow m_1 \xi^2 $
-  \State $ \Vxi \leftarrow \Vin - \Vc \frac{A_\xi}{\AL} $ 
-  \State $E_{\dot{V}\xi} \leftarrow \frac{m_1\xi}{\Vxi} $
-  \State $\CF1 \leftarrow \CF1 + E_{\dot{V}\xi} \Delta\xi$
-  \State $\xi \leftarrow \xi + \Delta\xi$
-  \EndWhile
-  \State \#\#\#
-  \While{ $\xi < L_{12}$ }
-  \State $A_\xi \leftarrow A_1 + m_2 \left( \xi^2 - L_1^2 \right) + 2 t_2\left(\xi - L_1\right) $
-  \State $ \Vxi \leftarrow \Vin - \Vc \frac{A_\xi}{\AL} $ 
-  \State $E_{\dot{V}\xi} \leftarrow \frac{m_2\xi + t_2}{\Vxi} $
-  \State $\CF2 \leftarrow \CF2 + E_{\dot{V}\xi} \Delta\xi$
-  \State $\xi \leftarrow \xi + \Delta\xi$
-  \EndWhile
-  \State \#\#\#
-  \While{ $\xi < L$ }
-  \State $A_\xi \leftarrow A_1 + A_2 + m_3 \left( \xi^2 - L_{12}^2 \right) + 2 t_3\left(\xi - L_{12}\right) $
-  \State $ \Vxi \leftarrow \Vin - \Vc \frac{A_\xi}{\AL} $ 
-  \State $E_{\dot{V}\xi} \leftarrow \frac{m_3\xi + t_3}{\Vxi} $
-  \State $\CF3 \leftarrow \CF3 + E_{\dot{V}\xi} \Delta\xi $
-  \State $\xi \leftarrow \xi + \Delta\xi $
-  \EndWhile
+  \State $\CF \leftarrow \text{calcCF}(.....)$
 \end{algorithmic}
-
-\subparagraph{6}
+\subparagraph{5}
 Calculate $w$:
 \begin{algorithmic}
 \State $w \leftarrow \ddfrac{\tvoid}{2\cdot\CF} $
@@ -496,31 +468,71 @@ Calculate passed channel area $A$:
 \end{algorithmic}
 \end{comment}
 
-\subparagraph{8}
+\subparagraph{6}
 Calculate $\Vhyd$ with passed area:
 \begin{algorithmic}
   \State $\Vhyd \leftarrow A_\xi \cdot w$
 \end{algorithmic}
 \clearpage
-
-
-\subsubsection*{General formulation of numerical CF integration for arbitrary channel shapes}
-The integration process above for three channel sections could also be generalized by the following formalism:
+\subsubsection*{S\quad subroutines}
+\subparagraph{S1} calcCF
+\begin{algorithmic}
+  \State \tiny \# initialize \xi near $z_0$ on the \xi-grid \normalsize
+  \State $\Delta\xi \leftarrow \frac{L}{n}$
+  \State $\xi < z_0$
+  \While{ $\xi < z_0$ }
+  \State $\xi \leftarrow \xi + \Delta\xi$
+  \EndWhile
+  \State \tiny \# Calculate $\CFone$ \normalsize
+  \While{ $\xi < z_0$ }
+  \State  $A_\xi \leftarrow m_1 \xi^2 $
+  \State $ \Vxi \leftarrow \Vin - \Vc \frac{A_\xi}{\AL} $ 
+  \State $E_{\dot{V}\xi} \leftarrow \frac{m_1\xi}{\Vxi} $
+  \State $\CF1 \leftarrow \CF1 + E_{\dot{V}\xi} \Delta\xi$
+  \State $\xi \leftarrow \xi + \Delta\xi$
+  \EndWhile
+  \State \tiny \# \normalsize
+  \While{ $\xi < L_{12}$ }
+  \State $A_\xi \leftarrow A_1 + m_2 \left( \xi^2 - L_1^2 \right) + 2 t_2\left(\xi - L_1\right) $
+  \State $ \Vxi \leftarrow \Vin - \Vc \frac{A_\xi}{\AL} $ 
+  \State $E_{\dot{V}\xi} \leftarrow \frac{m_2\xi + t_2}{\Vxi} $
+  \State $\CF2 \leftarrow \CF2 + E_{\dot{V}\xi} \Delta\xi$
+  \State $\xi \leftarrow \xi + \Delta\xi$
+  \EndWhile
+  \State \tiny \# \normalsize
+  \While{ $\xi < L$ }
+  \State $A_\xi \leftarrow A_1 + A_2 + m_3 \left( \xi^2 - L_{12}^2 \right) + 2 t_3\left(\xi - L_{12}\right) $
+  \State $ \Vxi \leftarrow \Vin - \Vc \frac{A_\xi}{\AL} $ 
+  \State $E_{\dot{V}\xi} \leftarrow \frac{m_3\xi + t_3}{\Vxi} $
+  \State $\CF3 \leftarrow \CF3 + E_{\dot{V}\xi} \Delta\xi $
+  \State $\xi \leftarrow \xi + \Delta\xi $
+  \EndWhile
+\end{algorithmic}
+\vspace*{-1.5ex}
+\subsubsection*{General formulation of numerical $\boldsymbol{C_\text{F}}$ integration for arbitrary 
+  channel shapes}
+\vspace*{-.5ex}
+The simple integration process above for three channel sections can also be generalized by the following when the 
+channel 
+shape is provided as a set of functions $e_s(x)$ :
 %% optimal shapes \scite{CarinasDiss, Wahlund etc. }
 \begin{algorithmic}
-\For{$s \leftarrow 1 $ to $S$}
-\While{ $\xi < L$ }
-\State $A_\xi \leftarrow \displaystyle\sum_{\sigma=1}^{s}A_\sigma + \displaystyle\int_{L1s}^\xi e_s(x) \diff x $
-\State $ \Vxi \leftarrow \Vin - \Vc \frac{A_\xi}{\AL} $ 
-\State $E_{\dot{V}\xi} \leftarrow \frac{e_s(\xi)}{\Vxi} $
-\State $\CF \leftarrow \CF + E_{\dot{V}\xi} \Delta\xi $
-\State $\xi \leftarrow \xi + \Delta\xi $
-\EndWhile
-\EndFor
+  \For{$s \leftarrow 1 $ to $S$}
+  \While{ $\xi < L$ }
+  \State $A_\xi \leftarrow \displaystyle\sum_{\sigma=1}^{s}A_\sigma + \displaystyle\int_{L1s}^\xi e_s(x) \diff x $
+  \State $ \Vxi \leftarrow \Vin - \Vc \frac{A_\xi}{\AL} $ 
+  \State $E_{\dot{V}\xi} \leftarrow \frac{e_s(\xi)}{\Vxi} $
+  \State $\CF \leftarrow \CF + E_{\dot{V}\xi} \Delta\xi $
+  \State $\xi \leftarrow \xi + \Delta\xi $
+  \EndWhile
+  \EndFor
 \end{algorithmic}
+\needspace{10em}
+\begin{comment} 
+%%%%%%%%%%%%
+%% Removed as this is better done numerically
+%%%%%%%%%%%%
 
-
-\subsubsection*{S\quad subroutines}
 \subparagraph{S1}
 Polynomial $P$:
 \begin{algorithmic}
@@ -570,10 +582,8 @@ Polynomial $P$:
 %\end{algorithmic}
 \clearpage
 %xxxxxxxxxxxxxxxxxxxxxxxxxx
-
-
-
-
+\end{comment}
+\clearpage
 \subsection*{Calibration of channel height by $\bm{\Vhyd}$}
 \subsubsection*{Inputs:}
 \label{sec:CalibVhyd}
@@ -652,38 +662,9 @@ Calculate area sections of the channel plain:
 \end{algorithmic}
 
 \subparagraph{4}
-Numerical integration for $\CF$ via trapezoidal rule:
+Numerical integration for $\CF$ via Riemann sum (see subroutine \textbf{S1} of $\Vhyd$ above):
 \begin{algorithmic}
-  \State \tiny \# initialize \xi near $z_0$ on the \xi-grid \normalsize
-  \State $\Delta\xi \leftarrow \frac{L}{n}$
-  \State $\xi < z_0$
-  \While{ $\xi < z_0$ }
-  \State $\xi \leftarrow \xi + \Delta\xi$
-  \EndWhile
-  \State \#\#\#
-  \While{ $\xi < z_0$ }
-  \State  $A_\xi \leftarrow m_1 \xi^2 $
-  \State $ \Vxi \leftarrow \Vin - \Vc \frac{A_\xi}{\AL} $ 
-  \State $E_{\dot{V}\xi} \leftarrow \frac{m_1\xi}{\Vxi} $
-  \State $\CF \leftarrow \CF + E_{\dot{V}\xi} \Delta\xi$
-  \State $\xi \leftarrow \xi + \Delta\xi$
-  \EndWhile
-  \State \#\#\#
-  \While{ $\xi < L_{12}$ }
-  \State $A_\xi \leftarrow A_1 + m_2 \left( \xi^2 - L_1^2 \right) + 2 t_2\left(\xi - L_1\right) $
-  \State $ \Vxi \leftarrow \Vin - \Vc \frac{A_\xi}{\AL} $ 
-  \State $E_{\dot{V}\xi} \leftarrow \frac{m_2\xi + t_2}{\Vxi} $
-  \State $\CF \leftarrow \CF + E_{\dot{V}\xi} \Delta\xi$
-  \State $\xi \leftarrow \xi + \Delta\xi$
-  \EndWhile
-  \State \#\#\#
-  \While{ $\xi < L$ }
-  \State $A_\xi \leftarrow A_1 + A_2 + m_3 \left( \xi^2 - L_{12}^2 \right) + 2 t_3\left(\xi - L_{12}\right) $
-  \State $ \Vxi \leftarrow \Vin - \Vc \frac{A_\xi}{\AL} $ 
-  \State $E_{\dot{V}\xi} \leftarrow \frac{m_3\xi + t_3}{\Vxi} $
-  \State $\CF \leftarrow \CF + E_{\dot{V}\xi} \Delta\xi $
-  \State $\xi \leftarrow \xi + \Delta\xi $
-  \EndWhile
+  \State $\CF \leftarrow \text{calcCF(.....)}$
 \end{algorithmic}
 
 \subparagraph{6}
@@ -717,14 +698,14 @@ Calculate $w$ by minimizing $\Delta^2 = \left( R_{\te} - R_D \right)^2$:
   \State $ \DwL \leftarrow \RDiff(\wL)$
 \ElsIf{ $\DwL > \DwM$ and $\DwM < \DwR$ }
 \scriptsize \#Shrink both distances about half \normalsize
-  \State $ \wL \leftarrow \frac{\wL + \wM}{2},\RDiff(\wL) $
-  \State $ \wR \leftarrow \frac{\wR + \wM}{2},\RDiff(\wR) $
+  \State $ \wL \leftarrow \frac{\wL + \wM}{2}, \DwL \leftarrow \RDiff(\wL) $
+  \State $ \wR \leftarrow \frac{\wR + \wM}{2}, \DwR \leftarrow \RDiff(\wR) $
 \EndIf
 \EndWhile
 \end{algorithmic}
 \subsubsection*{S\quad subroutines}
-\subparagraph{S1}
-$\RDiff \\ \text{calculate}~\Delta^2 = \left(  R_{\te} - R_D\right)^2$:
+\subparagraph{S2}
+$\RDiff \\ \text{calculate}~\Delta = \left(  R_{\te} - R_D\right)^2$:
 \begin{algorithmic}
   \State $R_{\te} \leftarrow \frac{2 \CF w}{t_e} $
   \State $\lambda \leftarrow \frac{D A_z}{\Vc w}$
