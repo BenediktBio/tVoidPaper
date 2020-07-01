@@ -475,7 +475,9 @@ Calculate $\Vhyd$ with passed area:
 \end{algorithmic}
 \clearpage
 \subsubsection*{S\quad subroutines}
+\vspace*{-1.2ex}
 \subparagraph{S1} calcCF
+\vspace*{-1.2ex}
 \begin{algorithmic}
   \State \tiny \# initialize \xi near $z_0$ on the \xi-grid \normalsize
   \State $\Delta\xi \leftarrow \frac{L}{n}$
@@ -491,7 +493,7 @@ Calculate $\Vhyd$ with passed area:
   \State $\CF1 \leftarrow \CF1 + E_{\dot{V}\xi} \Delta\xi$
   \State $\xi \leftarrow \xi + \Delta\xi$
   \EndWhile
-  \State \tiny \# \normalsize
+  \State \tiny \#  Calculate $\CFtwo$ \normalsize
   \While{ $\xi < L_{12}$ }
   \State $A_\xi \leftarrow A_1 + m_2 \left( \xi^2 - L_1^2 \right) + 2 t_2\left(\xi - L_1\right) $
   \State $ \Vxi \leftarrow \Vin - \Vc \frac{A_\xi}{\AL} $ 
@@ -499,7 +501,7 @@ Calculate $\Vhyd$ with passed area:
   \State $\CF2 \leftarrow \CF2 + E_{\dot{V}\xi} \Delta\xi$
   \State $\xi \leftarrow \xi + \Delta\xi$
   \EndWhile
-  \State \tiny \# \normalsize
+  \State \tiny \#  Calculate $\CFthree$ \normalsize
   \While{ $\xi < L$ }
   \State $A_\xi \leftarrow A_1 + A_2 + m_3 \left( \xi^2 - L_{12}^2 \right) + 2 t_3\left(\xi - L_{12}\right) $
   \State $ \Vxi \leftarrow \Vin - \Vc \frac{A_\xi}{\AL} $ 
@@ -508,13 +510,12 @@ Calculate $\Vhyd$ with passed area:
   \State $\xi \leftarrow \xi + \Delta\xi $
   \EndWhile
 \end{algorithmic}
-\vspace*{-1.5ex}
+\vspace*{-2.0ex}
 \subsubsection*{General formulation of numerical $\boldsymbol{C_\text{F}}$ integration for arbitrary 
   channel shapes}
 \vspace*{-.5ex}
-The simple integration process above for three channel sections can also be generalized by the following when the 
-channel 
-shape is provided as a set of functions $e_s(x)$ :
+The simple integration procedure above for three channel sections could also be generalized by the following when the 
+channel shape is provided as a set of functions $e_s(x)$:
 %% optimal shapes \scite{CarinasDiss, Wahlund etc. }
 \begin{algorithmic}
   \For{$s \leftarrow 1 $ to $S$}
@@ -527,12 +528,13 @@ shape is provided as a set of functions $e_s(x)$ :
   \EndWhile
   \EndFor
 \end{algorithmic}
-\needspace{10em}
+\vspace*{-0.5ex}
+Alternatively, the Riemann sum could be exchanged by a trapezoidal rule approach.
+\needspace{30em}
 \begin{comment} 
 %%%%%%%%%%%%
 %% Removed as this is better done numerically
 %%%%%%%%%%%%
-
 \subparagraph{S1}
 Polynomial $P$:
 \begin{algorithmic}
@@ -666,8 +668,8 @@ Numerical integration for $\CF$ via Riemann sum (see subroutine \textbf{S1} of $
 \begin{algorithmic}
   \State $\CF \leftarrow \text{calcCF(.....)}$
 \end{algorithmic}
-
-\subparagraph{6}
+\clearpage
+\subparagraph{5}
 Calculate $w$ by minimizing $\Delta^2 = \left( R_{\te} - R_D \right)^2$:
 
 \newcommand{\wL}{\ensuremath{w_\text{L}}}

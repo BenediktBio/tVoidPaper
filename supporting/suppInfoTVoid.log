@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.21)  30 JUN 2020 22:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.21)  1 JUL 2020 21:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4155,7 +4155,7 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ] [18] [19
 
 ]
-LaTeX Font Info:    Try loading font information for LGR+lmr on input line 480.
+LaTeX Font Info:    Try loading font information for LGR+lmr on input line 482.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/cbfonts-fd/lgrlmr.fd
@@ -4165,7 +4165,9 @@ File: lgrlmr.fd 2016/03/04 v1.1 Scalable Greek Latin Modern Regular
 ] [21
 
 ]
-[22]) (./dataSets.tex
+[22
+
+]) (./dataSets.tex
 <./images/data/img_BSA_VC_2_5_r1_te.pdf, id=363, 990.70125pt x 660.4675pt>
 File: ./images/data/img_BSA_VC_2_5_r1_te.pdf Graphic file (type pdf)
 
@@ -4541,9 +4543,9 @@ Package pdftex.def Info: ./images/deltaAnalysis.pdf used on input line 292.
  [29
 
  <./images/deltaAnalysis.pdf>])
-(./AF4program.tex [30
+(./AF4program.tex) [30
 
-]) 
+] 
 AED: lastpage setting LastPage
 [31
 
@@ -4564,10 +4566,10 @@ Package logreq Info: Writing requests to 'suppInfoTVoid.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 53469 strings out of 493013
- 1038302 string characters out of 6135682
+ 53475 strings out of 493013
+ 1038408 string characters out of 6135682
  1568377 words of memory out of 5000000
- 55884 multiletter control sequences out of 15000+600000
+ 55888 multiletter control sequences out of 15000+600000
  98279 words of font info for 98 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  65i,22n,77p,10413b,1730s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4591,10 +4593,10 @@ c/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/tex
 mf/fonts/type1/public/tex-gyre/qcsr.pfb></usr/share/texmf/fonts/type1/public/te
 x-gyre/qcsri.pfb>
-Output written on suppInfoTVoid.pdf (31 pages, 2400736 bytes).
+Output written on suppInfoTVoid.pdf (31 pages, 2403823 bytes).
 PDF statistics:
- 1773 PDF objects out of 2073 (max. 8388607)
- 1265 compressed objects within 13 object streams
- 176 named destinations out of 1000 (max. 500000)
+ 1775 PDF objects out of 2073 (max. 8388607)
+ 1267 compressed objects within 13 object streams
+ 178 named destinations out of 1000 (max. 500000)
  17596 words of extra memory for PDF output out of 20736 (max. 10000000)
 
