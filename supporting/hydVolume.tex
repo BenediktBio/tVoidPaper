@@ -9,7 +9,8 @@ Here, the derivation is analogously conducted as described in literature \scite{
 but using the straight equations \ref{eq:chLine} for description of the channel above. This takes into consideration 
 that $b(z)$ is variable over the whole channel length. In addition, also focussing into the first channel section is 
 considered, for this reason, the the surface cannot just be corrected by a constant term as reported 
-\scite{Litzen1991}. \tvoid is the void time of an unretained species which can be obtained by integration over the 
+\scite{Litzen1991}. 
+$\tvoid$ is the void time of an unretained species which can be obtained by integration over the 
 channel positions $ξ$.
 Although this derivation leads to rather laborious expressions, it has the advantage that no additional assumptions are 
 necessary. 
@@ -86,7 +87,7 @@ and
  %\right)
   \diff ξ
 \end{equation}
-Similar to the calculation of \Vgeo above, a case-by case analysis is required depending on $z_0$. Due to the 
+Similar to the calculation of $\Vgeo$ above, a case-by case analysis is required depending on $z_0$. Due to the 
 section-wise definition of the integrand, the integrals then have to be split accordingly to the partial domain of 
 $E(ξ)$.
 \clearpage
@@ -771,7 +772,7 @@ with
                                                            
  \subsubsection*{Evaluation of $\bm \Delta_2$}
 To avoid an additional case-by-case analysis for the integration, the discriminants the polynomials $P_2(ξ)$ and $P_3(ξ)$ each were resubsituted to derive that only one of the cases
-\[
+\begin{equation}
   \int \frac{\diff ξ}{β_i ξ^2 + γ_i ξ + δ_i}
   \left\{  
     \begin{array}{llll}
@@ -780,10 +781,10 @@ To avoid an additional case-by-case analysis for the integration, the discrimina
       = - \ddfrac{2}{\sqrt{-Δ_i}} \cdot \text{artanh}{\left( \ddfrac{ 2β_iξ_i+γ_i }{ \sqrt{-Δ_i} } \right)}
       & \forall & Δ_i < 0  \\ %  \label{eq:chLine3}
     \end{array}
-  \right. \qquad\ \scite{Bronstein2008a}
+  \right. \quad\ \scite{Bronstein2008a}
   % \label{eq:chLine}
   % end{align}  
-\]
+\end{equation}
 has to be applied for the evaluation of $\CF$:\clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%% 
 %\vspace*{2ex}\\

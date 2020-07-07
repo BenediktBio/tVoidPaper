@@ -2,7 +2,8 @@
   \begin{center}
     \includegraphics[width=\linewidth]{./images/fffChannelMeasures.pdf}    
   \end{center}
-  \caption[Channel dimensions]{Channel dimensions. The width $b(\zL)$ depends on the focus position and is not accessible via bare channel data.}
+  \caption[Channel dimensions]{Channel dimensions. The width $b(\zL)$ depends on the focus position and is not 
+  accessible via geometrical channel data only.}
   \label{fig:fffChannelMeasures} 
 \end{figure}AF4 channel have a trapezoidal shape with measures indicated in fig. \ref{fig:fffChannelMeasures}.
 For all further considerations, the channel plane is split into three sections (1,2,3) with their correspoding lengths $L_1, L_2, L_3$. To simplify the further calculations, they are subsumed as in the following:
@@ -33,8 +34,9 @@ The approach may be useful for further hydrodynamic considerations as for exampl
 a position-dependent size. For the trapezoidal plane shape, the channel is described by the enclosure of three pairs of 
 straight line \ref{fig:fffChannelCoordSys}. All expressions here are not optimized for mathematical elegance, but 
 rather for being translated into an understandable and well-maintainable calculation routine. This is achieved by 
-extensive subsitution of the known variables. Subsuming of these magnitudes helps to simplify the later expressions 
-and the transformation into an 
+extensive subsitution of the known variables. Subsuming of these magnitudes helps to simplify the later expressions. 
+In addition It allows the transformation and variation if a modification is required, for example if and another shape 
+model shall be introduced.
 Due to the reason of symmetry, only three borders have to described exactly:
 
 \begin{align}
@@ -54,7 +56,7 @@ Due to the reason of symmetry, only three borders have to described exactly:
   \begin{center}
     \includegraphics[width=\linewidth]{./images/fffChannelCoordSys.pdf}    
   \end{center}
-  \caption[Channel dimensions as a set of straight lines]{Channel dimensions as a set of 3 pairs of straight lines}
+  \caption[Channel dimensions as a set of straight lines]{Channel dimensions as a set of 3 pairs of straight lines.}
   \label{fig:fffChannelCoordSys} 
 \end{figure}
 As all dimensions here are known, the slopes and offsets of the lines can be calculated directly and don't have to be resubsituted after the following substitutions.
@@ -67,7 +69,7 @@ L_1$). In the algorithm later, rather the plane is used explicitly, which is obt
     \includegraphics[width=\linewidth]{./images/fffVolume1.pdf}
     \vspace*{-3ex}    
   \end{center}
-  \caption[Passed area section - distal focussing]{Area Section passed by the sample during the measurement marked with 
+  \caption[Passed area section - distal focussing]{Area section passed by the sample during the measurement marked with 
   the color of the corresponding line in the case of distal focussing}
   \label{fig:fffVolume1} 
 \end{figure}
@@ -95,7 +97,7 @@ It is described by:
     \includegraphics[width=0.95\linewidth]{./images/fffVolume2.pdf}    
   \end{center}
   \vspace*{-3ex}    
-  \caption[Passed area section - proximal focussing]{Area Section passed by the sample during the measurement marked 
+  \caption[Passed area section - proximal focussing]{Area section passed by the sample during the measurement marked 
   with the color of the corresponding line in the case of proximal focussing}
   \label{fig:fffVolume2} 
 \end{figure}
