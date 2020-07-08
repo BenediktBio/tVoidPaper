@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.21)  7 JUL 2020 21:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.21)  9 JUL 2020 01:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4008,24 +4008,19 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--79
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--79
+Underfull \hbox (badness 10000) in paragraph at lines 73--91
 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 91.
+(Font)              <12> on input line 93.
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 91.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 93.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 91.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 93.
 
 (./geoVolume.tex
 <./images/fffChannelMeasures.pdf, id=7, 702.47632pt x 158.43466pt>
@@ -4550,11 +4545,11 @@ AED: lastpage setting LastPage
 [31
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
  (./suppInfoTVoid.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 143.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 143.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 145.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 145.
 Package rerunfilecheck Info: File `suppInfoTVoid.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -4568,7 +4563,7 @@ Package logreq Info: Writing requests to 'suppInfoTVoid.run.xml'.
 Here is how much of TeX's memory you used:
  53477 strings out of 493013
  1038431 string characters out of 6135682
- 1568377 words of memory out of 5000000
+ 1568376 words of memory out of 5000000
  55889 multiletter control sequences out of 15000+600000
  98279 words of font info for 98 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
@@ -4593,7 +4588,7 @@ c/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/tex
 mf/fonts/type1/public/tex-gyre/qcsr.pfb></usr/share/texmf/fonts/type1/public/te
 x-gyre/qcsri.pfb>
-Output written on suppInfoTVoid.pdf (31 pages, 2403075 bytes).
+Output written on suppInfoTVoid.pdf (31 pages, 2403210 bytes).
 PDF statistics:
  1777 PDF objects out of 2073 (max. 8388607)
  1269 compressed objects within 13 object streams

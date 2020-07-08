@@ -15,7 +15,7 @@
    version="1.1"
    inkscape:version="0.92.1 r15371"
    sodipodi:docname="fffScheme.svg"
-   inkscape:export-filename="/home/bluemage/VirtualBox VMs/VirtWindows/SF_VirtWind/tvoidPaper/images/fffScheme.png"
+   inkscape:export-filename="/home/bluemage/VirtualBox VMs/VirtWindows/SF_VirtWind/tvoidPaper/tVoidPaper/images/fffScheme.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300">
   <defs
@@ -915,8 +915,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="526.5935"
-     inkscape:cy="-28.051214"
+     inkscape:cx="45.93257"
+     inkscape:cy="-10.023003"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -937,7 +937,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1032,64 +1032,64 @@
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.51423264px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman,  Italic';stroke-width:1.06666672">w</tspan></text>
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2.11733341;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart-0);marker-end:none"
-       d="m 183.80448,189.12417 c 0,-26.9049 0,-26.52054 0,-26.52054"
+       d="m 175.80448,189.12417 c 0,-26.9049 0,-26.52054 0,-26.52054"
        id="path8447"
        inkscape:connector-curvature="0" />
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2.11733341;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart-0);marker-end:none"
-       d="m 251.84604,189.12417 c 0,-26.9049 0,-26.52054 0,-26.52054"
+       d="m 243.84604,189.12417 c 0,-26.9049 0,-26.52054 0,-26.52054"
        id="path8451"
        inkscape:connector-curvature="0" />
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2.11733341;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart-0);marker-end:none"
-       d="m 319.88759,189.12417 c 0,-26.9049 0,-26.52054 0,-26.52054"
+       d="m 311.88759,189.12417 c 0,-26.9049 0,-26.52054 0,-26.52054"
        id="path8455"
        inkscape:connector-curvature="0" />
     <path
        inkscape:connector-curvature="0"
        id="path8457"
-       d="m 387.92913,189.12417 c 0,-26.9049 0,-26.52054 0,-26.52054"
+       d="m 379.92913,189.12417 c 0,-26.9049 0,-26.52054 0,-26.52054"
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2.11733341;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart-0);marker-end:none" />
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2.11733341;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart-0);marker-end:none"
-       d="m 455.97067,189.12417 c 0,-26.9049 0,-26.52054 0,-26.52054"
+       d="m 447.97067,189.12417 c 0,-26.9049 0,-26.52054 0,-26.52054"
        id="path8459"
        inkscape:connector-curvature="0" />
     <path
        inkscape:connector-curvature="0"
        id="path8461"
-       d="m 524.01224,189.12417 c 0,-26.9049 0,-26.52054 0,-26.52054"
+       d="m 516.01224,189.12417 c 0,-26.9049 0,-26.52054 0,-26.52054"
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2.11733341;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart-0);marker-end:none" />
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2.11733341;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart-0);marker-end:none"
-       d="m 592.05377,189.12417 c 0,-26.9049 0,-26.52054 0,-26.52054"
+       d="m 584.05377,189.12417 c 0,-26.9049 0,-26.52054 0,-26.52054"
        id="path8463"
        inkscape:connector-curvature="0" />
     <path
        inkscape:connector-curvature="0"
        id="path8465"
-       d="m 660.09532,189.12417 c 0,-26.9049 0,-26.52054 0,-26.52054"
+       d="m 652.09532,189.12417 c 0,-26.9049 0,-26.52054 0,-26.52054"
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2.11733341;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart-0);marker-end:none" />
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2.11733341;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart-0);marker-end:none"
-       d="m 660.09532,189.12417 c 0,-26.9049 0,-26.52054 0,-26.52054"
+       d="m 652.09532,189.12417 c 0,-26.9049 0,-26.52054 0,-26.52054"
        id="path8467"
        inkscape:connector-curvature="0" />
     <path
        inkscape:connector-curvature="0"
        id="path8469"
-       d="m 115.76293,189.12417 c 0,-26.9049 0,-26.52054 0,-26.52054"
+       d="m 107.76293,189.12417 c 0,-26.9049 0,-26.52054 0,-26.52054"
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2.11733341;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart-0);marker-end:none" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.80000019px;line-height:0%;font-family:cmr10;-inkscape-font-specification:cmr10;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.06666672"
-       x="434.33499"
+       x="425.61478"
        y="172.3754"
        id="text8471"
        transform="scale(0.91740494,1.0900312)"><tspan
          sodipodi:role="line"
          id="tspan8473"
-         x="434.33499"
+         x="425.61478"
          y="172.3754"
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.53985023px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman,  Italic';stroke-width:1.06666672">V<tspan
    style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.25114632px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman,  Italic';baseline-shift:sub;stroke-width:1.06666672"
@@ -1500,5 +1500,38 @@
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.16559601px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Italic';stroke-width:3.38996959;stroke-miterlimit:4;stroke-dasharray:none">L<tspan
    style="font-size:65%;baseline-shift:sub"
    id="tspan11820">3</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.2630043px;line-height:1.25;font-family:TeXGyreSchola;-inkscape-font-specification:TeXGyreSchola;letter-spacing:-0.47356829px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.24623239"
+       x="664.36914"
+       y="3.547389"
+       id="text5108"><tspan
+         sodipodi:role="line"
+         id="tspan5106"
+         x="664.36914"
+         y="3.547389"
+         style="stroke-width:1.24623239">upper wall</tspan></text>
+    <text
+       id="text5112"
+       y="139.54739"
+       x="664.36914"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.2630043px;line-height:1.25;font-family:TeXGyreSchola;-inkscape-font-specification:TeXGyreSchola;letter-spacing:-0.47356829px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.24623239"
+       xml:space="preserve"><tspan
+         style="stroke-width:1.24623239"
+         y="139.54739"
+         x="664.36914"
+         id="tspan5110"
+         sodipodi:role="line">membrane</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.2630043px;line-height:1.25;font-family:TeXGyreSchola;-inkscape-font-specification:TeXGyreSchola;letter-spacing:-0.47356829px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.24623239"
+       x="664.36914"
+       y="179.54739"
+       id="text5116"><tspan
+         sodipodi:role="line"
+         id="tspan5114"
+         x="664.36914"
+         y="179.54739"
+         style="stroke-width:1.24623239">frit</tspan></text>
   </g>
 </svg>
