@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.21)  9 JUL 2020 01:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.21)  9 JUL 2020 01:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4442,13 +4442,13 @@ Package pdftex.def Info: ./images/data/img_calibV_BSA_VC_2_5.pdf used on input
 line 226.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 
-<./images/data/img_calibW_BSA_VC_3_5.pdf, id=667, 476.78125pt x 328.22626pt>
+<./images/data/img_calibW_BSA_VC_3_5.pdf, id=667, 476.81195pt x 328.53091pt>
 File: ./images/data/img_calibW_BSA_VC_3_5.pdf Graphic file (type pdf)
 
 <use ./images/data/img_calibW_BSA_VC_3_5.pdf>
 Package pdftex.def Info: ./images/data/img_calibW_BSA_VC_3_5.pdf used on input 
 line 244.
-(pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
+(pdftex.def)             Requested size: 239.80252pt x 165.22752pt.
 
 <./images/data/img_calibV_BSA_VC_3_5.pdf, id=668, 476.78125pt x 328.22626pt>
 File: ./images/data/img_calibV_BSA_VC_3_5.pdf Graphic file (type pdf)
@@ -4588,7 +4588,7 @@ c/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/tex
 mf/fonts/type1/public/tex-gyre/qcsr.pfb></usr/share/texmf/fonts/type1/public/te
 x-gyre/qcsri.pfb>
-Output written on suppInfoTVoid.pdf (31 pages, 2403210 bytes).
+Output written on suppInfoTVoid.pdf (31 pages, 2403226 bytes).
 PDF statistics:
  1777 PDF objects out of 2073 (max. 8388607)
  1269 compressed objects within 13 object streams
