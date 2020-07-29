@@ -35,7 +35,7 @@
 \newcommand{\Vappgeo}{\ensuremath{V^{\approx\text{geo}}}}
 \newcommand{\Vgeo}{\ensuremath{V^\text{geo}}}
 \newcommand{\Vhyd}{\ensuremath{V^\text{hyd}}}
-\newcommand{\VnoTvoid}{\ensuremath{V^\text{noTvoid}}}
+\newcommand{\VnoTvoid}{\ensuremath{V^\text{noT}}}
 \newcommand{\whyd}{\ensuremath{w^\text{hyd}}}
 \newcommand{\zP}{\ensuremath{z_\text{\%}}}
 % \newcommand{\z0}{\ensuremath{z_\text{0}}}
@@ -66,7 +66,8 @@
 %\newcommand{\phantItem}{}
 % \newcommand{\phantSize}{}
 
-\chapter*{Revision of the AF4 calibration experiment (Supplementary information)}
+\addchap*{Revision of the AF4 calibration experiment (Supplementary 
+information)}
   
   %Precise batch evaluation of Asymmetrical Flow Field-Flow Fractionation data via automatized void peak determination 
   %%%-- Supplementary information}
@@ -74,48 +75,57 @@
 % \begin{center}
 \noindent\hrulefill\\
 % \end{center}
-\textbf{Abstract}\\
-% \bΔ
-Asymmetrical flow field-flow fractionation is a versatile chromatographic fractionation method. It is used for 
-size-based separation of colloids, biomolecules and polymers in combination with at least one detection technique. 
-Although used often as pure separation method, a well-elaborated theory is available that allows precise quantification 
-of the translational diffusion coefficient $D$. Still, current literature suggests different ways to transform this 
-theory into applicable experimental procedures and no “gold standard” for correct data processing exists. While some 
-sources report a direct way to extract diffusion information from the fractogram, others suggest the necessity of an 
-external calibration measurement to obtain the channel width $w$. In this work, we compare the different approaches and 
-calibration algorithms based on original and literature data using our own open-source AF4 evaluation software. Based 
-on the results, we conclude that available AF4 setups do not fulfill the requirements for absolute measurements of $D$. 
-We show that the best way to conduct is to consider the area of the channel and $D$ of the calibrant while neglecting 
-the 
-small peak which occurs in the void peak region.
+\vspace*{-8ex}
+{\let\clearpage\relax \tableofcontents}
 
-\noindent\hrulefill
-\section*{Determination of geometrical channel volume $\bm{\Vgeo}$}
+{\let\clearpage\relax
+   \chapter[Determination of geometrical channel volume $\Vgeo$]
+  {Determination of geometrical channel volume $\bm{\Vgeo}$}
+  
+} %\Vgeo}
 \input{./geoVolume.tex}
 
-\clearpage
-\section*{Determination of ``hydrodynamic" channel height $\bm\whyd$ and Volume $\bm\Vhyd$}
+{ \chapter[Determination of ``hydrodynamic" channel height $\whyd$ and Volume $\Vhyd$]
+  {Determination of ``hydrodynamic" channel height $\bm\whyd$ and volume $\bm\Vhyd$}
+}
 \input{./hydVolume.tex}
 
-\section*{Simplified formulation $\bm\whyd$ and Volume $\bm\Vhyd$}
+{\let\clearpage\relax
+\chapter[Simplified formulation $\whyd$ and volume $\Vhyd$]
+{Simplified formulation $\bm\whyd$ and Volume $\bm\Vhyd$}
+}
 \input{./simpleVolume.tex}
 
-\section*{Determination of without experimental $\tvoid$}
+{\let\clearpage\relax
+\chapter
+[Determination without experimental $\tvoid$]
+{
+  Determination without experimental $\bm\tvoid$}
+}
 \input{./tvoidSub.tex}
 
 %\section*{UML class diagram}
 %Perhaps, but not mandatory
 %\section*{User interface}
 %2 images 
-\clearpage
-\section*{Detailed description of applied algorithms}
+%\clearpage
+{\let\clearpage\relax
+\chapter{Detailed description of applied algorithms}
+}
 \input{./calibAlgos.tex}
 %\input{./axisConvAlgos.tex}
 %\input{./directAlgo.tex}    
-\section*{Complete data sets}
+\chapter{Complete data sets}
 \input{./dataSets.tex}
-\subsection*{Detailed measurement program}
+\FloatBarrier
+{ 
+  \RedeclareSectionCommand[
+  beforeskip=2.5\baselineskip,
+  afterskip=\baselineskip]{chapter}
+\chapter{Detailed measurement program} 
+}
 \input{./AF4program.tex}
+\clearpage
 \begin{comment}
 %\subsection*{Sequence order}
 %3xBSA VC3\\

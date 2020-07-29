@@ -5,12 +5,13 @@
   \caption[cross sections ]{Cross sections $B(ξ)$ of the channel at different positions $ξ$}
   \label{fig:XiCrossSection} 
 \end{figure}
-Here, the derivation is analogously conducted as described in literature \scite{Wahlund1987,Litzen1991, Wahlund2013}, 
+Here, the derivation is analogously conducted as described in literature \cite{Wahlund1987,Litzen1991, Wahlund2013}, 
 but using the straight equations \ref{eq:chLine} for description of the channel above. This takes into consideration 
 that $b(z)$ is variable over the whole channel length. In addition, also focussing into the first channel section is 
-considered, for this reason, the the surface cannot just be corrected by a constant term as reported 
-\scite{Litzen1991}. 
-$\tvoid$ is the void time of an unretained species which can be obtained by integration over the 
+considered. For this reason, the surface cannot just be corrected by a constant term as reported earlier.
+\cite{Litzen1991} 
+$\tvoid$ is the hypothetical time of a species to pass the separation volume with the mean migration velocity. It can 
+be obtained by integration over the 
 channel positions $ξ$.
 Although this derivation leads to rather laborious expressions, it has the advantage that no additional assumptions are 
 necessary. 
@@ -55,8 +56,8 @@ The total area \AL can be easily derived by letting of eq. \ref{eq:proxFocusVolu
   \end{array}
   \label{eq:areaSections}
 \end{equation}
-To evaluate $A(ξ)$ correctly, the integrals have to be split according to the conditions in eq. \ref{eq:chLine}. This 
-is required which corresponds to the cases needed for $b(ξ)$.
+To evaluate $A(ξ)$ correctly, the integrals have to be split according to the conditions in eq. \ref{eq:chLine}. 
+This requirement corresponds to the cases same needed for $b(ξ)$, i.e. the different passed channel sections.
 Merging eq. \ref{eq:tvoidMigVelo}
 and \ref{eq:VDepXi} gives the expression
 \begin{equation}
@@ -164,8 +165,10 @@ section from eq. \ref{eq:areaSections}, only the last integral is solved.
   \end{array}
   % \label{}
 \end{equation}
-In order to transform the integrand terms into ordinary rational functions and simplify the analytical solutions 
-This can be rearranged by using substitutions for the occurring prefactors $α_i,β_i,γ_i,δ_i$, the quadratic polynomials 
+In order to transform the integrand terms into ordinary 
+rational functions and simplify the analytical solutions, 
+this can be rearranged by using substitutions for the 
+occurring prefactors $α_i,β_i,γ_i,δ_i$, the quadratic polynomials 
 $P(ξ)$ and its discriminants
 $Δ_i$:
 \begin{equation}
@@ -269,7 +272,6 @@ $Δ_i$:
         \right]_{z_0}^{L_{12}} 
       \right) & \forall Δ_2 < 0 \\\addlinespace
     \end{cases} & \scite{Bronstein2008a}
-    %%%%%%%%%% 
     \\\addlinespace
            &=
     &\begin{cases}
@@ -664,7 +666,7 @@ with
      &= &\ddfrac{ m_1}{ β_1} \cdot \frac{1}{2}
      \left[
        \ln(\left| \ddfrac{δ_1}{β_1} + \displaystyle ξ^2 \right|)
-     \right]_{z_0}^{L_{1}} %& \scite{Bronstein2008b}
+     \right]_{z_0}^{L_{1}} %& \cite{Bronstein2008b}
    \\ \addlinespace[1ex]
   &= &\ddfrac{ m_1}{2 β_1} \cdot 
     \left(
@@ -907,4 +909,4 @@ has to be applied for the evaluation of $\CF$:\clearpage
   \end{array}
 \end{equation}
 It turns out that the sign of the discriminant cannot be determined exactly without prior knowledge about the 
-parameters. and the sign of the discriminants have to be determined ``at runtime''.\clearpage
+parameters and the sign of the discriminants have to be determined ``at runtime''.\clearpage

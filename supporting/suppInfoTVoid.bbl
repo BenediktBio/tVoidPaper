@@ -464,50 +464,5 @@
     \field{year}{2008}
     \warn{\item Can't use 'date' + 'year'}
   \endentry
-
-  \entry{Bronstein2008b}{incollection}{}
-    \name{author}{5}{}{%
-      {{hash=BI}{%
-         family={Bronstein},
-         familyi={B\bibinitperiod},
-         given={I.N.},
-         giveni={I\bibinitperiod},
-      }}%
-      {{hash=SK}{%
-         family={Semendjajew},
-         familyi={S\bibinitperiod},
-         given={K.A.},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=}{%
-      }}%
-      {{hash=MG}{%
-         family={Musiol},
-         familyi={M\bibinitperiod},
-         given={G.},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=MH}{%
-         family={M\"{u}hlig},
-         familyi={M\bibinitperiod},
-         given={H.},
-         giveni={H\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Harri Deutsch}%
-    }
-    \strng{namehash}{BI+1}
-    \strng{fullhash}{BISKMGMH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Taschenbuch der Mathematik}
-    \field{chapter}{21.7.1.3}
-    \field{isbn}{978-3-8171-2007-9}
-    \field{pages}{1078}
-    \field{title}{"Tabellen","Unbestimmte Integrale","No. 61"}
-    \field{year}{2008}
-    \warn{\item Can't use 'date' + 'year'}
-  \endentry
 \endsortlist
 \endinput

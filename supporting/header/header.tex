@@ -154,6 +154,10 @@ fontsize=11pt, expansion=false]{scrreprt}
 %\usepackage{achemso}
 %\usepackage{tocbasic}
 % \newcommand{\slfrac}[2]{ \left.#1\middle/#2\right.}
+\usepackage{tocloft}
+\renewcommand\cftchapdotsep{\cftdotsep}
+\renewcommand\cftchapleader{\cftdotfill{\cftchapdotsep}}
+
 \usepackage[official]{eurosym}
 \newcommand{\Euro}{\euro\xspace}
 \usepackage{etoolbox}

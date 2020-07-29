@@ -14341,9 +14341,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.4957317"
-     inkscape:cx="1638.6444"
-     inkscape:cy="7654.8913"
+     inkscape:zoom="1.402141"
+     inkscape:cx="5111.3489"
+     inkscape:cy="7919.8023"
      inkscape:document-units="mm"
      inkscape:current-layer="surface5953"
      showgrid="false"
@@ -18241,7 +18241,7 @@
            y="157.94769"
            style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola Italic';stroke-width:4.0343051">Y<tspan
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.71217346px;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';baseline-shift:super;stroke-width:4.0343051"
-   id="tspan7089">tvoidfree</tspan></tspan></text>
+   id="tspan7089">noT</tspan></tspan></text>
       <text
          id="text7099"
          y="1073.4108"
@@ -37733,6 +37733,17 @@
              height="100%" />
         </g>
       </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:1.25;font-family:TeXGyreSchola;-inkscape-font-specification:TeXGyreSchola;letter-spacing:-0.285px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75"
+         x="4224.3726"
+         y="107.89593"
+         id="text12030"><tspan
+           sodipodi:role="line"
+           id="tspan12028"
+           x="4224.3726"
+           y="120.81792"
+           style="stroke-width:0.75" /></text>
     </g>
     <g
        id="surface3110"
