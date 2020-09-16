@@ -1,0 +1,111 @@
+\subsection*{Axis conversion of $\bm{t \longrightarrow D \longrightarrow R_S }$ without 
+calibration}
+
+\subsubsection*{Inputs:}
+\begin{multicols}{3}
+  \begin{packed_item}
+    \item $t_j$
+    \item void Peak $t_\mathrm{void}$
+\item elution flow \Ve
+\item cross flow \Vc
+\item relative focus \zP;
+\item $L_1, L_2, L_3$
+\item $b_0$, \bL   
+  \end{packed_item}
+\end{multicols}
+
+\subsubsection*{Outputs:}
+\begin{multicols}{3}
+  \begin{packed_item}
+    \item  $D_{j}$
+    \item $\RSj$
+  \end{packed_item}
+\end{multicols}
+
+\subsubsection*{Temporary variables:}
+\begin{multicols}{3}
+  \begin{packed_item}
+    \item \tmp0
+    \item $λ$
+    \item $δ_λ$
+    \item \Rmeas, \Rcalc
+    \item $z_0$
+    \item $L_{12}, L$
+    \item $\bDelta$
+    \item $m_1, m_2, m_3$
+    \item $t_2, t_3$
+    \item $α_2, α_3$
+    \item $β_1, β_2, β_3$
+    \item $γ_2, γ_3$
+    \item $δ_1, δ_2, δ_3$
+    \item $Δ_2, Δ_3$
+    \item \CFone, \CFtwo, \CFthree, \CF
+    \item \tmp1, \tmp2
+    \item channel width $w$
+    \item channel volume \Vhyd    
+  \end{packed_item}
+\end{multicols}
+
+\subsubsection*{Constants:}
+\begin{multicols}{3}
+  \begin{packed_item}
+    \item $\lamMin \leftarrow 10^{-5}$
+    \item $\lamMax \leftarrow 100$ 
+  \end{packed_item}
+\end{multicols}
+\subsubsection*{Calculations:}
+
+\subparagraph{1-5} Same steps as for the calibration with \Vhyd (gives \CF)
+
+\subparagraph{6}
+Calculate $w$:
+\begin{algorithmic}
+  \State $w \leftarrow \ddfrac{\tvoid}{2\cdot\CF} $
+\end{algorithmic}
+
+\subparagraph{7}
+Calculate passed channel area $A_z$:\vspace*{-1.55ex}
+\begin{algorithmic}
+  \If{$ z_0 \geqq L_1$}
+  \State  $ A_z \leftarrow (L_{12} - z_0)\cdot( m_2  (L_{12} + z_0) + t_2 ) +  A_3$
+  \Else
+  \State  $ A_z \leftarrow  m_1 \cdot (L_1^2 - z_0^2) + A_2 + A_3 $
+  \EndIf
+\end{algorithmic}
+
+\subparagraph{8}
+Initialize $λ$ and $δ_λ$:\vspace*{-4ex}
+\[ λ \leftarrow \frac{\lamMin + \lamMax}{2} \]\vspace*{-1.55ex}
+\[ δ_λ \leftarrow \frac{\lamMax - \lamMin}{4} \]
+\vspace*{-1ex}
+\clearpage
+\subparagraph{9}
+Find such $λ$ that $|\Rmeas - \Rcalc | \stackrel{!}{=}\text{min}$ by
+bisection and convert to $D_j$:
+\begin{algorithmic}
+  \State $\tmp0 \leftarrow  \frac{A_z}{\Vc \cdot w} $
+  \ForAll{$t_j > t_\mathrm{void}$}
+  \State $ \Rmeas \leftarrow \frac{\tvoid}{t_j} $
+  \For{$k \leftarrow 0$ to $50$}
+  %  \State $\lambda \leftarrow  D_j \cdot \tmp0$ 
+  % \State $R_{calc} \leftarrow 6 \lambda [\coth(1 / 2 \lambda) - 2 \lambda ]$  
+  \State $\Rmeas \leftarrow 6 \lambda \left(\frac{1}{\tanh(1 / 2 \lambda)} - 2 \lambda \right)$  \# 
+  $\nicefrac{1}{tanh(x)} = \coth(x) $
+  \If{$\Rmeas > \Rmeas$}
+  \State $λ \leftarrow λ - δ_λ$
+  \Else
+  \State $λ \leftarrow λ + δ_λ$
+  \EndIf
+  \State $δ_λ \leftarrow δ_λ / 2$
+  \EndFor 
+  \State $ D_j \leftarrow \ddfrac{λ}{\tmp0} $
+  \EndFor
+\end{algorithmic}
+
+\subparagraph{10}
+Calculate $\RS$:
+\begin{algorithmic}
+  \ForAll{$D_j$}
+  \State $ \RSj \leftarrow  \frac{k_B\cdot T}{6 \pi \cdot \eta D_j}$
+  \EndFor
+\end{algorithmic}

@@ -1,0 +1,19 @@
+If a calibration measurement with known diffusion coefficient is used the relationship of $R$ can be formulated as used 
+as well. $R_D$ stands for the dependency of $R$ the calibration
+\begin{equation}
+R_D(w) = 6\lambda \left( \coth{\left( \frac{1}{2\lambda} \right) } - 2\lambda \right)
+\end{equation}
+
+\begin{equation}
+\lambda = \frac{D V}{\Vc w^2} = \frac{D \AL}{\Vc w}
+\end{equation}
+
+In order to eliminate $\tvoid$ as experimental input, eq. \ref{eq:CFEquation} is used as a substitution for the 
+retention ratio, resulting in an expression solely dependent on $\te$ and $w$:
+\begin{equation}
+R_{\te}(w) = \frac{2 \CF w}{\te}
+\end{equation}
+By adjusting $w$ such that \[\left( R_{\te} - R_D \right)^2 \rightarrow \min\]
+$w$ can be calculated. This corresponds (as an exact solution) to the literature to the "calibration method 5", 
+presented by Wahlund \scite{Wahlund2013} and remains as the only recommended calibration method according to the 
+results presented in the main paper.

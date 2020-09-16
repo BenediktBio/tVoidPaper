@@ -1,0 +1,195 @@
+\subsection*{Classical axis conversion of $\bm{t \longrightarrow D \longrightarrow R_S } $}
+
+\subsubsection*{Inputs:}
+\begin{multicols}{3}
+  \begin{packed_item}
+%  \item data point index $j$
+  \item time $t_j$
+  \item volume $V^0$
+  \item relative focus $\zP$;
+  \item cross flow $\Vc$
+  \item channel width $w$
+  \item temperature $T$
+  \item viscosity $\eta$    
+  \end{packed_item}
+\end{multicols}
+
+\subsubsection*{Outputs:}
+\begin{multicols}{3}
+  \begin{packed_item}
+  \item  $D_{j}$
+  \item $\RSj$
+  \end{packed_item}
+\end{multicols}
+
+\subsubsection*{Temporary Variables:}
+\begin{multicols}{3}
+  \begin{packed_item}
+  \item void Peak $t_\mathrm{void}$
+  \item measured retention $\Rmeas$
+  \item variation $δ_λ$
+  \item $\lambda$
+  \item temp. variable \tmp0
+  \end{packed_item}
+\end{multicols}
+\subsubsection*{Constants:}
+\begin{multicols}{3}
+  \begin{packed_item}
+    \item $\lamMin \leftarrow 10^{-5}$
+    \item $\lamMax \leftarrow 100$ 
+  \end{packed_item}
+  \end{multicols}
+\subparagraph{1}
+Calculate \tvoid:
+
+\[ \tvoid \leftarrow \frac{ V^0}{\Vc} \cdot 
+ \ln{ \left( \dfrac{ 
+     \zP  - \nicefrac{(\Ve + \Vc)}{\Vc} 
+   }{
+    1 - 
+\nicefrac{(\Ve + \Vc)}{\Vc} } \right) 
+} \]
+
+\subparagraph{2}
+
+Initialize $λ$ and $δ_λ$:\vspace*{-4ex}
+\[ λ \leftarrow \frac{\lamMin + \lamMax}{2} \]\vspace*{-1.55ex}
+\[ δ_λ \leftarrow \frac{\lamMax - \lamMin}{4} \]
+\vspace*{-3ex}
+\subparagraph{3}
+Find such $λ$ that $|\Rmeas - \Rcalc | \stackrel{!}{=}\text{min}$ by
+bisection and convert to $D_j$:
+\begin{algorithmic}
+  \State $\tmp0 \leftarrow  \frac{V^0}{\Vc \cdot w^2} $
+  \ForAll{$t_j > t_\mathrm{void}$}
+  \State $ \Rmeas \leftarrow \frac{\tvoid}{t_j} $
+  \For{$k \leftarrow 0$ to $50$}
+%  \State $\lambda \leftarrow  D_j \cdot \tmp0$ 
+  % \State $R_{calc} \leftarrow 6 \lambda [\coth(1 / 2 \lambda) - 2 \lambda ]$  
+  \State $R_{calc} \leftarrow 6 \lambda \left(\frac{1}{\tanh(1 / 2 \lambda)} - 2 \lambda \right)$  \# $\nicefrac{1}{tanh(x)} = \coth(x) $
+  \If{$R_{calc} > R_{Meas}$}
+  \State $λ \leftarrow λ - δ_λ$
+  \Else
+  \State $λ \leftarrow λ + δ_λ$
+  \EndIf  
+  \State $δ_λ \leftarrow δ / 2$
+  \EndFor 
+  \State $ D_j \leftarrow \ddfrac{λ}{\tmp0} $
+  \EndFor
+\end{algorithmic}
+
+\subparagraph{4}
+Calculate $\RSj$:
+\begin{algorithmic}
+  \ForAll{$D_j$}
+  \State $ \RSj \leftarrow  \frac{k_B\cdot T}{6 \pi \cdot \eta D_j}$
+  \EndFor
+\end{algorithmic}
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Axis conversion of $\bm{t \longrightarrow D \longrightarrow R_S } $ with \Vhyd}
+\subsubsection*{Inputs:}
+\vspace*{-4ex}
+\label{sec:CalibVhyd}
+\begin{multicols}{3}
+  \begin{packed_item}
+    \item $t_j$
+    \item channel width $w$
+    \item channel volume $\Vhyd$
+    \item elution flow \Ve
+    %    \item elution time $\te$
+    \item cross flow \Vc
+    %    \item \small diffusion coefficient \normalsize $D$
+    \item relative focus \zP;
+    \item $L_1, L_2, L_3$
+    \item $b_0$, \bL
+    % \item channelLength $L$
+  \end{packed_item}
+\end{multicols}\vspace*{-4ex}
+\subsubsection*{Outputs:}\vspace*{-4ex}
+\begin{multicols}{3}
+  \begin{packed_item}
+  \item  $D_{j}$
+  \item $\RSj$
+  \end{packed_item}
+\end{multicols}
+\vspace*{-4ex}
+\subsubsection*{Temporary variables:}\vspace*{-4ex}
+%\newcommand{\vartmp}[1]{\ensuremath{\text{tmp}_{#1}}}
+\begin{multicols}{3}
+  \begin{packed_item}
+    \item void peak \tvoid
+    \item \tmp0
+    \item $λ$
+    \item $δ_λ$
+    \item \Rmeas, \Rcalc
+    \item $z_0$
+    \item $L_{12}, L$
+    \item $\bDelta$
+    \item $m_1, m_2, m_3$
+    \item $t_2, t_3$
+    \item $α_2, α_3$
+    \item $β_1, β_2, β_3$
+    \item $γ_2, γ_3$
+    \item $δ_1, δ_2, δ_3$
+    \item $Δ_2, Δ_3$
+    \item $\CFone, \CFtwo, \CFthree, \CF$
+    \item $\tmp1, \tmp2$
+  \end{packed_item}
+\end{multicols}\vspace*{-4ex}
+\subsubsection*{Constants:}\vspace*{-4ex}
+\begin{multicols}{3}
+  \begin{packed_item}
+    \item $\lamMin \leftarrow 10^{-5}$
+    \item $\lamMax \leftarrow 100$ 
+  \end{packed_item}
+\end{multicols}\vspace*{-5ex}
+\subsubsection*{Calculations}
+\subparagraph{1-5} Same steps as for the calibration with \Vhyd (gives \CF)
+\vspace*{-2ex}
+\subparagraph{6}
+$\tvoid \leftarrow 2w\cdot \CF  $
+\vspace*{-1ex}
+\subparagraph{7}
+Initialize $λ$ and $δ_λ$:\vspace*{-4ex}
+\[ λ \leftarrow \frac{\lamMin + \lamMax}{2} \]\vspace*{-1.55ex}
+\[ δ_λ \leftarrow \frac{\lamMax - \lamMin}{4} \]
+\vspace*{-3ex}
+
+\subparagraph{8}
+Find such $λ$ that $|\Rmeas - \Rcalc | \stackrel{!}{=}\text{min}$ by
+bisection and convert to $D_j$:
+\begin{algorithmic}
+  \State $\tmp0 \leftarrow  \frac{\Vhyd}{\Vc \cdot w^2} $
+  \ForAll{$t_j > t_\mathrm{void}$}
+  \State $ R_{meas} \leftarrow \frac{\tvoid}{t_j} $
+  \For{$k \leftarrow 0$ to $50$}
+  %  \State $\lambda \leftarrow  D_j \cdot \tmp0$ 
+  % \State $R_{calc} \leftarrow 6 \lambda [\coth(1 / 2 \lambda) - 2 \lambda ]$  
+  \State $R_{calc} \leftarrow 6 \lambda \left(\frac{1}{\tanh(1 / 2 \lambda)} - 2 \lambda \right)$  \# 
+  $\nicefrac{1}{tanh(x)} = \coth(x) $
+  \If{$R_{calc} > R_{Meas}$}
+  \State $λ \leftarrow λ - δ_λ$
+  \Else
+  \State $λ \leftarrow λ + δ_λ$
+  \EndIf
+  \State $δ_λ \leftarrow δ_λ / 2$
+  \EndFor 
+  \State $ D_j \leftarrow \ddfrac{λ}{\tmp0} $
+  \EndFor
+\end{algorithmic}
+\vspace*{-2ex}
+\subparagraph{9}
+Calculate $\RSj$:
+\begin{algorithmic}
+  \ForAll{$D_j$}
+  \State $ \RSj \leftarrow  \frac{k_B\cdot T}{6 \pi \cdot \eta D_j}$
+  \EndFor
+\end{algorithmic}
+
+
+\subparagraph{S\quad subroutines}
+The subroutines are exactly the same as for the calibration with \Vhyd. %(\ref{sec:CalibVhyd})
+\clearpage

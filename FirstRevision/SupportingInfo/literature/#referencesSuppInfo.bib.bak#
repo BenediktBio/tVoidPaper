@@ -1,0 +1,400 @@
+% Encoding: ISO-8859-1
+
+
+@Article{Deemter1956,
+  Title                    = {Longitudinal diffusion and resistance to mass transfer as causes of nonideality In chromatography},
+  Author                   = {J J van Deemter and F J Zuiderweg},
+  Journal                  = {Chem. Engng Sci.},
+  Year                     = {1956},
+  Pages                    = {271--289},
+  Volume                   = {5},
+
+  File                     = {:home/bluemage/Dissertation/DissLiterature/FFF_Theory/Van_Deemter1956.pdf:PDF},
+  Owner                    = {bluemage},
+  Timestamp                = {2017.01.24}
+}
+
+@Article{Einstein1905,
+  Title                    = {{{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen}},
+  Author                   = {Albert Einstein},
+  Journal                  = {Annalen der Physik},
+  Year                     = {1905},
+  Pages                    = {549--560},
+  Volume                   = {322},
+
+  Abstract                 = {In dieser Arbeit so11gezeigt werden, dass nach der molekular-
+kinetischen Theorie der Wiirme in Fliissigkeiten suspendierte
+Korper von mikroskopisch sichtbarer Größee infolge der Mole-
+kularbewegung der Warme Bewegungen von solcher Größe
+ausfdhren miissen, daB diese Bewegungen leicht mit dem
+Mikroskop nachgewiesen werden konnen. Es ist moglich , dass
+die hier zu behandelnden Bewegungen mit der sogenannten
+,,Brownschen Molekularbewegung" identisch sind; die mir
+erreichbaren Angaben iiber letztere sind jedoch so ungenau,
+daB ich mir hieriiber kein Urteil bilden konnte.},
+  File                     = {:./analytics/EinsteinDiffusion.pdf:PDF},
+  Journaltitle             = {Annalen der Physik},
+  Owner                    = {bluemage},
+  Timestamp                = {2013.09.02}
+}
+
+@Article{Giddings1969,
+  Title                    = {{Nonequilibrium Theory of Field-Flow Fractionation}},
+  Author                   = {J. Calvin Giddings},
+  Journal                  = {The Journal Of Chemical Physics},
+  Year                     = {1969},
+
+  Month                    = {July},
+  Number                   = {1},
+  Pages                    = {81--85},
+  Volume                   = {49},
+
+  Abstract                 = {A rather general nonequilibrium theory is developed for a new separation concept. field-flow fractionation.
+This treatment accounts for the axial dispersion of a solute zone in a narrow tube subject to simultaneous
+displacement by anisotropic diffusion and by an arbitrary group of velocity vectors representing flow
+and applied field contributions. To good approximation, zone dispersion is found to obey Fick's law a
+result characteristic of nonequilibrium theories of chromatography. An equation for the effective diffusion
+coefficient is deduced. Expressions are obtained for a two-dimensional case with a general power-series
+expansion for flow velocity; a numerical result is acquired for a special limiting case.},
+  File                     = {:/home/bluemage/MasterThesis/Literature/analytics/nonEqFFFGiddings.pdf:PDF},
+  Journaltitle             = {The Journal Of Chemical Physics},
+  Owner                    = {bluemage},
+  Timestamp                = {2013.08.20}
+}
+
+@InCollection{Giddings1980,
+  Title                    = {{Analysis of Biological Macromolecules and Particles by Field-Flow Fractionation}},
+  Author                   = {J. Calvin Giddings and M. N. Myers and K. D. Caldwell and S. R. Fisher},
+  Booktitle                = {Methods of Biochemical Analysis},
+  Publisher                = {Wiley},
+  Year                     = {1980},
+  Pages                    = {79--136},
+  Series                   = {Methods of Biochemical Analysis},
+  Volume                   = {26},
+
+  Doi                      = {10.1002/9780470110461},
+  Owner                    = {bluemage},
+  Timestamp                = {2013.09.02}
+}
+
+@Article{Giddings1968,
+  Title                    = {{General Nonequilibrium Theory of Chromatography with Complex Flow Transport}},
+  Author                   = {J. Calvin Giddings and Paul D. Schettler},
+  Journal                  = {Journal of Physical Chemistry},
+  Year                     = {1968},
+  Pages                    = {2577--2582},
+  Volume                   = {73},
+
+  File                     = {:/home/bluemage/MasterThesis/Literature/analytics/nonEqGiddings.pdf:PDF},
+  Journaltitle             = {Journal of Physical Chemistry},
+  Owner                    = {bluemage},
+  Timestamp                = {2013.05.28}
+}
+
+@Article{Giddings1975,
+  Title                    = {{Nonequilibrium Plate Height for Field-Flow Fractionation in Ideal Parallel Plate Columns}},
+  Author                   = {J. Calvin Giddings and Young Hee Yoon and Karin D. Caldwell and Marcus N. Myers and Margo E. Hovingh},
+  Journal                  = {Separation Science},
+  Year                     = {1975},
+  Number                   = {4},
+  Pages                    = {447},
+  Volume                   = {10},
+
+  Abstract                 = {The need for a more realistic theoretical description of peak spreading in field-
+flow fractionation (FFF) is shown. The lengthy derivation necessary to obtain
+the plate height of an ideal parallel plate column is then described in abbreviated
+form. Several limiting expressions are derived.},
+  File                     = {:/home/bluemage/MasterThesis/Literature/analytics/Broadening.pdf:PDF},
+  Journaltitle             = {Separation Science},
+  Owner                    = {bluemage},
+  Timestamp                = {2013.08.20}
+}
+
+@Article{Litzen1991,
+  Title                    = {{Zone Broadening and Dilution in Rectangular and Trapezoidal -- Asymmetrical Flow Field-Flow Fractionation Channels}},
+  Author                   = {Anne Litz\'{e}n and Karl-Gustav Wahlund},
+  Journal                  = {Anal. Chem.},
+  Year                     = {1991},
+  Pages                    = {1001--1007},
+  Volume                   = {63},
+
+  Abstract                 = {A new trapezoidal geometry of the asymmetrical flow field-
+flow fractionation (FFF) channel Introduces an additional
+means to regulate the longitudinal flow veloclty. The trape-
+zoidal geometry, where the breadth decreases on going to-
+ward the channel outlet, makes It possible to level out the
+steep linear veloclty gradients that can appear In the rec-
+tangular channels. Equations for the channel flow velocity
+gradient and the void time are derived. I n addition, an
+equatlon for the nonequillbrlum plate height Is derlved for
+asymmetrical channels. The equation suggests that the same
+efficiencies should be obtained In asymmetrical as In the
+original symmetrical channels under similar flow conditions.
+The relative peak dllutlon occurring In channels of different
+designs Is evaluated. The results favor the trapezoidal versus
+the rectangular channel and asymmetrical versus symmetrical
+channels. The plate numbers calculated from the derived
+equations were compared with those found experimentally.
+The latter were found to deviate from the calculated numbers
+at hlgh retention levels. Approximately 2600 plates have been
+reached.},
+  Editor                   = {Peter A. Jansson},
+  File                     = {:/home/bluemage/MasterThesis/Literature/analytics/broadening_litzen_wahlund.pdf:PDF},
+  Journaltitle             = {Anal. Chem.},
+  Owner                    = {bluemage},
+  Publisher                = {Academic Press, Inc.},
+  Timestamp                = {2013.09.30}
+}
+
+@Article{Litzen1989,
+  Title                    = {Improved separation speed and efficiency for proteins, nucleic acids and viruses in asymmetrical flow field flow fractionation.},
+  Author                   = {A. Litzén and K. G. Wahlund},
+  Journal                  = {J Chromatogr},
+  Year                     = {1989},
+
+  Month                    = {Aug},
+  Pages                    = {413--421},
+  Volume                   = {476},
+
+  Abstract                 = {The performance of the asymmetrical flow field-flow fractionation channel has been improved by the use of a much thinner (0.12-mm) channel than before and by flow programming (stepwise gradient elution). The thinner channel contributes to a decreased zone broadening which enables complete resolution in a shorter time. Three protein peaks, representing molecular weights from 12,000 to 136,000, wer completely resolved within 3 min. Flow programming speeds up the elution of the high-molecular-weight materials which occur late in a fractogram. This enabled separation of a small plasmid fragment (700 base pairs) from the large amounts of a big fragment (4600 base pairs) in 30 min and improved detection of a presumed trimer of albumin. Two viruses (1.8 10(6) and 50 10(6) daltons) were eluted as narrow peaks within 5 min.},
+  Institution              = {Department of Analytical Pharmaceutical Chemistry, University of Uppsala Biomedical Center Sweden.},
+  Keywords                 = {Chemical Fractionation, methods; Nucleic Acids, analysis; Plasmids; Proteins, analysis; Viruses, isolation /&/ purification},
+  Medline-pst              = {ppublish},
+  Owner                    = {bluemage},
+  Pmid                     = {2777988},
+  Timestamp                = {2014.09.26}
+}
+
+@Article{Schimpf1989,
+  Title                    = {{Accurate Molecular Weight Distribution of Polymers Using Thermal Field-Flow Fractionation with Deconvolution to Remove System Dispersion}},
+  Author                   = {Martin E. Schimpf and P. Stephen Williams and J. Calvin Giddings},
+  Journal                  = {Journal of Applied Polymer Science},
+  Year                     = {1989},
+  Pages                    = {2059--2076},
+  Volume                   = {37},
+
+  Abstract                 = {Thermal field-flow fractionation (ThFFF) is an elution process that separates polymeric
+materials by molecular weight. Elution profiles thus provide approximations to the molecular
+weight distributions of polymers. The accuracy of such approximate distributions is expected to
+be improved by accounting for the effect on the elution profile of band-broadening processes in
+the FFF system. Fortunately this intrinsic band broadening, referred to as system dispersion, is
+theoretically well-defined in ThFFF. In this article we present an algorithm that corrects ThFFF
+elution profiles by removing system dispersion. The program is applied to ThFFF fractograms of
+standard polymers having both narrow and broad molecular weight distributions. The increased
+accuracy obtained by accounting for system dispersion is demonstrated. For the narrow standard,
+deconvolution shows that the polydispersity (weight/number-average mol. wt.) is only 1.004. For
+the broad standard, NBS 706, the molecular weight distribution and parameters obtained agree
+well with previously published results. Application to a simulated fractogram resulting from
+mixing five narrow standards helps define the conditions under which accurate molecular weight
+information can be recovered},
+  File                     = {:/home/bluemage/MasterThesis/Literature/analytics/Schimpf_Giddings.pdf:PDF},
+  Journaltitle             = {Journal of Applied Polymer Science},
+  Owner                    = {bluemage},
+  Timestamp                = {2013.05.15}
+}
+
+@Article{Schure1987,
+  Title                    = {{Fast Algorithm for the Conversion of R to Lambda Values in Field-Flow Fractionation}},
+  Author                   = {Mark. R. Schure},
+  Journal                  = {Separation Science and Technology},
+  Year                     = {1987},
+  Number                   = {12},
+  Pages                    = {2403--2411},
+  Volume                   = {22},
+
+  Abstract                 = {The numerical methodology needed to convert the retention ratio, R . to the
+dimensionless mean layer thickness. A, commonly encountered in field-flow
+fractionation (FFF), is reviewed and a rigorous interpolation scheme which is
+suitable for any of the FFF techniques is presented. Computer implementation
+and error estimates are discussed in detail.},
+  File                     = {:/home/bluemage/MasterThesis/Literature/analytics/schure1987.pdf:PDF},
+  Journaltitle             = {Separation Science and Technology},
+  Owner                    = {bluemage},
+  Timestamp                = {2013.11.12}
+}
+
+@Article{Schure1989,
+  Title                    = {{Deconvolution of Nonequilibrium Band Broadening Effects for Accurate Particle Size Distributions by Sedimentation Field-Flow Fractionation}},
+  Author                   = {Mark R. Schure and Bhajendra N. Barman and J. Calvin Giddings},
+  Journal                  = {Analytical Chemistry},
+  Year                     = {1989},
+
+  Month                    = {December},
+  Number                   = {24},
+  Pages                    = {2735--2743},
+  Volume                   = {61},
+
+  Abstract                 = {Two dlfferent deconvolutlon methods, Fourier and lteratlve,
+are applied to experimental fractograms from sedimentation
+fiekl-flow fractionation In order to obtain accurate partide size
+distributions by removing nonequllibrlum band broadening.
+These methods are compared in effectiveness and ease of
+application. The lteratlve method, although slower, is gen-
+erally superlor by virtue of Is aMllty to remove variable levels
+of zone broadenlng from dlfferent parts of the fractogram as
+required by FFF theory. The condltlons under which decon-
+volutlon Is useful for the removal of nonequlllbrium band
+broadenlng effects are examined. Deconvolutlon Is partlcu-
+larly recommended for the resolution enhancement of small
+part-
+eluting at low retentlon and for fractograms obtained
+under high-speed condltlons},
+  File                     = {:/home/bluemage/MasterThesis/Literature/analytics/Schure_Giddings.pdf:PDF},
+  Journaltitle             = {Analytical Chemistry},
+  Owner                    = {bluemage},
+  Timestamp                = {2013.04.19}
+}
+
+@Article{Wahlund1987,
+  Title                    = {{Properties of an asymmetrical flow field-flow fractionation channel having one permeable wall.}},
+  Author                   = {K. G. Wahlund and J. C. Giddings},
+  Journal                  = {Anal Chem},
+  Year                     = {1987},
+
+  Month                    = {May},
+  Number                   = {9},
+  Pages                    = {1332--1339},
+  Volume                   = {59},
+
+  File                     = {:/home/bluemage/MasterThesis/Literature/analytics/wahlundGiddings.pdf:PDF},
+  Journaltitle             = {Anal Chem},
+  Keywords                 = {Chemical Fractionation, instrumentation; Chemistry Techniques, Analytical, instrumentation; Mathematics; Membranes, Artificial; Permeability; Proteins, isolation /&/ purification; Ultrafiltration},
+  Medline-pst              = {ppublish},
+  Owner                    = {bluemage},
+  Pmid                     = {3605623},
+  Timestamp                = {2013.09.02}
+}
+
+@Article{Wahlund1986,
+  Title                    = {{Improved flow field-flow fractionation system applied to water-soluble polymers: programming, outlet stream splitting, and flow optimization.}},
+  Author                   = {K. G. Wahlund and H. S. Winegarner and K. D. Caldwell and J. C. Giddings},
+  Journal                  = {Analytical Chemistry},
+  Year                     = {1986},
+
+  Month                    = {Mar},
+  Number                   = {3},
+  Pages                    = {573--578},
+  Volume                   = {58},
+
+  File                     = {:/home/bluemage/MasterThesis/Literature/analytics/WahlundGiddings1986.pdf:PDF},
+  Journaltitle             = {Analytical Chemistry},
+  Keywords                 = {Chemical Fractionation, methods; Chemical Phenomena; Chemistry; Polystyrenes, analysis},
+  Medline-pst              = {ppublish},
+  Owner                    = {bluemage},
+  Pmid                     = {3963405},
+  Timestamp                = {2013.09.02}
+}
+
+@Article{Magnusson2012,
+  author          = {Magnusson, Emma and Håkansson, Andreas and Janiak, John and Bergenstahl, Björn and Nilsson, Lars},
+  title           = {Hydrodynamic radius determination with asymmetrical flow field-flow fractionation using decaying cross-flows. Part II. Experimental evaluation.},
+  journal         = {Journal of chromatography. A},
+  year            = {2012},
+  volume          = {1253},
+  pages           = {127--133},
+  month           = aug,
+  issn            = {1873-3778},
+  __markedentry   = {[bluemage:]},
+  abstract        = {In this study we investigate the effect of programmed cross-flows on the error in the hydrodynamic radii (r(h)) determination with asymmetrical flow field-flow fractionation (AsFlFFF). Three different standard polystyrene particles (nominal radii of 30 and 40 and 50 nm) are fractionated with exponentially and linearly decaying cross-flows with different decay rates. Hydrodynamic radii are calculated according to retention theory including steric effects. Rapid decay is expected to give rise to systematic deviations in r(h) determination. The error in r(h) was found to be small when decay rates with half-lives longer than 6 min were used, whereas steeper decays could give rise to errors as high as 16\% of the particle size. The error is often explained in terms of secondary relaxation. However, comparisons show that experimental errors are significantly larger than what would be expected due to secondary relaxation, suggesting that other factors also have to be considered in order to fully understand deviations for rapidly decaying cross-flow.},
+  chemicals       = {Proteins},
+  citation-subset = {IM},
+  completed       = {2012-11-13},
+  country         = {Netherlands},
+  doi             = {10.1016/j.chroma.2012.07.005},
+  file            = {:FFF_Theory/MagnussonNilsson2012.pdf:PDF},
+  issn-linking    = {0021-9673},
+  keywords        = {Animals; Cattle; Fractionation, Field Flow; Hydrodynamics; Light; Particle Size; Proteins, chemistry, isolation & purification; Scattering, Radiation},
+  nlm-id          = {9318488},
+  owner           = {NLM},
+  pii             = {S0021-9673(12)01037-0},
+  pmid            = {22818771},
+  pubmodel        = {Print-Electronic},
+  pubstatus       = {ppublish},
+  revised         = {2012-08-07},
+}
+
+@Article{Haakansson2012,
+  author          = {Håkansson, Andreas and Magnusson, Emma and Bergenståhl, Björn and Nilsson, Lars},
+  title           = {Hydrodynamic radius determination with asymmetrical flow field-flow fractionation using decaying cross-flows. Part I. A theoretical approach.},
+  journal         = {Journal of chromatography. A},
+  year            = {2012},
+  volume          = {1253},
+  pages           = {120--126},
+  month           = aug,
+  issn            = {1873-3778},
+  __markedentry   = {[bluemage:]},
+  abstract        = {Direct determination of hydrodynamic radius from retention time is an advantage of the field-flow fractionation techniques. However, this is not always completely straight forward since non-idealities exist and assumptions have been made in deriving the retention equations. In this study we investigate the effect on accuracy from two factors: (1) level of sophistication of the equations used to determine channel height from a calibration experiment and (2) the influence of secondary relaxation on the accuracy of hydrodynamic radius determination. A new improved technique for estimating the channel height from calibration experiments is suggested. It is concluded that severe systematic error can arise if the most common channel height equations are used and an alternative more rigorous approach is described. For secondary relaxation it is concluded that this effect increases with the cross-flow decay rate. The secondary relaxation effect is quantified for different conditions. This is part one of two. In the second part the determination of hydrodynamic radius are evaluated experimentally under similar conditions.},
+  citation-subset = {IM},
+  completed       = {2012-11-13},
+  country         = {Netherlands},
+  doi             = {10.1016/j.chroma.2012.07.029},
+  file            = {:FFF_Theory/HakanssonNilsson2012.pdf:PDF},
+  issn-linking    = {0021-9673},
+  keywords        = {Calibration; Fractionation, Field Flow; Hydrodynamics; Models, Theoretical},
+  nlm-id          = {9318488},
+  owner           = {NLM},
+  pii             = {S0021-9673(12)01064-3},
+  pmid            = {22835686},
+  pubmodel        = {Print-Electronic},
+  pubstatus       = {ppublish},
+  revised         = {2012-08-07},
+}
+
+@Article{Bolinsson2018,
+  author          = {Bolinsson, Hans and Lu, Yi and Hall, Stephen and Nilsson, Lars and Håkansson, Andreas},
+  title           = {An alternative method for calibration of flow field flow fractionation channels for hydrodynamic radius determination: The nanoemulsion method (featuring multi angle light scattering).},
+  journal         = {Journal of chromatography. A},
+  year            = {2018},
+  volume          = {1533},
+  pages           = {155--163},
+  month           = jan,
+  issn            = {1873-3778},
+  abstract        = {This study suggests a novel method for determination of the channel height in asymmetrical flow field-flow fractionation (AF4), which can be used for calibration of the channel for hydrodynamic radius determinations. The novel method uses an oil-in-water nanoemulsion together with multi angle light scattering (MALS) and elution theory to determine channel height from an AF4 experiment. The method is validated using two orthogonal methods; first, by using standard particle elution experiments and, secondly, by imaging an assembled and carrier liquid filled channel by x-ray computed tomography (XCT). It is concluded that the channel height can be determined with approximately the same accuracy as with the traditional channel height determination technique. However, the nanoemulsion method can be used under more challenging conditions than standard particles, as the nanoemulsion remains stable in a wider pH range than the previously used standard particles. Moreover, the novel method is also more cost effective.},
+  chemicals       = {Emulsions},
+  citation-subset = {IM},
+  completed       = {2018-05-08},
+  country         = {Netherlands},
+  doi             = {10.1016/j.chroma.2017.12.026},
+  file            = {:FFF_Theory/Bolinsson_Hakansson2018.pdf:PDF},
+  issn-linking    = {0021-9673},
+  keywords        = {Calibration; Emulsions, chemistry; Fractionation, Field Flow; Hydrodynamics; Light; Nanotechnology, methods; Radius; Scattering, Radiation; Tomography, X-Ray Computed; AF4; Channel height; Flow field-flow fractionation; Multi angle light scattering; Nanoemulsion; X-ray computed tomography},
+  nlm-id          = {9318488},
+  owner           = {NLM},
+  pii             = {S0021-9673(17)31802-2},
+  pmid            = {29248348},
+  pubmodel        = {Print-Electronic},
+  pubstatus       = {ppublish},
+  revised         = {2018-05-08},
+}
+
+@Article{Wahlund2013,
+  author          = {Wahlund, Karl-Gustav},
+  title           = {Flow field-flow fractionation: critical overview.},
+  journal         = {Journal of chromatography. A},
+  year            = {2013},
+  volume          = {1287},
+  pages           = {97--112},
+  month           = apr,
+  issn            = {1873-3778},
+  abstract        = {This overview regards some critical issues in performing flow field-flow fractionation (flow FFF, FlFFF, AF4, HF-FlFFF, HF5). It includes the channel thickness, void time, channel-flow parabolic profile, channel-flow velocity gradient, uniformity of the cross-flow, sample injection time, relaxation/focusing time, width of sample starting zone, retention level, theoretical and experimental zone broadening, hydrodynamic threshold immobilisation/re-mobilisation, sample loss and adsorption, membrane fouling, sample mass overloading, problems with symmetrical channels, non-spherical sample particles, and method development. Good method development practice (GMDP) and good fractogram practice (GFP) is suggested.},
+  chemicals       = {Membranes, Artificial, Proteins},
+  citation-subset = {IM},
+  completed       = {2013-09-10},
+  country         = {Netherlands},
+  doi             = {10.1016/j.chroma.2013.02.028},
+  file            = {:FFF_Theory/Wahlund2013.pdf:PDF},
+  issn-linking    = {0021-9673},
+  journaltitle    = {Journal of chromatography. A},
+  keywords        = {Fractionation, Field Flow, methods; Membranes, Artificial; Proteins, isolation & purification; Ultrafiltration},
+  nlm-id          = {9318488},
+  owner           = {NLM},
+  pii             = {S0021-9673(13)00317-8},
+  pmid            = {23510956},
+  pubmodel        = {Print-Electronic},
+  pubstatus       = {ppublish},
+  revised         = {2013-04-01},
+}
+
+
+
+@Comment{jabref-meta: databaseType:bibtex;}

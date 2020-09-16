@@ -1,0 +1,336 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-*-LaTeX-*-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%     standard texheader fo writing extended documents
+%%%
+%%%  
+%%%
+%%%
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%**** header *****%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[paper=A4, pagesize, DIV=calc, headings=small,
+fontsize=11pt, expansion=false]{scrreprt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%### used packages ###%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%# standard packages  #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[ngerman]{babel}      %% neue deutsche Rechtschreibung+
+\usepackage[english,ngerman]{babel}       %% english hypenation
+\usepackage[T1, OT1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{alphabeta}
+\usepackage{lmodern}
+
+%\DeclareUnicodeCharacter{00E5}{\aa}
+% \usepackaage{newunicodechar}
+%\newunicodechar{å}{\aa}
+%\newunicodechar{å}{\AA}
+\usepackage[pdftex]{graphicx}            %% include graphics
+\usepackage{chngcntr}
+%\counterwithout*{figure}{chapter}
+
+\usepackage{float}               %% determine image positions
+\usepackage{wrapfig}
+\usepackage{cleveref}
+\usepackage{soul}                %% offers additional types of text formation
+                                 %% HAS TO BE INSTALLED MANUALLY
+\usepackage{ellipsis}            %% HAS TO BE INSTALLED MANUALLY
+\usepackage{xspace}             
+\usepackage{tabularx}             %% tables
+\usepackage[font={footnotesize}, format=hang, margin=.00\linewidth ]{caption}%% description of images and tab
+% les
+% \usepackage[font= ]
+\captionsetup[figure]{font={footnotesize}, name={Fig.}}
+\renewcommand{\thefigure}{S.\arabic{figure}}
+\renewcommand{\thetable}{S.\arabic{table}}
+\renewcommand{\theequation}{S.\arabic{equation}}
+\usepackage[font={footnotesize}]{subcaption}
+\usepackage{booktabs}            %% formatting of tables
+\newcommand{\closedtoprule}{\specialrule{\heavyrulewidth}{\abovetopsep}{\belowrulesep}}
+\newcommand{\closedbottomrule}{\specialrule{\heavyrulewidth}{\aboverulesep}{\belowbottomsep}}
+\newcommand{\closedmidrule}{\specialrule{\heavyrulewidth}{\aboverulesep}{\belowbottomsep}}
+\makeatletter
+\newcommand{\modhline}[1]{\noalign {\ifnum 0=`}\fi \hrule height #1
+  \futurelet \reserved@a \@xhline}
+\newcolumntype{"}{@{\hskip\tabcolsep\vrule width 1pt\hskip\tabcolsep}}
+\makeatother
+% \usepackage{changepage}
+\usepackage{tabu}
+\usepackage{array}
+
+\usepackage{longtable}
+\usepackage{rotating} 
+\usepackage{tablefootnote}               
+\usepackage{geometry}            %% page geometry 
+\usepackage{scrpage2}            %% page layout
+\usepackage{dsfont}              %% math font \mathds{R}, => "Real Numbers"  
+\usepackage{changepage}
+%\usepackage[numbers, square, super]{natbib}
+
+\usepackage[backend=bibtex, style=chem-angew, hyperref]{biblatex}
+%\renewcommand\bibname{Bibliography}
+
+\newcommand{\scite}[1]{\mkbibsuperscript{\cite{#1}}}
+
+%%\let\cite=\supercite
+%\DeclareBibliographyCategory{fullcited}
+%\newcommand{\fullciteEx}[1]{\fullcite{#1} \addtocategory{fullcited}{#1}}
+%\newcommand{\fullciteEx}[1]{\fullcite{#.\mybibexclude{reese}
+
+%\addbibresource{../DissLiterature/References.bib}
+%\usepackage{biblatex}
+\usepackage{multicol}
+\usepackage{multirow}
+\setlength{\columnseprule}{0pt}
+\usepackage{comment}
+\usepackage{setspace}
+\usepackage{amssymb}
+%\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{bm}
+%\usepackage{mathabx}
+\usepackage{mathtools}
+\newcommand\ddfrac[2]{\ensuremath{\frac{\displaystyle #1}{\displaystyle #2}}}
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\newcommand*\Diff[1]{\mathop{}\!\mathrm{d^#1}}
+\usepackage{bigints}
+\usepackage{nccmath}
+\usepackage{cancel}
+%\usepackage{stix}
+\usepackage[hidelinks=true]{hyperref} %% links, includes xcolor
+%\DeclareTextSymbolDefault{\dot#1}{T1}
+\usepackage{xcolor}
+\definecolor{intGreen}{HTML}{008000}
+\definecolor{intBlue}{HTML}{0088AA}
+\definecolor{intPurple}{HTML}{800080}
+\definecolor{mGreen}{HTML}{C1FFE0}
+\definecolor{mPurple}{HTML}{E0CCFF}
+\definecolor{mRed}{HTML}{FF6666}
+\definecolor{mOrange}{HTML}{FFA347}
+\definecolor{mYellow}{HTML}{FFFF00}
+\newcommand\markBlue[1]{\colorbox{intBlue!10!white}{\ensuremath{#1}}}
+\newcommand\markOrange[1]{\colorbox{mOrange!10!white}{\ensuremath{#1}}}
+\newcommand\markGreen[1]{\colorbox{intGreen!10!white}{\ensuremath{#1}}}
+\newcommand\markPurple[1]{\colorbox{mPurple!20!white}{\ensuremath{#1}}}
+\newcommand\markYellow[1]{\colorbox{mYellow!20!white}{\ensuremath{#1}}}
+\newcommand\markRed[1]{\colorbox{mRed!10!white}{\ensuremath{#1}}}
+\usepackage{tcolorbox}
+\tcbuselibrary{listings, breakable}
+\newtcbox{\intGreenBox}{nobeforeafter,colframe=intGreen,colback=intGreen!25!white,boxrule=1.2pt,arc=2pt,
+  boxsep=0pt,left=6pt,right=6pt,top=6pt,bottom=6pt,tcbox raise base}
+\newtcbox{\intBlueBox}{nobeforeafter,colframe=intBlue,colback=intBlue!25!white,boxrule=1.2pt,arc=2pt,
+  boxsep=0pt,left=6pt,right=6pt,top=6pt,bottom=6pt,tcbox raise base}
+\newtcbox{\intPurpleBox}{nobeforeafter,colframe=intPurple,colback=intPurple!25!white,boxrule=1.2pt,arc=2pt,
+  boxsep=0pt,left=6pt,right=6pt,top=6pt,bottom=6pt,tcbox raise base}
+%\newcommand{\intGreenBox}[1]{\colorbox{intGreen}{\ensuremath{#1}}}
+%\newcommand{\intBlueBox}[1]{\colorbox{intBlue}{\ensuremath{#1}}}
+%\newcommand{\intPurpleBox}[1]{\colorbox{intPurple}{\ensuremath{#1}}}
+%\usepackage{allrunes}
+\usepackage{xfrac}
+\usepackage{nicefrac}
+\usepackage[expansion=false]{microtype} %% for pdfTeX 1.4 or later
+\usepackage[version=3]{mhchem}
+\usepackage{tikz}
+\usepackage{ctable}
+%\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage{wasysym}
+\usepackage{pifont}
+\usepackage{needspace}
+\usepackage{pdfpages}
+\usepackage{physics}
+\usepackage{chemarrow}
+\usepackage{ogonek}    %% polski letters; install manually
+\usepackage{bibentry}
+%\usepackage{achemso}
+%\usepackage{tocbasic}
+% \newcommand{\slfrac}[2]{ \left.#1\middle/#2\right.}
+\usepackage[official]{eurosym}
+\newcommand{\Euro}{\euro\xspace}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%### macros ###%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\slfrac}[2]{\left.\ensuremath\raisebox{1.5ex}{$#1$}\kern-.8em\ensuremath\rotatebox[origin=c]{-15}{$\Bigg/$}\kern-.8em\ensuremath\raisebox{-1.5ex}{$#2$}\right.}
+
+
+\newcommand{\slfracTwo}[2]{\left.\ensuremath\raisebox{1.5ex}{$#1$}\kern-.8em\ensuremath\rotatebox[origin=c]{-15}{$\Bigg/$}\kern-.6em\ensuremath\raisebox{-1.5ex}{$#2$}\right.}
+
+\newcommand{\nicefracns}[2]{\raise1.2ex\hbox{#1}\kern-.2em/\kern-.2em \lower1ex\hbox{#2}}
+
+% \def\nicefracns#1#2{
+% \raise1.2ex\hbox{#1}%
+%  \kern-.2em/\kern-.2em%
+%  \lower1ex\hbox{#2}}
+
+\newcommand{\latex}{\LaTeX\xspace}  %% \latex for "LaTeX"
+\newcommand{\tex}{\TeX\xspace}      %% \tex for "TeX
+\newcommand{\milliQ}{milli-Q water~}
+\newcommand{\Qtw}{\textsc{Q$_{20}$}~}
+\newcommand{\Qfs}{\textsc{Q$_{56}$}~}
+\newcommand{\Qns}{\textsc{Q$_{97}$}~}
+\renewcommand{\contentsname}{Contents}
+%\renewcommand{\bibname}{References}
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
+
+\DefineBibliographyStrings{english}{%
+  bibliography = {References},% replace "references" with "bibliography"  for `book`/`report`
+}
+
+%%% Circled numbers
+\newcommand{\bigCirc}[1]{\protect\tikz[baseline=(char.base)]{
+    \protect\node[shape=circle,draw,inner sep=1.5pt] (char) {#1};}}
+\newcommand{\smCirc}[1]{\protect\tikz[baseline=(char.base)]{
+    \protect\node[shape=circle,draw,inner sep=.8pt] (char) {#1};}}
+\newcommand{\tCirc}[1]{\protect\tikz[baseline=(char.base)]{
+    \protect\node[shape=circle,draw,inner sep=.6pt, line width = .8pt] (char) {\footnotesize \textmd{#1}};}}         
+
+
+%%%% Formula symbols
+\newcommand{\ffo}{\nicefrac{\raisebox{.45ex}{\resizebox{.26em}{!}{\ensuremath{f\kern-0.28em}}}}
+  {\raisebox{-.5ex}{\resizebox{.48em}{!}{\ensuremath{\kern-0.32em f_0}}}}}
+
+%\renewcommand*{\thesubsubsection}{\arabic{the}
+\setcounter{secnumdepth}{3}
+
+%%%%% Harpoons
+
+\newcommand{\rlharpoons}[2]{\autorightleftharpoons{\ensuremath{#1}}{\ensuremath{#2}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Unit declarations %%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{siunitx}
+\DeclareSIPrePower\squared{2}
+\DeclareSIPrePower\cube{3}
+
+\DeclareSIUnit[number-unit-product = {}]\a{\,\year}
+\DeclareSIUnit[number-unixt-product = {}]\mo{\,\month}
+\DeclareSIUnit[number-unit-product = {}]\d{\,\day}
+\DeclareSIUnit[number-unit-product = {}]\h{\,\hour}
+\DeclareSIUnit[number-unit-product = {}]\m{\,\minute}
+\DeclareSIUnit[number-unit-product = {}]\min{\,\minute}
+
+\DeclareSIUnit[number-unit-product = {}]\nm{\nano\metre}
+
+\DeclareSIUnit[number-unit-product = {}]\sqkm{\squared\kilo\metre}
+\DeclareSIUnit[number-unit-product = {}]\sqm{\squared\metre}
+\DeclareSIUnit[number-unit-product = {}]\sqdm{\squared\metre}
+\DeclareSIUnit[number-unit-product = {}]\sqcm{\squared\centi\metre}
+\DeclareSIUnit[number-unit-product = {}]\sqmm{\squared\milli\metre}
+\DeclareSIUnit[number-unit-product = {}]\sqmum{\squared\micro\metre}
+\DeclareSIUnit[number-unit-product = {}]\sqmicron{squared\sq\micro\metre}
+\DeclareSIUnit[number-unit-product = {}]\sqnm{\squared\nano\metre}
+\DeclareSIUnit[number-unit-product = {}]\sqangstrom{\squared\angstrom}
+
+\DeclareSIUnit[number-unit-product = {}]\cubekm{\cube\kilo\metre}
+\DeclareSIUnit[number-unit-product = {}]\cubem{\cube\metre}
+\DeclareSIUnit[number-unit-product = {}]\cubecm{\cube\centi\metre}
+\DeclareSIUnit[number-unit-product = {}]\cubemm{\cube\milli\metre}
+\DeclareSIUnit[number-unit-product = {}]\cubemum{\cube\micro\metre}
+\DeclareSIUnit[number-unit-product = {}]\cubemicron{cube\sq\micro\metre}
+\DeclareSIUnit[number-unit-product = {}]\cubenm{\cube\nano\metre}
+\DeclareSIUnit[number-unit-product = {}]\cubeangstrom{\cube\angstrom}
+
+\DeclareSIUnit[number-unit-product = {}]\t{\ton}
+
+\DeclareSIUnit[number-unit-product = {}]\M{\,\textsc{M}}
+\DeclareSIUnit[number-unit-product = {}]\mM{\,\milli\textsc{M}}
+\DeclareSIUnit[number-unit-product = {}]\muM{\,\micro\textsc{M}}
+\DeclareSIUnit[number-unit-product = {}]\nM{\,\nano\textsc{M}}
+\DeclareSIUnit[number-unit-product = {}]\pM{\,\pico\textsc{M}}
+
+\DeclareSIUnit[number-unit-product = {}]\pwv{\,\percent$_{\nicefrac{w\kern-0.12em}{\kern-0.12em v}}$}
+\DeclareSIUnit[number-unit-product = {}]\pvv{\,\percent$_{\nicefrac{v\kern-0.12em}{\kern-0.12em v}}$ }
+\DeclareSIUnit[number-unit-product = {}]\RCF{\,\,\textsc{RCF}}
+
+
+\DeclareSIUnit[number-unit-product = {}]\gl{{\resizebox{.9em}{!}{\nicefracns{\g}{\l}}}~}
+%\DeclareSIUnit[number-unit-product = {}]\mgml{{\resizebox{2.1em}{!}{\nicefracns{\mg}{\ml}}}~}
+%\DeclareSIUnit[number-unit-product = {}]\ugml{{\resizebox{2.0em}{!}{\nicefracns{\ug}{\ml}}}~}
+%\DeclareSIUnit[number-unit-product = {}]\ugml{{\resizebox{2.0em}{!}{\raise{1.2ex}\hbox{\ug}\kern-.2em/\kern-.2em \lower1ex\hbox{\ml}}}~}
+\DeclareSIUnit[number-unit-product = {}]\ugml{~\nicefrac{\mathrm{\ug}}{\ml}~}
+\DeclareSIUnit[number-unit-product = {}]\mgml{~\nicefrac{\mathrm{\mg}}{\ml}~}
+\DeclareSIUnit[number-unit-product = {}]\mgl{~\nicefrac{\mathrm{\mg}}{\l}~}
+
+%\DeclareSIUnit[number-unit-product = {}]\mgl{\resizebox{1.45em}{!}{{\nicefracns{\mg}{\l}}}~}
+\DeclareSIUnit[number-unit-product = {}]\mlmin{\nicefracns{\ml}{\min}~}
+%\newcommand{\pvv}{$_{\nicefrac{\mathrm{v\kern-0.4em}}{\mathrm{v}}~}$}
+%\newcommand{\pwv}{$_{\nicefrac{\mathrm{w}}{\mathrm{v}}~}$}
+
+%\newcommand{\gl}{\nicefracns{g}{l}~}
+%\newcommand{\mgl}{\nicefracns{mg}{l}~}
+%\newcommand{\mgml}{\nicefracns{mg}{ml}~}
+
+%\newcommand{\mgml}{\nicefracns{ml}{min}~}
+
+\DeclareSIUnit[number-unit-product = {}]\kA{\kilo\Ampere}
+\DeclareSIUnit[number-unit-product = {}]\A{\Ampere}
+\DeclareSIUnit[number-unit-product = {}]\mA{\milli\Ampere}
+\DeclareSIUnit[number-unit-product = {}]\muA{\micro\Ampere}
+\DeclareSIUnit[number-unit-product = {}]\kV{\kilo\Volt}
+\DeclareSIUnit[number-unit-product = {}]\V{\Volt}
+\DeclareSIUnit[number-unit-product = {}]\mV{\milli\Volt}
+\DeclareSIUnit[number-unit-product = {}]\muV{\micro\Volt}
+%%viscosity
+\DeclareSIUnit[number-unit-product = {}]\poise{\,\textsc{P}}
+\DeclareSIUnit[number-unit-product = {}]\cP{\,\centi\textsc{P}}
+
+\geometry{
+   a4paper,
+%  twoside,
+%% paperheight=xxx,
+%% paperwidth=xxx,
+%%   outer=20mm,--
+%%   inner=25mm,
+  left=21mm,
+  right=25mm,
+   top=15mm,
+   bottom=15mm,
+   includefoot
+}
+%\usepackage[page]{totcount}
+\usepackage{lastpage}
+\clearscrheadfoot %% clear all 6 column fields
+%\regtotcounter{page}
+\pagestyle{scrheadings} 
+%\rohead[\sf{\thepage~of~\pageref{LastPage}}]{\sf{\thepage~of~\pageref{LastPage}}}
+%\rehead[\sf{\thepage~of~\pageref{LastPage}}]{\sf{\thepage~of~\pageref{LastPage}}}
+
+\rohead[\textsf{\textup{\thepage}}]{\textsf{\textup{\thepage}}}
+\rehead[\textsf{\textup{\thepage}}]{\textsf{\textup{\thepage}}}
+\setheadwidth{text}
+%\setheadsepline[text]{0.3mm}
+%\ohead{\headmark}
+%\automark[chapter]{chapter}
+%\renewcommand{\headfont}{\bfseries}
+
+%%%%%%%%%% Crystallographic Symbols %%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Needs the font cryst.pfb installed
+%%% Symbol is created by \cry{xxx}
+\DeclareFontFamily{U}{cry}{\hyphenchar\font=-1}
+\DeclareFontShape{U}{cry}{m}{n}{ <-> cryst}{}
+\newcommand{\cry}[1]{{\usefont{U}{cry}{m}{n} \symbol{#1}}}
+
+%%%%%% REMOVE page breaks
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+
+%%%%%%% linestretch and indent of paragraphs 
+%\renewcommand{\baselinestretch}{1.95}
+\renewcommand{\baselinestretch}{1.1}
+\parindent0pt
+\widowpenalty=1000
+\clubpenalty=1000
+\newenvironment{packed_item}{
+\begin{itemize}
+  \setlength{\itemsep}{0pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{itemize}}

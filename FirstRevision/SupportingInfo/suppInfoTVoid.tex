@@ -1,0 +1,155 @@
+\input{./header/header.tex}
+%% Prepocessor macros to remove header and footer directives 
+%% in included files that were added for possible standalone compilation
+%% paths to external documents are adapted by the defined macros
+\def\INCLUDEDFILE{INCLUDEDFILE}
+\addbibresource{./literature/referencesSuppInfo.bib}
+% \parindent{0pt}
+\begin{document}
+% \Renewcommand{\thepage}{}
+\pagestyle{scrheadings}
+\setcounter{page}{1}
+\renewcommand{\thepage}{\arabic{page}}
+\newcommand{\UNKWOWN}{\textcolor{red}{?????????????}}
+\selectlanguage{english}
+
+% \chapter*{Kurzreferat}
+% \thispagestyle{empty}
+% \selectlanguage{ngerman}
+% \input{./SummaryGer/SummaryGer}
+% \clearpage
+\large
+% \sffamily
+% \bfseries
+% \textbf{Supplementary Information}
+% \rmseries
+\normalsize
+\setcounter{page}{1}
+\setcounter{figure}{0}
+
+% \subsection*{Theory of AF4}
+%% Variables:
+
+\newcommand{\RS}{\ensuremath{R_\text{S}}}
+\newcommand{\RSj}{\ensuremath{R_{\text{S}j}}}
+\newcommand{\Vappgeo}{\ensuremath{V^{\approx\text{geo}}}}
+\newcommand{\Vgeo}{\ensuremath{V^\text{geo}}}
+\newcommand{\Vhyd}{\ensuremath{V^\text{hyd}}}
+\newcommand{\VnoTvoid}{\ensuremath{V^\text{noT}}}
+\newcommand{\whyd}{\ensuremath{w^\text{hyd}}}
+\newcommand{\zP}{\ensuremath{z_\text{\%}}}
+% \newcommand{\z0}{\ensuremath{z_\text{0}}}
+\newcommand{\zL}{\ensuremath{z_L}}
+% \newcommand{\b0}{\ensuremath{b_\text{0}}}
+\newcommand{\bL}{\ensuremath{b_L}}
+\newcommand{\bDelta}{\ensuremath{b_\Delta}}
+% \newcommand{\bΔ}{\ensuremath{bΔ}}
+\newcommand{\Vc}{\ensuremath{\dot{V}_\text{c}}}
+\newcommand{\Vxi}{\ensuremath{\dot{V}_\xi}}
+\newcommand{\Ve}{\ensuremath{\dot{V}_\text{e}}}
+\newcommand{\Vdot}{\ensuremath{\dot{V}}}
+\newcommand{\vm}{\ensuremath{v_\text{m}}}
+\newcommand{\Vin}{\ensuremath{\dot{V}_\text{in}}}
+\newcommand{\Rmeas}{\ensuremath{R_\text{meas}}}
+\newcommand{\Rcalc}{\ensuremath{R_\text{calc}}}
+\newcommand{\te}{\ensuremath{t_\text{e}}}
+\newcommand{\tvoid}{\ensuremath{t_\text{void}}}
+\newcommand{\wmin}{\ensuremath{w_\text{min}}}
+\newcommand{\wmax}{\ensuremath{w_\text{max}}}
+\newcommand{\AL}{\ensuremath{A_L}}
+\newcommand{\CF}{\ensuremath{C_\text{F}}}
+\newcommand{\CFone}{\ensuremath{C_\text{F1}}}
+\newcommand{\CFtwo}{\ensuremath{C_\text{F2}}}
+\newcommand{\CFthree}{\ensuremath{C_\text{F3}}}
+\newcommand{\CFi}{\ensuremath{C_{\text{F}i}}}
+\newcommand{\tmp}[1]{\ensuremath{\text{T}_{#1}}}
+%\newcommand{\phantItem}{}
+% \newcommand{\phantSize}{}
+
+\addchap*{Revision of the AF4 calibration experiment (Supplementary 
+information)}
+  
+  %Precise batch evaluation of Asymmetrical Flow Field-Flow Fractionation data via automatized void peak determination 
+  %%%-- Supplementary information}
+\emph{Benedikt Häusele, Maxim B. Gindele, Helmut Cölfen}\\
+% \begin{center}
+\noindent\hrulefill\\
+% \end{center}
+\vspace*{-8ex}
+{\let\clearpage\relax \tableofcontents}
+
+{\let\clearpage\relax
+   \chapter[Determination of geometrical channel volume $\Vgeo$]
+  {Determination of geometrical channel volume $\bm{\Vgeo}$}
+  
+} %\Vgeo}
+\input{./geoVolume.tex}
+
+{ \chapter[Determination of ``hydrodynamic" channel height $\whyd$ and Volume $\Vhyd$]
+  {Determination of ``hydrodynamic" channel height $\bm\whyd$ and volume $\bm\Vhyd$}
+}
+\input{./hydVolume.tex}
+
+{\let\clearpage\relax
+\chapter[Simplified formulation $\whyd$ and volume $\Vhyd$]
+{Simplified formulation $\bm\whyd$ and Volume $\bm\Vhyd$}
+}
+\input{./simpleVolume.tex}
+
+{\let\clearpage\relax
+\chapter
+[Determination without experimental $\tvoid$]
+{
+  Determination without experimental $\bm\tvoid$}
+}
+\input{./tvoidSub.tex}
+
+%\section*{UML class diagram}
+%Perhaps, but not mandatory
+%\section*{User interface}
+%2 images 
+%\clearpage
+{\let\clearpage\relax
+\chapter{Detailed description of applied algorithms}
+}
+\input{./calibAlgos.tex}
+%\input{./axisConvAlgos.tex}
+%\input{./directAlgo.tex}    
+\chapter{Complete data sets}
+\input{./dataSets.tex}
+\FloatBarrier
+{ 
+  \RedeclareSectionCommand[
+  beforeskip=2.5\baselineskip,
+  afterskip=\baselineskip]{chapter}
+\chapter{Detailed measurement program} 
+}
+\input{./AF4program.tex}
+\clearpage
+\begin{comment}
+%\subsection*{Sequence order}
+%3xBSA VC3\\
+%VC 3\\
+%VC 2\\
+%VC 1\\
+%VC 3\\
+%VC 2\\
+VC 1\\
+VC 3\\
+VC 2\\
+VC 1\\
+Thyro\\
+VC 1\\
+VC 0.75\\
+VC 0.5\\
+VC 1\\
+VC 0.75\\
+VC 0.5\\
+VC 1\\
+VC 0.75\\
+VC 0.5\\
+\end{comment}
+
+\printbibliography
+
+\end{document}

@@ -1,0 +1,478 @@
+
+%%%%% Depracated stuff
+
+\begin{comment}
+  With those considerations the integrals can be solved explicitly:
+  \begin{equation}
+    \begin{array}{lclll}
+      \CF
+      &= 
+      &&   m_2 \cdot \displaystyle\int_{z_0}^{L_{12}}  
+         \ddfrac{    ξ + α_2   }{
+         β_2 ξ^2 + γ_2 ξ + \delta_2
+         }
+         \diff ξ
+         + m_3 \cdot \displaystyle\int_{L_{12}}^{L}
+         \ddfrac{   ξ + α_3
+         }{
+         β_3 ξ^2 + γ_3 ξ + \delta_3
+         }
+         \diff ξ
+         % \right) %\left. \vphantom{\ddfrac{dummy}{\int_a^b}}  \right) %% phantom bracket^^
+      \\\addlinespace
+      %%%%%%%%%%%%%%%%%%%%%%%%%% 
+      &= 
+      &&   m_2 \cdot
+         \left(
+         \displaystyle\int_{z_0}^{L_{12}}       
+         \ddfrac{ ξ }{
+         P_2(ξ) % β_2 ξ^2 + γ_2 ξ + \delta_2
+         }
+         \diff ξ
+         +
+         \displaystyle\int_{z_0}^{L_{12}}       
+         \ddfrac{ α_2 }{
+         P_2(ξ) % β_2 ξ^2 + γ_2 ξ + \delta_2
+         }
+         \diff ξ
+         \right)       
+         +
+         m_3 \cdot
+         \left(
+         \displaystyle\int_{L_{12}}^{L}       
+         \ddfrac{ ξ }{
+         P_3(ξ) % β_2 ξ^2 + γ_2 ξ + \delta_2
+         }
+         \diff ξ
+         +
+         \displaystyle\int_{L_{12}}^{L}       
+         \ddfrac{ α_3 }{
+         P_3(ξ) % β_2 ξ^2 + γ_2 ξ + \delta_2
+         }
+         \diff ξ
+         \right)
+         % \right)
+      \\\addlinespace%\left. \vphantom{\ddfrac{dummy}{\int_a^b}}  \right) %% phantom bracket^^
+      %%%%%%%%%%%%%%%%%%%%%%% 
+      &=
+      &&m_2 \cdot
+         \left(
+         \left[    \frac{\ln{P_2(ξ)}}{2β_2} \right]_{z_0}^{L_{12}}
+         % \displaystyle\int_{z_0}^{L_{12}}       
+         % \ddfrac{ ξ }{
+         % P_2(ξ) 
+         % }
+         %   \diff ξ
+         + 
+         \left(
+         α_2 - \frac{γ_2}{2β_2}
+         \right)
+         \displaystyle\int_{z_0}^{L_{12}}       
+         \ddfrac{\diff ξ }{
+         P_2(ξ) % β_2 ξ^2 + γ_2 ξ + \delta_2
+         }             
+         \right)
+      \\\addlinespace
+      &&+
+      &m_3 \cdot
+        \left(
+          % \displaystyle\int_{L_{12}}^{L}       
+          % \ddfrac{ ξ }{
+          % P_3(ξ) % β_2 ξ^2 + γ_2 ξ + \delta_2
+          % }
+          %   \diff ξ
+        \left[  \frac{\ln{P_3(ξ)}}{2β_3} \right]_{L_{12}}^{L}
+        + 
+        \left(
+        α_3 - \frac{γ_3}{2β_3}
+        \right)
+        \displaystyle\int_{L_{12}}^{L}       
+        \ddfrac{\diff ξ }{
+        P_3(ξ) % β_2 ξ^2 + γ_2 ξ + \delta_2
+        }             
+        \right)   
+        % \right)
+      & \scite{Bronstein2008}
+      \\\addlinespace%\left. \vphantom{\ddfrac{dummy}{\int_a^b}}  \right) %% phantom bracket^^
+      %%%%%%%%%%%%%%%%%%%%%%% 
+      &=
+      & & m_2 \cdot
+          \left(
+          \left[ \frac{\ln{P_2(ξ)}}{2β_2} \right]_{z_0}^{L_{12}}
+          + 
+          \left(
+          α_2 - \frac{γ_2}{2β_2}
+          \right)
+          \left[
+          -\ddfrac{2}{\sqrt{-Δ_2}} \cdot \text{artanh}{\left( \ddfrac{ 2β_2\xi+γ_2 }{ \sqrt{-Δ_2} } \right) }
+          \right]_{z_0}^{L_{12}}
+          \right)\\\addlinespace
+      &&  +&
+             m_3 \cdot
+             \left(
+             \left[ \frac{\ln{P_3(ξ)}}{2β_3}
+             \right]_{L_{12}}^{L}
+             + 
+             \left(
+             α_3 - \frac{γ_3}{2β_3}
+             \right)
+             \left[
+             -\ddfrac{2}{\sqrt{-Δ_3}} \cdot \text{artanh}{\left( \ddfrac{ 2β_3\xi+γ_3 }{ \sqrt{-Δ_3} } \right) }
+             \right]_{L_{12}}^{L}
+             \right)   
+             % \right)
+      & \scite{Bronstein2008a}
+      \\\addlinespace%\left. \vphantom{\ddfrac{dummy}{\int_a^b}}  \right) %% phantom bracket^^
+      %%%%%%%%%%%%%%%%%%%%%%% 
+      &=
+      & & m_2 \cdot \Bigg(
+      % \left(
+          \frac{1}{2β_2}
+          \Big(
+          \ln{P_2(L_{12})} - \ln{P_2({z_0})}
+          \Big)
+          -\left(
+          \frac{2}{\sqrt{-Δ_2}}
+          \right)
+          \left(
+          α_2 - \frac{γ_2}{2β_2}
+          \right)
+          \left(
+          \text{artanh} \frac{ 2β_2L_{12}+γ_2 }{ \sqrt{-Δ_2} }
+          - \text{artanh} \frac{ 2β_2z_0+γ_2 }{ \sqrt{-Δ_2} }
+          \right)
+          % \right)
+          \Bigg)
+      \\\addlinespace
+      &&  +& m_3 \cdot \Bigg(
+      % \left(
+             \frac{1}{2β_3}
+             \Big(
+             \ln{P_3(L)} - \ln{P_3(L_{12})}
+             \Big)
+             -\left(
+             \frac{2}{\sqrt{-Δ_3}}
+             \right)
+             \left(
+             α_3 - \frac{γ_3}{2β_3}
+             \right)
+             \left(
+             \text{artanh} \frac{ 2β_3L+γ_3 }{ \sqrt{-Δ_3} }
+             - \text{artanh} \frac{ 2β_3L_{12}+γ_3 }{ \sqrt{-Δ_3} }
+             \right)
+             % \right)
+             \Bigg)
+             %%%%%%%%%%%%%%%%%%%%%% 
+      \\\addlinespace
+      &=
+      & & m_2 \cdot \left(
+          \frac{1}{2β_2}       
+          \ln{\frac{P_2(L_{12})}{ P_2(z_0)}}
+          -\left(
+          \frac{2}{\sqrt{-Δ_2}}
+          \right)
+          \left(
+          α_2 - \frac{γ_2}{2β_2}
+          \right)
+          \left(
+          \text{artanh}
+          \ddfrac{2β_2L_{12}+ γ_2 - 2β_2z_0-γ_2
+          }{
+          \sqrt{-Δ_2} \cdot \left(
+          1 - \scriptstyle
+          \frac{2β_2L_{12}+γ_2 }{ \sqrt{-Δ_2} } \cdot
+          \frac{2β_2z_0+γ_2 }{ \sqrt{-Δ_2} }
+          \right)
+
+          }
+          \right)        
+          \right)
+      \\\addlinespace
+      &&  +&m_3 \cdot \left(
+             \frac{1}{2β_3}       
+             \ln{\frac{P_3(L)}{ P_3(L_{12})}}
+             -\left(
+             \frac{2}{\sqrt{-Δ_3}}
+             \right)
+             \left(
+             α_3 - \frac{γ_3}{2β_3}
+             \right)
+             \left(
+             \text{artanh}
+             \ddfrac{2β_3L+ γ_3 - 2β_3L_{12}-γ_3
+             }{
+             \sqrt{-Δ_3} \cdot \left(
+             1 - \scriptstyle
+             \frac{2β_3L+γ_3 }{ \sqrt{-Δ_3} } \cdot
+             \frac{2β_3L_{12}+γ_3 }{ \sqrt{-Δ_3} }
+             \right)
+             }
+             \right)        
+             \right)
+
+      \\\addlinespace
+      &=
+      & & m_2 \cdot \left(
+          \frac{1}{2β_2}       
+          \ln{\frac{P_2(L_{12})}{ P_2(z_0)}}
+          -\left(
+          \frac{2}{\sqrt{-Δ_2}}
+          \right)
+          \left(
+          α_2 - \frac{γ_2}{2β_2}
+          \right)
+          \left(
+          \text{artanh}
+          \ddfrac{2β_2 (L_{12} - z_0)
+          }{
+          \left(
+          \sqrt{-Δ_2}- \scriptstyle
+          % \frac{2β_2L_{12}+γ_2 }{ \sqrt{-Δ_2} } \cdot
+          \frac{ \left(2β_2L_{12}+γ_2 \right)  \left(2β_2z_0+γ_2 \right) }{\sqrt{-Δ_2}}
+          % \frac{2β_2z_0+γ_2 }{ \sqrt{-Δ_2} }
+          \right)
+
+          }
+          \right)        
+          \right)
+      \\\addlinespace
+      &&  +&m_3 \cdot \left(
+             \frac{1}{2β_3}       
+             \ln{\frac{P_3(L)}{ P_3(L_{12})}}
+             -\left(
+             \frac{2}{\sqrt{-Δ_3}}
+             \right)
+             \left(
+             α_3 - \frac{γ_3}{2β_3}
+             \right)
+             \left(
+             \text{artanh}
+             \ddfrac{2β_3 L_3
+             }{
+             \left(
+             \sqrt{-Δ_3}- \scriptstyle
+             % \frac{2β_2L_{12}+γ_2 }{ \sqrt{-Δ_2} } \cdot
+             \frac{ \left(2β_3L+γ_3 \right)  \left(2β_3L_{12}+γ_3 \right) }{\sqrt{-Δ_3}}
+             % \frac{2β_2z_0+γ_2 }{ \sqrt{-Δ_2} }
+             \right)
+             }
+             \right)        
+             \right)
+      \\\addlinespace
+    \end{array}  
+  \end{equation}
+\end{comment}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+
+
+
+
+
+
+\begin{comment}
+  &=
+  \left( 4 \cdot \frac{\Vc^2}{\AL^2} \right)
+  \cdot \left(
+    % \frac{1}{4} \left( b_0^2c
+    + \frac{L1}{L2}\bDelta \right)^2
+  - \frac{1}{4} \frac{\bDelta}{L_2} b_0 L_1 
+  - \frac{1}{4} \frac{\bDelta^2}{L_2^2}L_1^2
+  + \frac{\bDelta}{2L_2}\left( b_0 +\frac{L_1}{L_2} \bDelta    \right)  L_1
+  - 2 \frac{L_1}{L_2} \bDelta\b0 - 2 \frac{L_1^2}{L_2^2}      
+\right)
++ 2 \cdot \frac{\bDelta}{\AL L_2} \left( \Vc\Ve + \Vc^2 \right)
++ 4 \cdot \frac{\Vc m_2 \Vin}{\AL}  
+\\\addlinespace
+&=  \frac{\Vc^2}{\AL^2}
+\cdot \left(
+  b_0^2
+  +  2 \frac{L_1}{L_2}b_0\bDelta 
+  +\markOrange{ \frac{L_1^2}{L_2^2} \bDelta^}
+  
+  - \markBlue {\frac{L_1}{L_2} b_0 \bDelta}
+  - \markOrange{ \frac{L_1^2}{L_2^2}\bDelta^2}
+  + \markBlue{2\frac{L_1}{L_2} b_0 \bDelta}
+  + \markOrange{2\frac{L_1^2}{L_2^2} \bDelta^2}
+\right)
++ 2 \cdot \frac{\bDelta}{\AL L_2}  \Vc\Ve + 2 \cdot \frac{\bDelta}{\AL L_2}  \Vc^2
+\\\addlinespace%[3ex]
+&=  \cancelto{>0}{\frac{\Vc^2}{\AL^2}}
+\cdot \left(
+  \cancelto{\geq0}{ b_0^2 }
+  +\cancelto{\geq0}{ 3\frac{L_1}{L_2}b_0\bDelta }
+  +\cancelto{\geq0}{ 2 \frac{L_1^2}{L_2^2}  \bDelta^2 }
+\right)
++ \cancelto{\geq0}{2 \cdot \frac{\bDelta}{\AL L_2}  \Vc\Ve } 
++ \cancelto{\geq0}{2 \cdot \frac{\bDelta}{\AL L_2}  \Vc^2 }
+
+\end{comment}
+
+
+
+
+\begin{comment}
+  \[ \Longrightarrow  Δ_2 < 0, \text{as only either}\ \bDelta = 0\ \text{or}\ b_0= 0\]
+
+  \begin{equation}
+    \begin{array}{ll}
+      Δ_3 &=  4β_3δ_3 - γ_3^2 
+      \\\addlinespace    
+          &= 
+            4 \cdot \frac{\Vc m_3}{\AL} \cdot
+            \left(
+            \Vin - \frac{\Vc}{\AL} \left(  A_1 + A_2 - m_3L_{12}^2 - 2t_3L_{12} \right)
+            \right)
+            - \left( \frac{2 \Vc t_3}{\AL} \right)^2
+            %%%%% 
+      \\\addlinespace
+          &=          
+            4 \cdot \frac{\Vc m_3 \Vin}{\AL}
+            - 4\cdot \frac{\Vc^2m_3A_1}{\AL^2}
+            - 4\cdot \frac{\Vc^2m_3A_2}{\AL^2}
+            + 4\cdot \frac{\Vc^2m_3^2L_{12}^2}{\AL^2}
+            + 4\cdot \frac{2 \Vc^2m_3 t_3 L_{12}}{\AL^2}
+            - 4 \cdot \frac{\Vc^2t_3^2}{\AL^2}          
+      \\\addlinespace
+          &=
+            \left( 4\cdot \frac{\Vc^2}{\AL^2} \right)
+            \cdot \left(
+            - m_3A_1
+            - m_3A_2
+            + m_3^2L_{12}^2
+            + m_3t_3 L_{12}
+            - t_3^2
+            \right)
+            + 4 \cdot \frac{\Vc m_3 \Vin}{\AL}
+      \\\addlinespace
+          &=
+            \left( \frac{\Vc^2}{\AL^2} \right)
+            \cdot \left(\scriptstyle
+            \frac{L_1}{L_3}b_0b_L
+            -\frac{L_{12}}{L_3}b_L\bDelta
+            + \frac{b_L}{L_3}\cdot\left( \scriptstyle -\bDelta L_{12} - \markBlue{\scriptstyle\bDelta L_1 }+ b_0L_2 +\markBlue{\scriptstyle\bDelta L_1}  \right)
+            +\markPurple{ \frac{L_{12}^2}{L_3^2} b_L^2}
+            -\markPurple{ \frac{L_{12}L}{L_3^2}b_L^2}
+            - \frac{L^2}{L_3^2}b_L^2
+            % +\frac{L_2}{L_3}b_L b_0
+            \right)
+            + 4 \cdot \frac{\Vc m_3 \Vin}{\AL}
+      \\\addlinespace
+          &=
+            \left( \frac{\Vc^2}{\AL^2} \right)
+            \cdot \left(
+            \markOrange{\frac{L_1}{L_3}b_0b_L}
+            - \markGreen{ \frac{L_{12}}{L_3}b_L\bDelta}
+            - \markGreen{ \frac{L_{12}}{L_3}b_L\bDelta}
+            + \markOrange{\frac{L_2}{L_3} b_0 b_L}
+            -\markPurple{\frac{L_3L}{L_3^2}b_L^2}
+            - \frac{L^2}{L_3^2}b_L^2      
+            \right)
+            + 4 \cdot \frac{\Vc m_3 \Vin}{\AL}
+      \\\addlinespace
+          &=                
+            \left( \frac{\Vc^2}{\AL^2} \right)
+            \cdot \left(
+            \markOrange{\frac{L_{12}}{L_3}b_0b_L}
+            - \markGreen{2 \frac{L_{12}}{L_3}b_L b\Delta}
+            - \frac{L}{L_3}b_L^2
+            - \frac{L^2}{L_3^2}b_L^2
+            \right)
+            + 4 \cdot \frac{\Vc m_3 \Vin}{\AL}
+      \\\addlinespace
+          &=           \left( \frac{\Vc^2}{\AL^2} \right)
+            \cdot \left(
+            \frac{L_{12}}{L_3}(b_L -b\Delta) b_L
+            - 2 \frac{L_{12}}{L_3}b_L\bDelta          
+            -\frac{L}{L_3}b_L^2     
+            - \frac{L^2}{L_3^2}b_L^2
+            
+            \right)
+            + 4 \cdot \frac{\Vc m_3 \Vin}{\AL}
+      \\\addlinespace
+          &= \left( \frac{\Vc^2}{\AL^2} \right)
+            \cdot \left(
+              % \frac{L_{12}}{L_3}(b_L - b\Delta) b_L
+            \markYellow{\frac{L_{12}}{L_3}b_L^2}
+            -\markRed{ \frac{L_{12}}{L_3}b_L\bDelta}
+            - \markRed{2 \frac{L_{12}}{L_3}b_L\bDelta }
+            -\markYellow{\frac{L}{L_3}b_L^2     }
+            - \frac{L^2}{L_3^2}b_L^2          
+            \right)
+            + 4 \cdot \frac{\Vc m_3 \Vin}{\AL}
+      \\\addlinespace
+          &=
+            \underbrace{ \left( \frac{\Vc^2}{\AL^2} \right)
+            }_{ >0 }
+            \cdot \left(
+            - \underbrace{\vphantom{\left( \frac{\Vc^2}{\AL^2} \right)}
+            \markRed{3 \frac{L_{12}}{L_3}b_L\bDelta }
+            }_{<0}
+            - \underbrace{\vphantom{\left( \frac{\Vc^2}{\AL^2} \right)}
+            \markYellow{\frac{\cancel{L_3}}{\cancel{L_3}}b_L^2     } }_{<0}
+            -  \underbrace{\vphantom{\left( \frac{\Vc^2}{\AL^2} \right)}
+            \frac{L^2}{L_3^2}b_L^2 }_{<0}
+            \right)
+            +\underbrace{\vphantom{\left( \frac{\Vc^2}{\AL^2} \right)}
+            4 \cdot \frac{\Vc m_3 \Vin}{\AL}}_{<0\ \text{with}\ m_3<0}
+            
+            
+          &=\left( 4 \cdot \frac{\Vc^2}{\AL^2} \right)
+            \cdot
+            \left(
+            t_3^2 + m_3A_1 + \markBlue{ m_3A_2} - m_3^2L_{12}^2 - m_3 t_3 L_{12}
+            \right)
+            - 4 \cdot \frac{\Vc m_3 \Vin}{\AL}
+      \\\addlinespace
+          &=\left( 4 \cdot \frac{\Vc^2}{\AL^2} \right) \cdot
+            \left(
+            \frac{1}{4} \frac{L^2 \bL^2}{L_3^2 }
+            -\frac{1}{4} \frac{b_0 \bL^2}{L_3 }
+            -\markBlue{ \frac{1}{2}\frac{\bL L_1^2 m_2}{  L_3 } }
+            -\markBlue{ \frac{1}{2}\frac{ \bL L_1 L_2 m_2 }{  L_3 } }
+            -\markBlue {\frac{1}{2}\frac{\bL L_1 t_2 }{  L_3 } }
+            -\frac{1}{4} \frac{\bL^2L_{12}^2}{L_3^2}
+            +\frac{1}{4} \frac{\bL^2L L_{12}}{L_3^2}
+            \right)
+            - 4 \cdot \frac{\Vc m_3 \Vin}{\AL}   
+      \\\addlinespace
+          & =  \frac{\Vc^2}{\AL^2} 
+            \left(
+            \frac{L^2 \bL^2}{L_3^2 }
+            - \frac{b_0 \bL^2}{L_3}
+            \qquad\qquad
+            % + \frac{b_L^2L_1^2}{L_3^2}
+            % + \frac{b_L^2L_1L_2}{L_3^2}
+            % - \frac{b_L^2L_1L}{L_3^2}
+            - \frac{b_L^2L_{12}^2}{L_3^2}
+            + \frac{\bL^2L L_{12}}{L_3^2}      
+            \right)
+            + 4 \cdot \frac{\Vc b_L  \Vin}{\AL L_3}
+            % - 4 \cdot \frac{\Vc m_3 \Vin}{\AL}
+
+    \end{array}  
+  \end{equation}
+  \[ \Longrightarrow  Δ_2 < 0, \text{as only either}\ \bDelta = 0\ \text{or}\ b_0= 0\]
+  %%%%%%%%%%%%%%%%%%%%%%%%% 
+  \vspace*{2ex}\\
+  $\bm{z_0 < L_1}$\\
+  \begin{equation}
+    \begin{array}{ll}
+      δ_2 =
+    \end{array}
+  \end{equation}
+  \begin{equation}
+    \begin{array}{ll}
+      δ_3 =
+    \end{array}
+  \end{equation}
+  Expanding the formalism for the remaining case would be possible, however, it would also complicate further evaluations and error considerations.
+\end{comment}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
