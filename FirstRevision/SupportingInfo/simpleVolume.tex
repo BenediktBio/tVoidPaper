@@ -1,7 +1,17 @@
 %\section*{Simplified formalism}
-A much shorter version has already been derived\scite{Litzen1991} with the assumptions $L_{23} = L_2 
-+ L_3$. %and $b(L) \approx b(L_{12}) = b_L$.
-In addition, in this model the extrapolated channel breadths $b_0$ and $\bL$ are used. They are given with
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=\linewidth]{./images/fffSimplified.pdf}
+    \vspace*{-3ex}    
+  \end{center}
+  \caption[Total area of an AF4 channel in the simplified model]{
+    Total area of an AF4 channel in the simplified model.}
+  \label{fig:fffSimplified}
+\end{figure}
+A much shorter version has already been derived\scite{Litzen1991}, %^with the assumptions $L_{23} = L_2 
+%+ L_3$. %and $b(L) \approx b(L_{12}) = b_L$.
+This model uses the extrapolated channel breadths $b_0$ and $\bL$ are used. Based on our analytical formulation of 
+$E(x)$, we can reconstruct them easily by
 \begin{equation}
 b_0 = 2e_2(0) = b_1+\frac{L_1}{L_2}\bDelta 
 \end{equation}
@@ -9,9 +19,36 @@ and
 \begin{equation}
 b_L = 2e_2(L) 
 = b_1+\frac{L_1}{L_2}\bDelta - \frac{L}{L_2}\bDelta 
-= b_1-\frac{L_{23}}{L_2}\bDelta 
+= b_1-\frac{L_{23}}{L_2}\bDelta ~~~~~.
 \end{equation}
-Here, 
+The derivation of a relationship between channel volume and $\tvoid$ is based on Eq. \ref{eq:tvoidMigVelo}.
+The total membrane area $\AL$ is given by geometrical considerations (Fig. \ref{fig:fffSimplified}) as 
+\begin{equation}
+\AL = \int_{0}^{L} b(z) \diff z 
+= 
+\intGreenBox{\ensuremath{\frac{1}{2} b_1 L_1}}
++ 
+\intPurpleBox{ \ensuremath{ \phantom{ \frac{1}{2} } \hspace{-1ex} b_L L_{23}}  }
++
+\intBlueBox{\ensuremath{\frac{1}{2} \bDelta L_{23}}}
+\end{equation}
+%With these assumptions, the channel surface $\AL$ is computed as
+The channel volume in the simplified model is also given by elementary geometry:
+\begin{equation}
+\Vappgeo = \wappgeo \AL
+\end{equation}
+Unfortunately, only the case $z_0 \geqq L_1$ was formulated explicitly\scite{Litzen1991}.
+\subsubsection*{Distal focusing with \bm{$z_0 \geqq L_1$}}
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=\linewidth]{./images/fffApprox1.pdf}
+    \vspace*{-3ex}    
+  \end{center}
+  \caption[Skipped area section - proximal focusing, simplified approximation]{
+    Simplified model of relevant skipped area sections according to literature\scite{Litzen1991} 
+    in case of a distal focusing point.}
+  \label{fig:fffApprox1}
+\end{figure}
 \begin{equation}
 \begin{array}{lll}
 \tvoid &= & \frac{\Vappgeo}{\Vc} \ln{
@@ -23,7 +60,7 @@ Here,
     \left(
     b_0 z_0 
     - \frac{
-      z_0^2 \bDelta
+      z_0^2 (b_0 - \bL)
     }{
       2L} 
     - Y
@@ -39,47 +76,30 @@ Here,
   1 - \frac{
     b_0 z_0 
     - \frac{
-      z_0^2 \bDelta
+      z_0^2 (b_0 - b_L)
     }{
       2L
     } 
     -  Y
   }{
- \int_{0}^{L} b(z) \diff z 
+% \int_{0}^{L} b(z) \diff z 
+\AL
 }
   \right)
   \right)}
 \end{array}
 \end{equation}
-\begin{figure}[H]
-  \begin{center}
-    \includegraphics[width=\linewidth]{./images/fffSimplified.pdf}
-    \vspace*{-3ex}    
-  \end{center}
-  \caption[Total area of an AF4 channel in the simplified model]{
-    Total area of an AF4 channel in the simplified model.}
-  \label{fig:fffSimplied}
-\end{figure}
-With these assumptions, the channel surface $\AL$ is computed as
-\begin{equation}
-\AL = \int_{0}^{L} b(z) \diff z 
-= 
-\intGreenBox{\ensuremath{\frac{1}{2} b_1 L_1}}
-+ 
-\intPurpleBox{\ensuremath{b_2 L_{23}}}
-+
-\intBlueBox{\ensuremath{\frac{1}{2} (b_1-b_2) L_{23}}}
-\end{equation}
+
 $Y$ is the enclosed area of the elongation from,
 $e_2(x)$ y-axis and $e_1(x)$ and its symmetrical counterpart 
 %(Fig. \ref{fig:fffApprox1} and \ref{fig:fffApprox2}). 
-(Fig. \ref{fig:fffSimplied})
+(Fig. \ref{fig:fffApprox1})
 It can be calculated by simple geometrical considerations as 
 \begin{equation}
 \intOrangeBox{\ensuremath{ Y \hspace{-4ex}\phantom{\left(\frac{1}{2}\right)} }} 
-= \intOrangeBox{\ensuremath{ 2\cdot\left(\frac{1}{2} L_1 b_1 \right)
-  + 2\cdot\left( \frac{1}{2} L_1 \left( b_0 - b_1 \right) \right) }} 
-=\intOrangeBox{\ensuremath{ L_1 b_0 \hspace{-4ex}\phantom{\left(\frac{1}{2}\right)} } }
+%= \intOrangeBox{\ensuremath{ 2\cdot\left(\frac{1}{2} L_1 b_1 \right)
+%  + 2\cdot\left( \frac{1}{2} L_1 \left( b_0 - b_1 \right) \right) }} 
+=\intOrangeBox{\ensuremath{\frac{1}{2}  L_1 b_0 \hspace{-4ex}\phantom{\left(\frac{1}{2}\right)} } }
 %= \intOrangeBox{\ensuremath{ }} 
 %\intOrangeBox{\ensuremath{\displaystyle\phantom{\hspace{-4ex} \int_0^{L1}} Y  }} 
 %= \intOrangeBox{\ensuremath{\displaystyle 2 \int_0^{L1}e_2(2)\diff x - \frac{1}{2}b_1L_1  }}Z
@@ -87,9 +107,44 @@ It can be calculated by simple geometrical considerations as
 %\intOrangeBox{\ensuremath{ \frac{1}{2}\left( b_0 + \frac{L_1}{L_{23}} \bDelta \right) L_1 }}
 \end{equation}
 
-The channel volume in the simplified model is also given by elementary geometry:
+\subsubsection*{Proximal focusing with \bm{$z_0 < L_1$}}
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=\linewidth]{./images/fffApprox2.pdf}
+    \vspace*{-3ex}    
+  \end{center}
+  \caption[Skipped area section for proximal focussing, simplified approximation]{
+    Simplified model of relevant skipped area sections in case of a proximal focusing  point.}
+  \label{fig:fffApprox2}
+\end{figure}
+In this case, the additional space on the left part has to be considered as well for the skipped area (Fig. 
+\ref{fig:fffApprox2}).
+This simplifies this skipped part such that it can be expressed as 
 \begin{equation}
-  \Vappgeo = \wappgeo \AL
+ \begin{array}{lll}
+  \tvoid &= & 
+  \frac{\Vappgeo}{\Vc} \ln{
+    \left(
+    1 + \frac{\Vc}{\Ve}
+    \left(
+    1 - \frac{
+     e_1(z_0) \cdot z_0
+    }{\AL}
+    \right)
+    \right)}
+  \\ & = & 
+   \frac{\Vappgeo}{\Vc} \ln{
+   \left(
+   1 + \frac{\Vc}{\Ve}
+   \left(
+   1 - \frac{
+    \frac{1}{2}\frac{b_1}{L_1} z_0^2
+   }{\AL}
+   \right)
+   \right)}
+ \\
+ \end{array}
 \end{equation}
 
 \begin{comment}
