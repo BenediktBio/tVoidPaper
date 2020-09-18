@@ -3,11 +3,13 @@ A much shorter version has already been derived\scite{Litzen1991} with the assum
 + L_3$. %and $b(L) \approx b(L_{12}) = b_L$.
 In addition, in this model the extrapolated channel breadths $b_0$ and $\bL$ are used. They are given with
 \begin{equation}
-b_0 = e_2(0) = 
+b_0 = 2e_2(0) = b_1+\frac{L_1}{L_2}\bDelta 
 \end{equation}
 and
 \begin{equation}
-b_L = e_2(L) = 
+b_L = 2e_2(L) 
+= b_1+\frac{L_1}{L_2}\bDelta - \frac{L}{L_2}\bDelta 
+= b_1-\frac{L_{23}}{L_2}\bDelta 
 \end{equation}
 Here, 
 \begin{equation}
@@ -26,7 +28,7 @@ Here,
       2L} 
     - Y
     \right)
-  }{\Vgeo}
+  }{\Vappgeo}
   \right)
   \right)}
 \\\addlinespace
@@ -70,13 +72,27 @@ With these assumptions, the channel surface $\AL$ is computed as
 \end{equation}
 $Y$ is the enclosed area of the elongation from,
 $e_2(x)$ y-axis and $e_1(x)$ and its symmetrical counterpart 
-(Fig. \ref{fig:fffApprox1} and \ref{fig:fffApprox2}). 
-It can be calculated by simple geometrical considerations (Fig. \ref{fig:fffSimplied}) as 
+%(Fig. \ref{fig:fffApprox1} and \ref{fig:fffApprox2}). 
+(Fig. \ref{fig:fffSimplied})
+It can be calculated by simple geometrical considerations as 
 \begin{equation}
-\intOrangeBox{\ensuremath{Y}} = \intOrangeBox{\ensuremath{ 2 \cdot \frac{1}{2} e_2(0) L_1 }} = 
-\intOrangeBox{\ensuremath{ \frac{1}{2}\left( b_0 + \frac{L_1}{L_{23}} \bDelta \right) L_1 }}
+\intOrangeBox{\ensuremath{ Y \hspace{-4ex}\phantom{\left(\frac{1}{2}\right)} }} 
+= \intOrangeBox{\ensuremath{ 2\cdot\left(\frac{1}{2} L_1 b_1 \right)
+  + 2\cdot\left( \frac{1}{2} L_1 \left( b_0 - b_1 \right) \right) }} 
+=\intOrangeBox{\ensuremath{ L_1 b_0 \hspace{-4ex}\phantom{\left(\frac{1}{2}\right)} } }
+%= \intOrangeBox{\ensuremath{ }} 
+%\intOrangeBox{\ensuremath{\displaystyle\phantom{\hspace{-4ex} \int_0^{L1}} Y  }} 
+%= \intOrangeBox{\ensuremath{\displaystyle 2 \int_0^{L1}e_2(2)\diff x - \frac{1}{2}b_1L_1  }}Z
+%= \intOrangeBox{\ensuremath{ 2 \cdot \frac{1}{2} e_2(0) L_1 }} = 
+%\intOrangeBox{\ensuremath{ \frac{1}{2}\left( b_0 + \frac{L_1}{L_{23}} \bDelta \right) L_1 }}
 \end{equation}
 
+The channel volume in the simplified model is also given by elementary geometry:
+\begin{equation}
+  \Vappgeo = \wappgeo \AL
+\end{equation}
+
+\begin{comment}
 The area, which is relevant for separation, could also be calculated according to the geometrical considerations from 
 above.
 In this simplified version, the proximal and distal focusing cases have to be distinguished:
@@ -127,3 +143,4 @@ In this case, the additional space on the left part has to be considered as well
       L_{23} } }
 \end{equation}
 
+\end{comment}

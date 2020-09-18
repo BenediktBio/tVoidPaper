@@ -40,7 +40,7 @@
   \item $\lambda$
   \end{packed_item}
 \end{multicols}
-
+\clearpage
 \subsubsection*{Calculations:}
 
 \subparagraph{1}
@@ -62,7 +62,7 @@ Calculate \Rmeas:
 Initialize $w$ and $δ$:
 \[ w \leftarrow \frac{\wmax + \wmin}{2} \]
 \[ δ_w \leftarrow \frac{\wmax - \wmin}{4} \]
-\clearpage
+
 \subparagraph{4}
 Find $w$ such that $|\Rmeas - \Rcalc| \stackrel{!}{=}\text{min}$ by bisection:
 \begin{algorithmic}
@@ -94,7 +94,7 @@ shape model}
     \item \small diffusion coefficient \normalsize $D$
     \item relative focus $\zP$;
     \item $L_1, L_2, L_3$
-    \item $b_0, \bL$
+    \item $b_1, b_2$
     % \item channelLength $L$
   \end{packed_item}
 \end{multicols}
@@ -121,16 +121,18 @@ shape model}
 \begin{multicols}{3}
   \begin{packed_item}
     % \item volume $V^0$
+    \item $b_0, \bL$
     \item measured\enspace retention $\Rmeas$
     \item Channel surface area $\AL$
 %    \item variation $δ_w$
     \item $\lambda$
-    \item $\tmp1$
+    \item $\tmp1$\textbf{}
+    \item $z_0$
   \end{packed_item}
 \end{multicols}
 
 \subsubsection*{Calculations:}
-
+\textbf{}
 \subparagraph{1}
 Calculate volume:
 
@@ -138,9 +140,13 @@ Calculate volume:
 %\nicefrac{(\Ve + \Vc)}{\Vc}          } \right) }} \]
 
 \begin{algorithmic}
-  \State $L_{23} \leftarrow L_2 + L_3$,\qquad $\bDelta \leftarrow b_0 - \bL$
+  \State $L_{23} \leftarrow L_2 + L_3$,\qquad $\bDelta \leftarrow b_1 - b_2$
   \State $\AL \leftarrow \frac{1}{2} b_0 L_1 + b_L L_{23} + \frac{1}{2} \bDelta L_{23}$
-  \State $ Y \leftarrow \frac{1}{2} \left( b_0 +\frac{L_1}{L_{23}} \right) L_1$
+  \State $b_0 \leftarrow b_1 + \frac{L_1}{L_2}\bDelta$
+  \State $b_L \leftarrow b_1 - \frac{L_{23}}{L_2}\bDelta$
+  \State $z_0 \leftarrow \zP L$
+%  \State $ Y \leftarrow \frac{1}{2} \left( b_0 +\frac{L_1}{L_{23}} \right) L_1$
+  \State $Y \leftarrow L_1 b_0$
   \State $\tmp1 \leftarrow b_0 z_0 
   - \frac{ z_0^2 \bDelta  }{  2L} - Y $
   %%%% Alternative calculation for 1-A(z) instead of AL
@@ -195,6 +201,7 @@ Find $w$ such that $|\Rmeas - \Rcalc| \stackrel{!}{=}\text{min}$ by bisection:
 \newcommand{\lamMax}{\ensuremath{\lambda_\text{max}}}
 \subsubsection*{Inputs:}
 \begin{multicols}{3}
+  \vspace*{-3ex}
   \begin{packed_item}
     \item void peak $\tvoid$
 %    \item elution flow $\Ve$ 
@@ -203,20 +210,22 @@ Find $w$ such that $|\Rmeas - \Rcalc| \stackrel{!}{=}\text{min}$ by bisection:
     \item \small diffusion coefficient \normalsize $D$
     \item relative focus $\zP$;
     \item $L_1, L_2, L_3$
-    \item $b_0, \bL$
+    \item $b_1, \bL$
     % \item channelLength $L$
   \end{packed_item}
 \end{multicols}
-
+\vspace*{-3ex}
 \subsubsection*{Outputs:}
+\vspace*{-2ex}
 \begin{multicols}{3}
   \begin{packed_item}
     \item channel height $w$ 
     \item channel volume $\Vgeo$    
   \end{packed_item}
 \end{multicols}
-
+\vspace*{-4ex}
 \subsubsection*{Temporary variables:}
+\vspace*{-2ex}
 \begin{multicols}{3}
   \begin{packed_item}
     % \item volume $V^0$
@@ -234,16 +243,17 @@ Find $w$ such that $|\Rmeas - \Rcalc| \stackrel{!}{=}\text{min}$ by bisection:
     \item $A_3$
   \end{packed_item}
 \end{multicols}
-
+\vspace*{-4ex}
 \subsubsection*{Constants:}
+\vspace*{-2ex}
 \begin{multicols}{3}
   \begin{packed_item}
     \item $\lamMin \leftarrow 10^{-5}$
     \item  $\lamMax \leftarrow 100$ 
     \end{packed_item}
   \end{multicols}
+\vspace*{-2ex}
 \subsubsection*{Calculations:}
-
 \subparagraph{1}
 Calculate $\Rmeas$:\vspace*{-4ex}
 \begin{algorithmic}
@@ -254,7 +264,7 @@ Calculate $\Rmeas$:\vspace*{-4ex}
 Initialize $λ$ and $δ_λ$:\vspace*{-4ex}
 \[ λ \leftarrow \frac{\lamMin + \lamMax}{2} \]\vspace*{-1.55ex}
 \[ δ_λ \leftarrow \frac{\lamMax - \lamMin}{4} \]
-\vspace*{-1ex}
+\vspace*{-4ex}
 \subparagraph{3}
 Find $λ$ such that $|\Rmeas - \Rcalc| \stackrel{!}{=}\text{min}$ by bisection:
 \begin{spacing}{1.1}
@@ -278,29 +288,29 @@ Calculate substitution term $S$:\vspace*{-7.5ex}
   \State  \[ S \leftarrow \ddfrac{λ \cdot \Vc }{D} \]
 \end{algorithmic}\vspace*{-3.5ex}
 \begin{comment}
-\subparagraph{5} Calculate passed channel area $A_z$:
+\subparagraph{xxx} Calculate passed channel area $A_z$:
 \begin{algorithmic}
-  \State $\displaystyle A_3 \leftarrow \frac{1}{2}\cdot \bL L_3
+  \State $\displaystyle A_3 \leftarrow \frac{1}{2}\cdot b_2 L_3
    \qquad L_{12} \leftarrow L_1 + L_2 
    \qquad L \leftarrow L_{12} + L_3 
    \qquad z_0 \leftarrow z_\% \cdot L $\vspace*{.5ex}
   \If{$ z_0 \geqq L_1$}
-  \State $\displaystyle m_2 \leftarrow \frac{b_0 - \bL}{2\cdot L_2}
-           \qquad \bDelta \leftarrow b_0 - \bL
-           \qquad t_2 \leftarrow \frac{1}{2}\left(b_0 + \frac{L_1}{L_2} \bDelta \right) 
+  \State $\displaystyle m_2 \leftarrow \frac{ - b_2}{2\cdot L_2}
+           \qquad \bDelta \leftarrow b_1 - b_2
+           \qquad t_2 \leftarrow \frac{1}{2}\left(b_1 + \frac{L_1}{L_2} \bDelta \right) 
            $\vspace*{.5ex}
   \State  $ A_z \leftarrow (L_{12} - z_0)\cdot( m_2  (L_{12} + z_0) + t_2 ) +  A_3$
   \Else
-  \State $m_1 \leftarrow \frac{b_0}{2 L_1}$
-  \State  $ A_z \leftarrow  m_1 \cdot (L_1^2 - z_0^2) + \frac{1}{2}(b_0 + b_L)L_2  + A_3 $
+  \State $m_1 \leftarrow \frac{b_1}{2 L_1}$
+  \State  $ A_z \leftarrow  m_1 \cdot (L_1^2 - z_0^2) + \frac{1}{2}(b_1 + b_2)L_2  + A_3 $
   \EndIf
 \end{algorithmic}
 \end{comment}
 \subparagraph{5} Calculate membrane area $\AL$:
 \begin{algorithmic}
-  \State $       A_1 \leftarrow \frac{1}{2} b_0  L_1  
-  \qquad A_2 \leftarrow  \frac{1}{2} (b_0 + b_L) L_2  
-  \qquad A_3 \leftarrow \frac{1}{2} L_3\bL  
+  \State $       A_1 \leftarrow \frac{1}{2} b_1  L_1  
+  \qquad A_2 \leftarrow  \frac{1}{2} (b_1 + b_2) L_2  
+  \qquad A_3 \leftarrow \frac{1}{2} L_3b_2  
   $\vspace*{.5ex}
   \State $  \AL \leftarrow A_1 + A_2 + A_3
   $\vspace*{.5ex}
@@ -332,7 +342,7 @@ Calculate substitution term $S$:\vspace*{-7.5ex}
 %    \item \small diffusion coefficient \normalsize $D$
     \item relative focus \zP;
     \item $L_1, L_2, L_3$
-    \item $b_0$, \bL
+    \item $b_1, b_2$
     % \item channelLength $L$
   \end{packed_item}
 \end{multicols}
@@ -371,27 +381,27 @@ Calculate "derived" parameters:
 \State $L_{12} \leftarrow L_1 + L_2
         \qquad L \leftarrow L_{12} + L_3
         \qquad z_0 \leftarrow \zP \cdot L
-        \qquad \bDelta \leftarrow  b_0 - \bL
+        \qquad \bDelta \leftarrow  b_1 - b_2
         \qquad \Vin \leftarrow \Ve + \Vc
         $
 \end{algorithmic}
 \subparagraph{2}
 Calculate slopes and offsets of the border lines of the channel plain:
 \begin{algorithmic}
-  \State $       m_1 \leftarrow   \frac{b_0}{2L_1}
+  \State $       m_1 \leftarrow   \frac{b_1}{2L_1}
           \qquad m_2 \leftarrow - \frac{\bDelta}{2L_2}
-          \qquad m_3 \leftarrow - \frac{\bL}{2L_3}
+          \qquad m_3 \leftarrow - \frac{b_2}{2L_3}
          $\vspace*{.5ex}
-  \State $           t_2 \leftarrow \frac{1}{2} \left( b_0 +  \frac{L_1}{L_2}\bDelta \right)
-              \qquad t_3 \leftarrow \frac{L \bL}{2 L_3 }
+  \State $           t_2 \leftarrow \frac{1}{2} \left( b_1 +  \frac{L_1}{L_2}\bDelta \right)
+              \qquad t_3 \leftarrow \frac{L b_2}{2 L_3 }
          $\vspace*{.5ex}
 \end{algorithmic}
 \subparagraph{3}
 Calculate area sections of the channel plain:
 \begin{algorithmic}
-  \State $       A_1 \leftarrow \frac{1}{2} b_0  L_1  
-          \qquad A_2 \leftarrow  \frac{1}{2} (b_0 + b_L) L_2  
-          \qquad A_3 \leftarrow \frac{1}{2} L_3\bL  
+  \State $       A_1 \leftarrow \frac{1}{2} b_1  L_1  
+          \qquad A_2 \leftarrow  \frac{1}{2} (b_1 + b_2) L_2  
+          \qquad A_3 \leftarrow \frac{1}{2} L_3b_2  
          $\vspace*{.5ex}
   \State $  \AL \leftarrow A_1 + A_2 + A_3
   $\vspace*{.5ex}
@@ -482,9 +492,10 @@ Calculate passed channel area $A$:
 \end{comment}
 
 \subparagraph{6}
-Calculate $\Vhyd$ with passed area:
+Calculate $\Vhyd$:
 \begin{algorithmic}
-  \State $\Vhyd \leftarrow A_\xi \cdot w$
+%  \State $\Vhyd \leftarrow A_\xi \cdot w$
+  \State $\Vhyd \leftarrow A_L \cdot w$
 \end{algorithmic}
 \clearpage
 \subsubsection*{S\quad subroutines}
@@ -609,9 +620,9 @@ Polynomial $P$:
     %    \item elution time $\te$
     \item cross flow \Vc
     %    \item \small diffusion coefficient \normalsize $D$
-    \item relative focus \zP;
+    \item relative focus \zP
     \item $L_1, L_2, L_3$
-    \item $b_0$, \bL
+    \item $b_1, b_2$
     % \item channelLength $L$
   \end{packed_item}
 \end{multicols}
@@ -650,27 +661,27 @@ Calculate "derived" parameters:
   \State $L_{12} \leftarrow L_1 + L_2
   \qquad L \leftarrow L_{12} + L_3
   \qquad z_0 \leftarrow \zP \cdot L
-  \qquad \bDelta \leftarrow  b_0 - \bL
+  \qquad \bDelta \leftarrow  b_1 - b_2
   \qquad \Vin \leftarrow \Ve + \Vc
   $
 \end{algorithmic}
 \subparagraph{2}
 Calculate slopes and offsets of the border lines of the channel plain:
 \begin{algorithmic}
-  \State $       m_1 \leftarrow   \frac{b_0}{2L_1}
+  \State $       m_1 \leftarrow   \frac{b_1}{2L_1}
   \qquad m_2 \leftarrow - \frac{\bDelta}{2L_2}
-  \qquad m_3 \leftarrow - \frac{\bL}{2L_3}
+  \qquad m_3 \leftarrow - \frac{b_2}{2L_3}
   $\vspace*{.5ex}
-  \State $           t_2 \leftarrow \frac{1}{2} \left( b_0 +  \frac{L_1}{L_2}\bDelta \right)
-  \qquad t_3 \leftarrow \frac{L \bL}{2 L_3 }
+  \State $           t_2 \leftarrow \frac{1}{2} \left( b_1 +  \frac{L_1}{L_2}\bDelta \right)
+  \qquad t_3 \leftarrow \frac{L b_2}{2 L_3 }
   $\vspace*{.5ex}
 \end{algorithmic}
 \subparagraph{3}
 Calculate area sections of the channel plain:
 \begin{algorithmic}
-  \State $       A_1 \leftarrow \frac{1}{2} b_0  L_1  
-  \qquad A_2 \leftarrow  \frac{1}{2} (b_0 + b_L) L_2  
-  \qquad A_3 \leftarrow \frac{1}{2} L_3\bL  
+  \State $       A_1 \leftarrow \frac{1}{2} b_1  L_1  
+  \qquad A_2 \leftarrow  \frac{1}{2} (b_1 + b_2) L_2  
+  \qquad A_3 \leftarrow \frac{1}{2} L_3b_2  
   $\vspace*{.5ex}
   \State $  \AL \leftarrow A_1 + A_2 + A_3
   $\vspace*{.5ex}
@@ -724,7 +735,14 @@ $\RDiff \\ \text{calculate}~\Delta = \left(  R_{\te} - R_D\right)^2$:
 \begin{algorithmic}
   \State $R_{\te} \leftarrow \frac{2 \CF w}{t_e} $
   \State $\lambda \leftarrow \frac{D A_z}{\Vc w}$
-  \State $R_D \leftarrow 6\lambda \left( \coth{\left( \frac{1}{2\lambda} \right) } - 2\lambda \right)$
+  \State $R_D \leftarrow 6\lambda 
+  \left(
+%   \coth{
+%  \left( \frac{1}{2\lambda}
+%  \right)
+% }
+ - 2\lambda 
+\right)$
   \State \Return $\left(R_{\te} - R_D\right)^2$
 \end{algorithmic}
 \clearpage
