@@ -523,6 +523,7 @@ $\bm{\zP}$\thinspace=\thinspace12\thinspace\%}
   \label{fig:calibRes_PS_VC0_5_16}
 \end{figure}
 \FloatBarrier
+\clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% 
 %%% Evaluated own results at z = 8 %
@@ -530,31 +531,33 @@ $\bm{\zP}$\thinspace=\thinspace12\thinspace\%}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Single results of calibration experiments with literature data, 
   $\bm{\zP}$\thinspace=\thinspace8\thinspace\%}
-\begin{figure}[H]
-  \begin{center}
-    \begin{subfigure}{.75\linewidth}
-%      \includegraphics[width=\linewidth]{\imgpath/Fig7/img_calibW_LitData1.pdf} 
-      \subcaption{$w$ for data from Table 3}
-    \end{subfigure}\\
-    \begin{subfigure}{.75\linewidth}
- %     \includegraphics[width=\linewidth]{\imgpath/Fig7/img_calibV_LitData1.pdf} 
-      \subcaption{$V$ for data from Table 3}
-    \end{subfigure}\\
-    \begin{subfigure}{.75\linewidth}
-  %    \includegraphics[width=\linewidth]{\imgpath/Fig7/img_calibW_LitData2.pdf} 
-      \subcaption{$w$ for data from Table 4}
-    \end{subfigure}\\
-    \begin{subfigure}{.75\linewidth}
-   %   \includegraphics[width=\linewidth]{\imgpath/Fig7/img_calibV_LitData2.pdf} 
-      \subcaption{$V$ for data from Table 4}
-    \end{subfigure}
-  \end{center}
-  \caption[Results of calibration algorithms with literature data
+\setcounter{subfigure}{0}
+\begin{minipage}{\linewidth}
+%  \begin{center}
+\centering
+    \begin{minipage}{.75\linewidth}
+      \includegraphics[width=\linewidth]{./images/data/eval_lit_p8/Lit1Data_w_8p.pdf}
+  %    \subcaption{$w$ for data from Table 3}
+    \end{minipage}\\
+    \begin{minipage}{.75\linewidth}
+      \includegraphics[width=\linewidth]{./images/data/eval_lit_p8/Lit1Data_V_8p.pdf}
+ %     \subcaption{$V$ for data from Table 3}
+    \end{minipage}\\
+    \begin{minipage}{.75\linewidth}
+      \includegraphics[width=\linewidth]{./images/data/eval_lit_p8/Lit2Data_w_8p.pdf}
+%      \subcaption{$w$ for data from Table 4}
+    \end{minipage}\\
+    \begin{minipage}{.75\linewidth}
+      \includegraphics[width=\linewidth]{./images/data/eval_lit_p8/Lit2Data_V_8p.pdf}
+      %\subcaption{$V$ for data from Table 4}  
+        \captionof{subfigure}[]{$w$ for data from Table}      
+    \end{minipage}
+%  \end{center}
+  \captionof{figure}[Results of calibration algorithms with literature data
   ]{Results of calibration algorithms with literature data}
   \label{fig:LitDataResults_p8}
-\end{figure}
+\end{minipage}
 \clearpage
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% 
 %%% Evaluated own results at z = 16 %
@@ -562,46 +565,49 @@ $\bm{\zP}$\thinspace=\thinspace12\thinspace\%}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Single results of calibration experiments with literature data, 
   $\bm{\zP}$\thinspace=\thinspace16\thinspace\%}
-
-\begin{figure}[H]
-  \begin{center}
-    \begin{subfigure}{.75\linewidth}
-      %      \includegraphics[width=\linewidth]{\imgpath/Fig7/img_calibW_LitData1.pdf} 
-      \subcaption{$w$ for data from Table 3}
-    \end{subfigure}\\
-    \begin{subfigure}{.75\linewidth}
-      %     \includegraphics[width=\linewidth]{\imgpath/Fig7/img_calibV_LitData1.pdf} 
-      \subcaption{$V$ for data from Table 3}
-    \end{subfigure}\\
-    \begin{subfigure}{.75\linewidth}
-      %    \includegraphics[width=\linewidth]{\imgpath/Fig7/img_calibW_LitData2.pdf} 
-      \subcaption{$w$ for data from Table 4}
-    \end{subfigure}\\
-    \begin{subfigure}{.75\linewidth}
-      %   \includegraphics[width=\linewidth]{\imgpath/Fig7/img_calibV_LitData2.pdf} 
-      \subcaption{$V$ for data from Table 4}
-    \end{subfigure}
-  \end{center}
-  \caption[Results of calibration algorithms with literature data
+\setcounter{subfigure}{0}
+\begin{minipage}{\linewidth}
+  %  \begin{center}
+  \centering
+  \begin{minipage}{.75\linewidth}
+    \includegraphics[width=\linewidth]{./images/data/eval_lit_p16/Lit1Data_w_16p.pdf}
+    %    \subcaption{$w$ for data from Table 3}
+  \end{minipage}\\
+  \begin{minipage}{.75\linewidth}
+    \includegraphics[width=\linewidth]{./images/data/eval_lit_p16/Lit1Data_V_16p.pdf}
+    %     \subcaption{$V$ for data from Table 3}
+  \end{minipage}\\
+  \begin{minipage}{.75\linewidth}
+    \includegraphics[width=\linewidth]{./images/data/eval_lit_p16/Lit2Data_w_16p.pdf}
+    %      \subcaption{$w$ for data from Table 4}
+  \end{minipage}\\
+  \begin{minipage}{.75\linewidth}
+    \includegraphics[width=\linewidth]{./images/data/eval_lit_p16/Lit2Data_V_16p.pdf}
+    %\subcaption{$V$ for data from Table 4}  
+    \captionof{subfigure}[]{$w$ for data from Table}      
+  \end{minipage}
+  %  \end{center}
+  \captionof{figure}[Results of calibration algorithms with literature data
   ]{Results of calibration algorithms with literature data}
-  \label{fig:LitDataResults_p16}
-\end{figure}
-
-\FloatBarrier
+  \label{fig:LitDataResults_p8}
+\end{minipage}
 %\clearpage
 \newgeometry{margin=1.3cm}
 %\needspace{20em}
 \section*{Deviation influences}
 %\lipsum
-\begin{figure}[H]
-  \begin{center}
+%\begin{figure}[H]
+ % \begin{center}
+  \begin{minipage}{\linewidth}
     \includegraphics[width=.925\linewidth]{./images/deltaAnalysis.pdf}
-  \end{center}
+  %\end{center}
   \vspace*{-3ex}
-  \caption[Parameter deviation analysis, example for sample BSA\_VC2\_5\_r1]{Parameter deviation analysis, example for sample 
+  \captionof{figure}[Parameter deviation analysis, example for sample BSA\_VC2\_5\_r1]{Parameter deviation analysis, 
+  example for sample 
   BSA\_VC2\_5\_r1}
   \label{fig:DeviationAnalysis}
-\end{figure}
+  \end{minipage}
+%\end{figure}
 \FloatBarrier
 \restoregeometry
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

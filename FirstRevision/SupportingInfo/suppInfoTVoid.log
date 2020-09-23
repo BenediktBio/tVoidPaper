@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.21)  22 SEP 2020 20:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.21)  23 SEP 2020 22:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3735,6 +3735,9 @@ LaTeX Warning: Label `subfig:calibRes_BSA_VC3_5_w' multiply defined.
 
 LaTeX Warning: Label `sub@subfig:calibRes_BSA_VC3_5_w' multiply defined.
 
+
+LaTeX Warning: Label `fig:LitDataResults_p8' multiply defined.
+
 )
 \openout1 = `suppInfoTVoid.aux'.
 
@@ -4910,9 +4913,125 @@ e page
 pdfTeX warning: /usr/bin/pdflatex (file ./images/data/eval_own_p16/calibV_PS_VC
 _0_5_p16.pdf): PDF inclusion: multiple pdfs with page group included in a singl
 e page
->] [30] [31
+>]
+<./images/data/eval_lit_p8/Lit1Data_w_8p.pdf, id=2019, 826.08624pt x 328.22626p
+t>
+File: ./images/data/eval_lit_p8/Lit1Data_w_8p.pdf Graphic file (type pdf)
+ <use ./images/data/eval_lit_p8/Lit1Data_w_8p.pdf>
+Package pdftex.def Info: ./images/data/eval_lit_p8/Lit1Data_w_8p.pdf used on in
+put line 539.
+(pdftex.def)             Requested size: 367.04056pt x 145.83734pt.
 
-]
+<./images/data/eval_lit_p8/Lit1Data_V_8p.pdf, id=2020, 856.357pt x 328.53091pt>
+File: ./images/data/eval_lit_p8/Lit1Data_V_8p.pdf Graphic file (type pdf)
+<use ./images/data/eval_lit_p8/Lit1Data_V_8p.pdf>
+Package pdftex.def Info: ./images/data/eval_lit_p8/Lit1Data_V_8p.pdf used on in
+put line 543.
+(pdftex.def)             Requested size: 367.04056pt x 140.80934pt.
+
+<./images/data/eval_lit_p8/Lit2Data_w_8p.pdf, id=2021, 825.7485pt x 328.53091pt
+>
+File: ./images/data/eval_lit_p8/Lit2Data_w_8p.pdf Graphic file (type pdf)
+ <use ./images/data/eval_lit_p8/Lit2Data_w_8p.pdf>
+Package pdftex.def Info: ./images/data/eval_lit_p8/Lit2Data_w_8p.pdf used on in
+put line 547.
+(pdftex.def)             Requested size: 367.04056pt x 146.03287pt.
+
+<./images/data/eval_lit_p8/Lit2Data_V_8p.pdf, id=2022, 826.08624pt x 328.22626p
+t>
+File: ./images/data/eval_lit_p8/Lit2Data_V_8p.pdf Graphic file (type pdf)
+ <use ./images/data/eval_lit_p8/Lit2Data_V_8p.pdf>
+Package pdftex.def Info: ./images/data/eval_lit_p8/Lit2Data_V_8p.pdf used on in
+put line 551.
+(pdftex.def)             Requested size: 367.04056pt x 145.83734pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 553.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 557.
+See the caption package documentation for explanation.
+
+[30
+
+ <./images/data/eval_lit_p8/Lit1Data_w_8p.pdf> <./images/data/eval_lit_p8/Lit1D
+ata_V_8p.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./images/data/eval_lit_p8/Lit1Data_V_8p
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./images/data/eval_lit_p8/Lit2Data_w_8p.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./images/data/eval_lit_p8/Lit2Data_w_8p
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./images/data/eval_lit_p8/Lit2Data_V_8p.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./images/data/eval_lit_p8/Lit2Data_V_8p
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<./images/data/eval_lit_p16/Lit1Data_w_16p.pdf, id=2442, 826.08624pt x 328.2262
+6pt>
+File: ./images/data/eval_lit_p16/Lit1Data_w_16p.pdf Graphic file (type pdf)
+ <use ./images/data/eval_lit_p16/Lit1Data_w_16p.pdf>
+Package pdftex.def Info: ./images/data/eval_lit_p16/Lit1Data_w_16p.pdf used on 
+input line 573.
+(pdftex.def)             Requested size: 367.04056pt x 145.83734pt.
+
+<./images/data/eval_lit_p16/Lit1Data_V_16p.pdf, id=2443, 856.19875pt x 328.2262
+6pt>
+File: ./images/data/eval_lit_p16/Lit1Data_V_16p.pdf Graphic file (type pdf)
+ <use ./images/data/eval_lit_p16/Lit1Data_V_16p.pdf>
+Package pdftex.def Info: ./images/data/eval_lit_p16/Lit1Data_V_16p.pdf used on 
+input line 577.
+(pdftex.def)             Requested size: 367.04056pt x 140.70381pt.
+
+<./images/data/eval_lit_p16/Lit2Data_w_16p.pdf, id=2444, 826.08624pt x 328.2262
+6pt>
+File: ./images/data/eval_lit_p16/Lit2Data_w_16p.pdf Graphic file (type pdf)
+ <use ./images/data/eval_lit_p16/Lit2Data_w_16p.pdf>
+Package pdftex.def Info: ./images/data/eval_lit_p16/Lit2Data_w_16p.pdf used on 
+input line 581.
+(pdftex.def)             Requested size: 367.04056pt x 145.83734pt.
+
+<./images/data/eval_lit_p16/Lit2Data_V_16p.pdf, id=2445, 826.08624pt x 328.2262
+6pt>
+File: ./images/data/eval_lit_p16/Lit2Data_V_16p.pdf Graphic file (type pdf)
+ <use ./images/data/eval_lit_p16/Lit2Data_V_16p.pdf>
+Package pdftex.def Info: ./images/data/eval_lit_p16/Lit2Data_V_16p.pdf used on 
+input line 585.
+(pdftex.def)             Requested size: 367.04056pt x 145.83734pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 587.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 591.
+See the caption package documentation for explanation.
+
+[31
+
+ <./images/data/eval_lit_p16/Lit1Data_w_16p.pdf> <./images/data/eval_lit_p16/Li
+t1Data_V_16p.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./images/data/eval_lit_p16/Lit1Data_V_1
+6p.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+
+> <./images/data/eval_lit_p16/Lit2Data_w_16p.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./images/data/eval_lit_p16/Lit2Data_w_1
+6p.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+
+> <./images/data/eval_lit_p16/Lit2Data_V_16p.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./images/data/eval_lit_p16/Lit2Data_V_1
+6p.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+
+>]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -4945,14 +5064,19 @@ e page
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-<./images/deltaAnalysis.pdf, id=2032, 4321.99458pt x 6272.85132pt>
+ <./images/deltaAnalysis.pdf, id=2866, 4396.06624pt x 6383.4084pt>
 File: ./images/deltaAnalysis.pdf Graphic file (type pdf)
 
 <use ./images/deltaAnalysis.pdf>
-Package pdftex.def Info: ./images/deltaAnalysis.pdf used on input line 598.
-(pdftex.def)             Requested size: 484.26735pt x 702.84172pt.
- [32
+Package pdftex.def Info: ./images/deltaAnalysis.pdf used on input line 602.
+(pdftex.def)             Requested size: 484.26735pt x 703.15114pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 607.
+See the caption package documentation for explanation.
+
+[32
 
  <./images/deltaAnalysis.pdf>]) [33
 
@@ -4982,10 +5106,10 @@ Package logreq Info: Writing requests to 'suppInfoTVoid.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 53945 strings out of 493013
- 1049346 string characters out of 6135682
+ 53988 strings out of 493013
+ 1051086 string characters out of 6135682
  1573158 words of memory out of 5000000
- 56301 multiletter control sequences out of 15000+600000
+ 56332 multiletter control sequences out of 15000+600000
  133797 words of font info for 134 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  65i,22n,77p,10413b,1733s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -5008,10 +5132,10 @@ hare/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/tex
 mf/fonts/type1/public/tex-gyre/qcsr.pfb>
-Output written on suppInfoTVoid.pdf (35 pages, 2437174 bytes).
+Output written on suppInfoTVoid.pdf (35 pages, 2558161 bytes).
 PDF statistics:
- 2768 PDF objects out of 2984 (max. 8388607)
- 1950 compressed objects within 20 object streams
- 204 named destinations out of 1000 (max. 500000)
- 24388 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 3594 PDF objects out of 4296 (max. 8388607)
+ 2501 compressed objects within 26 object streams
+ 206 named destinations out of 1000 (max. 500000)
+ 24428 words of extra memory for PDF output out of 24883 (max. 10000000)
 
