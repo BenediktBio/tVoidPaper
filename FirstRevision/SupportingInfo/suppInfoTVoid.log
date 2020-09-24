@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.21)  23 SEP 2020 22:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.21)  24 SEP 2020 20:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5064,12 +5064,12 @@ pdfTeX warning: /usr/bin/pdflatex (file ./images/data/eval_lit_p16/Lit2Data_V_1
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- <./images/deltaAnalysis.pdf, id=2866, 4396.06624pt x 6383.4084pt>
+ <./images/deltaAnalysis.pdf, id=2866, 4423.84335pt x 6315.08969pt>
 File: ./images/deltaAnalysis.pdf Graphic file (type pdf)
 
 <use ./images/deltaAnalysis.pdf>
 Package pdftex.def Info: ./images/deltaAnalysis.pdf used on input line 602.
-(pdftex.def)             Requested size: 484.26735pt x 703.15114pt.
+(pdftex.def)             Requested size: 484.26735pt x 691.28941pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
@@ -5078,15 +5078,14 @@ See the caption package documentation for explanation.
 
 [32
 
- <./images/deltaAnalysis.pdf>]) [33
-
-]
+ <./images/deltaAnalysis.pdf>])
 chapter 7.
-(./AF4program.tex) [34
+(./AF4program.tex) [33
+
 
 ] 
 AED: lastpage setting LastPage
-[35
+[34
 
 
 ]
@@ -5106,36 +5105,35 @@ Package logreq Info: Writing requests to 'suppInfoTVoid.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 53988 strings out of 493013
- 1051086 string characters out of 6135682
+ 53983 strings out of 493013
+ 1051013 string characters out of 6135682
  1573158 words of memory out of 5000000
  56332 multiletter control sequences out of 15000+600000
  133797 words of font info for 134 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  65i,22n,77p,10413b,1733s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/shar
-e/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
-m-mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn0600
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/shar
+e/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
+m-mathit.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn0600
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts
 /type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-r5.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/tex
-mf/fonts/type1/public/tex-gyre/qcsr.pfb>
-Output written on suppInfoTVoid.pdf (35 pages, 2558161 bytes).
+/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmr5.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbol
+s/msam10.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qcsr.pfb>
+Output written on suppInfoTVoid.pdf (34 pages, 2543833 bytes).
 PDF statistics:
- 3594 PDF objects out of 4296 (max. 8388607)
- 2501 compressed objects within 26 object streams
- 206 named destinations out of 1000 (max. 500000)
+ 3559 PDF objects out of 3580 (max. 8388607)
+ 2476 compressed objects within 25 object streams
+ 201 named destinations out of 1000 (max. 500000)
  24428 words of extra memory for PDF output out of 24883 (max. 10000000)
 
