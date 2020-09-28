@@ -1437,9 +1437,9 @@
      showgrid="false"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
-     inkscape:cy="21.495533"
-     inkscape:cx="-32.13443"
-     inkscape:zoom="1"
+     inkscape:cy="-22.140476"
+     inkscape:cx="121.57593"
+     inkscape:zoom="1.4142136"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -1537,7 +1537,7 @@
          id="tspan6731"
          x="78.566887"
          y="60.225967"
-         style="fill:#1d1d1d;fill-opacity:1;stroke:none;stroke-width:2.06699991;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">y</tspan></text>
+         style="fill:#1d1d1d;fill-opacity:1;stroke:none;stroke-width:2.06699991;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-style:italic;-inkscape-font-specification:'TeXGyreSchola Italic';font-family:TeXGyreSchola;font-weight:normal;font-stretch:normal;font-variant:normal">y</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:18.66666603px;line-height:1.25;font-family:sans-serif;letter-spacing:-0.38px;word-spacing:0px;fill:#1d1d1d;fill-opacity:1;stroke:none;stroke-width:2.06699991;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1548,7 +1548,7 @@
          id="tspan6731-6"
          x="102.58899"
          y="88.483124"
-         style="fill:#1d1d1d;fill-opacity:1;stroke:none;stroke-width:2.06699991;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">x</tspan></text>
+         style="fill:#1d1d1d;fill-opacity:1;stroke:none;stroke-width:2.06699991;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-style:italic;-inkscape-font-specification:'TeXGyreSchola Italic';font-family:TeXGyreSchola;font-weight:normal;font-stretch:normal;font-variant:normal">x</tspan></text>
     <path
        sodipodi:nodetypes="cccccc"
        inkscape:connector-curvature="0"
@@ -1817,7 +1817,7 @@
          y="25.846537"
          x="625.94678"
          id="tspan5273-3-3"
-         sodipodi:role="line">V<tspan
+         sodipodi:role="line">v<tspan
    style="font-style:normal;font-size:64.99999762%;baseline-shift:sub"
    id="tspan5405"
    dx="-5">c</tspan>(y,z)</tspan></text>
@@ -1827,7 +1827,7 @@
        x="142.2065"
        style="font-style:normal;font-weight:normal;font-size:18.66666603px;line-height:1.25;font-family:sans-serif;letter-spacing:-0.38px;word-spacing:0px;fill:#1d1d1d;fill-opacity:1;stroke:none;stroke-width:2.06699991;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        xml:space="preserve"><tspan
-         style="fill:#1d1d1d;fill-opacity:1;stroke:none;stroke-width:2.06699991;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:#1d1d1d;fill-opacity:1;stroke:none;stroke-width:2.06699991;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-style:italic;-inkscape-font-specification:'TeXGyreSchola Italic';font-family:TeXGyreSchola;font-weight:normal;font-stretch:normal;font-variant:normal"
          y="119.38029"
          x="142.2065"
          id="tspan5409"

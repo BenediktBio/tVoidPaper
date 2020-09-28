@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.21)  24 SEP 2020 20:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.21)  28 SEP 2020 21:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1047,7 +1047,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count112
 \LT@p@ftn=\toks29
 )
-Class scrreprt Info: longtable captions redefined on input line 63.
+Class scrreprt Info: longtable captions redefined on input line 65.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
@@ -3735,9 +3735,6 @@ LaTeX Warning: Label `subfig:calibRes_BSA_VC3_5_w' multiply defined.
 
 LaTeX Warning: Label `sub@subfig:calibRes_BSA_VC3_5_w' multiply defined.
 
-
-LaTeX Warning: Label `fig:LitDataResults_p8' multiply defined.
-
 )
 \openout1 = `suppInfoTVoid.aux'.
 
@@ -4922,12 +4919,26 @@ Package pdftex.def Info: ./images/data/eval_lit_p8/Lit1Data_w_8p.pdf used on in
 put line 539.
 (pdftex.def)             Requested size: 367.04056pt x 145.83734pt.
 
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 540.
+See the caption package documentation for explanation.
+
+Package hyperref Info: bookmark level for unknown subfigure defaults to 0 on in
+put line 540.
+
 <./images/data/eval_lit_p8/Lit1Data_V_8p.pdf, id=2020, 856.357pt x 328.53091pt>
 File: ./images/data/eval_lit_p8/Lit1Data_V_8p.pdf Graphic file (type pdf)
 <use ./images/data/eval_lit_p8/Lit1Data_V_8p.pdf>
 Package pdftex.def Info: ./images/data/eval_lit_p8/Lit1Data_V_8p.pdf used on in
 put line 543.
 (pdftex.def)             Requested size: 367.04056pt x 140.80934pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 544.
+See the caption package documentation for explanation.
+
 
 <./images/data/eval_lit_p8/Lit2Data_w_8p.pdf, id=2021, 825.7485pt x 328.53091pt
 >
@@ -4936,6 +4947,12 @@ File: ./images/data/eval_lit_p8/Lit2Data_w_8p.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./images/data/eval_lit_p8/Lit2Data_w_8p.pdf used on in
 put line 547.
 (pdftex.def)             Requested size: 367.04056pt x 146.03287pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 548.
+See the caption package documentation for explanation.
+
 
 <./images/data/eval_lit_p8/Lit2Data_V_8p.pdf, id=2022, 826.08624pt x 328.22626p
 t>
@@ -4947,7 +4964,7 @@ put line 551.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 553.
+(caption)                particular \caption on input line 552.
 See the caption package documentation for explanation.
 
 
@@ -4971,7 +4988,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./images/data/eval_lit_p8/Lit2Data_w_8p
 pdfTeX warning: /usr/bin/pdflatex (file ./images/data/eval_lit_p8/Lit2Data_V_8p
 .pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<./images/data/eval_lit_p16/Lit1Data_w_16p.pdf, id=2442, 826.08624pt x 328.2262
+<./images/data/eval_lit_p16/Lit1Data_w_16p.pdf, id=2445, 826.08624pt x 328.2262
 6pt>
 File: ./images/data/eval_lit_p16/Lit1Data_w_16p.pdf Graphic file (type pdf)
  <use ./images/data/eval_lit_p16/Lit1Data_w_16p.pdf>
@@ -4979,38 +4996,56 @@ Package pdftex.def Info: ./images/data/eval_lit_p16/Lit1Data_w_16p.pdf used on
 input line 573.
 (pdftex.def)             Requested size: 367.04056pt x 145.83734pt.
 
-<./images/data/eval_lit_p16/Lit1Data_V_16p.pdf, id=2443, 856.19875pt x 328.2262
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 574.
+See the caption package documentation for explanation.
+
+
+<./images/data/eval_lit_p16/Lit1Data_V_16p.pdf, id=2446, 856.19875pt x 328.2262
 6pt>
 File: ./images/data/eval_lit_p16/Lit1Data_V_16p.pdf Graphic file (type pdf)
  <use ./images/data/eval_lit_p16/Lit1Data_V_16p.pdf>
 Package pdftex.def Info: ./images/data/eval_lit_p16/Lit1Data_V_16p.pdf used on 
-input line 577.
+input line 578.
 (pdftex.def)             Requested size: 367.04056pt x 140.70381pt.
 
-<./images/data/eval_lit_p16/Lit2Data_w_16p.pdf, id=2444, 826.08624pt x 328.2262
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 579.
+See the caption package documentation for explanation.
+
+
+<./images/data/eval_lit_p16/Lit2Data_w_16p.pdf, id=2447, 826.08624pt x 328.2262
 6pt>
 File: ./images/data/eval_lit_p16/Lit2Data_w_16p.pdf Graphic file (type pdf)
  <use ./images/data/eval_lit_p16/Lit2Data_w_16p.pdf>
 Package pdftex.def Info: ./images/data/eval_lit_p16/Lit2Data_w_16p.pdf used on 
-input line 581.
+input line 583.
 (pdftex.def)             Requested size: 367.04056pt x 145.83734pt.
 
-<./images/data/eval_lit_p16/Lit2Data_V_16p.pdf, id=2445, 826.08624pt x 328.2262
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 584.
+See the caption package documentation for explanation.
+
+
+<./images/data/eval_lit_p16/Lit2Data_V_16p.pdf, id=2448, 826.08624pt x 328.2262
 6pt>
 File: ./images/data/eval_lit_p16/Lit2Data_V_16p.pdf Graphic file (type pdf)
  <use ./images/data/eval_lit_p16/Lit2Data_V_16p.pdf>
 Package pdftex.def Info: ./images/data/eval_lit_p16/Lit2Data_V_16p.pdf used on 
-input line 585.
+input line 588.
 (pdftex.def)             Requested size: 367.04056pt x 145.83734pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 587.
+(caption)                particular \caption on input line 590.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 591.
+(caption)                particular \caption on input line 594.
 See the caption package documentation for explanation.
 
 [31
@@ -5064,16 +5099,16 @@ pdfTeX warning: /usr/bin/pdflatex (file ./images/data/eval_lit_p16/Lit2Data_V_1
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- <./images/deltaAnalysis.pdf, id=2866, 4423.84335pt x 6315.08969pt>
+ <./images/deltaAnalysis.pdf, id=2872, 4423.84335pt x 6315.08969pt>
 File: ./images/deltaAnalysis.pdf Graphic file (type pdf)
 
 <use ./images/deltaAnalysis.pdf>
-Package pdftex.def Info: ./images/deltaAnalysis.pdf used on input line 602.
+Package pdftex.def Info: ./images/deltaAnalysis.pdf used on input line 605.
 (pdftex.def)             Requested size: 484.26735pt x 691.28941pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 607.
+(caption)                particular \caption on input line 610.
 See the caption package documentation for explanation.
 
 [32
@@ -5105,9 +5140,9 @@ Package logreq Info: Writing requests to 'suppInfoTVoid.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 53983 strings out of 493013
- 1051013 string characters out of 6135682
- 1573158 words of memory out of 5000000
+ 53989 strings out of 493013
+ 1051081 string characters out of 6135682
+ 1573216 words of memory out of 5000000
  56332 multiletter control sequences out of 15000+600000
  133797 words of font info for 134 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
@@ -5130,10 +5165,10 @@ blic/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbol
 s/msam10.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qcsr.pfb>
-Output written on suppInfoTVoid.pdf (34 pages, 2543833 bytes).
+Output written on suppInfoTVoid.pdf (34 pages, 2544485 bytes).
 PDF statistics:
- 3559 PDF objects out of 3580 (max. 8388607)
- 2476 compressed objects within 25 object streams
- 201 named destinations out of 1000 (max. 500000)
+ 3566 PDF objects out of 3580 (max. 8388607)
+ 2483 compressed objects within 25 object streams
+ 207 named destinations out of 1000 (max. 500000)
  24428 words of extra memory for PDF output out of 24883 (max. 10000000)
 

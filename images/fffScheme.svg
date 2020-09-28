@@ -5,10 +5,31 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    id="svg2"
    height="345.50665"
-   width="795.58887">
+   width="795.58887"
+   sodipodi:docname="fffScheme.svg"
+   inkscape:version="0.92.1 r15371">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview277"
+     showgrid="false"
+     inkscape:zoom="3.4181686"
+     inkscape:cx="555.30015"
+     inkscape:cy="289.76485"
+     inkscape:current-layer="layer1" />
   <defs
      id="defs4">
     <marker
@@ -1025,7 +1046,7 @@
          x="135.67314"
          id="tspan15872-5">b<tspan
    id="tspan4306"
-   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.53902721px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman,  Italic';baseline-shift:sub;stroke-width:1.06666672">0</tspan></tspan></text>
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.53902721px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Italic';baseline-shift:sub;stroke-width:1.06666672">1</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.80000019px;line-height:0%;font-family:cmr10;-inkscape-font-specification:cmr10;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.06666672"
@@ -1037,7 +1058,7 @@
          y="-131.78461"
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.82897949px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman,  Italic';stroke-width:1.06666672">b<tspan
    id="tspan4314"
-   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.53902721px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman,  Italic';baseline-shift:sub;stroke-width:1.06666672">L</tspan></tspan></text>
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.53902721px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Italic';baseline-shift:sub;stroke-width:1.06666672">2</tspan></tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#TriangleInM-2-3-2);marker-end:url(#TriangleInM-2-3-2)"
        d="m 736.07748,-105.91235 c 2.84437,-2.11252 5.13134,-3.81106 6.97009,-5.17669 7.67788,-5.70238 7.541,-5.60071 7.541,-5.60071"
@@ -1113,7 +1134,7 @@
          x="256.31763"
          id="tspan8430-9">L<tspan
    id="tspan4675"
-   style="font-size:15.70763588px;baseline-shift:sub;stroke-width:3.38996959">2</tspan></tspan></text>
+   style="font-size:15.70763588px;baseline-shift:sub;stroke-width:3.38996959;font-style:normal">2</tspan></tspan></text>
     <text
        transform="scale(0.96506587,1.0361987)"
        id="text8428-2-3"
@@ -1126,7 +1147,7 @@
          x="127.99856"
          id="tspan8430-9-6">L<tspan
    id="tspan4698"
-   style="font-size:64.99999762%;baseline-shift:sub">1</tspan></tspan></text>
+   style="font-size:64.99999762%;baseline-shift:sub;font-style:normal">1</tspan></tspan></text>
     <path
        id="path3782-9-56-2"
        d="m 757.72156,-80.649745 10.36788,-0.09482"
@@ -1143,7 +1164,7 @@
          x="783.17358"
          id="tspan8430-9-1">L<tspan
    id="tspan11820"
-   style="font-size:65%;baseline-shift:sub">3</tspan></tspan></text>
+   style="font-size:65%;baseline-shift:sub;font-style:normal">3</tspan></tspan></text>
     <text
        id="text5108"
        y="3.547389"

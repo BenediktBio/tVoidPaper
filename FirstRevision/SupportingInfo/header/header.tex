@@ -46,6 +46,8 @@ fontsize=11pt, expansion=false]{scrreprt}
 \renewcommand{\thetable}{S.\thechapter.\arabic{table}}
 \renewcommand{\theequation}{S.\thechapter.\arabic{equation}}
 \usepackage[font={footnotesize}]{subcaption}
+\DeclareCaptionLabelFormat{enclosed}{(#2)}
+\captionsetup[subfigure]{labelformat=enclosed,labelsep=space}
 \usepackage{booktabs}            %% formatting of tables
 \newcommand{\closedtoprule}{\specialrule{\heavyrulewidth}{\abovetopsep}{\belowrulesep}}
 \newcommand{\closedbottomrule}{\specialrule{\heavyrulewidth}{\aboverulesep}{\belowbottomsep}}
