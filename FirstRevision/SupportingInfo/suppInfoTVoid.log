@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.21)  28 SEP 2020 21:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.21)  11 OCT 2020 21:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4320,7 +4320,7 @@ File: ./images/data/rawPlots/img_BSA_VC_2_5_r1_te.pdf Graphic file (type pdf)
  <use ./images/data/rawPlots/img_BSA_VC_2_5_r1_te.pdf>
 Package pdftex.def Info: ./images/data/rawPlots/img_BSA_VC_2_5_r1_te.pdf used o
 n input line 17.
-(pdftex.def)             Requested size: 220.22284pt x 146.81497pt.
+(pdftex.def)             Requested size: 200.65062pt x 133.76408pt.
 
 <./images/data/rawPlots/img_BSA_VC_2_5_r1_t0.pdf, id=338, 991.2816pt x 661.2048
 2pt>
@@ -4328,7 +4328,7 @@ File: ./images/data/rawPlots/img_BSA_VC_2_5_r1_t0.pdf Graphic file (type pdf)
  <use ./images/data/rawPlots/img_BSA_VC_2_5_r1_t0.pdf>
 Package pdftex.def Info: ./images/data/rawPlots/img_BSA_VC_2_5_r1_t0.pdf used o
 n input line 22.
-(pdftex.def)             Requested size: 220.22284pt x 146.88808pt.
+(pdftex.def)             Requested size: 200.65062pt x 133.8327pt.
 
 <./images/data/rawPlots/img_BSA_VC_2_5_r2_te.pdf, id=341, 990.70125pt x 660.467
 5pt>
@@ -4336,7 +4336,7 @@ File: ./images/data/rawPlots/img_BSA_VC_2_5_r2_te.pdf Graphic file (type pdf)
  <use ./images/data/rawPlots/img_BSA_VC_2_5_r2_te.pdf>
 Package pdftex.def Info: ./images/data/rawPlots/img_BSA_VC_2_5_r2_te.pdf used o
 n input line 29.
-(pdftex.def)             Requested size: 220.22284pt x 146.81497pt.
+(pdftex.def)             Requested size: 200.65062pt x 133.76408pt.
 
 <./images/data/rawPlots/img_BSA_VC_2_5_r2_t0.pdf, id=342, 990.70125pt x 660.467
 5pt>
@@ -4344,7 +4344,7 @@ File: ./images/data/rawPlots/img_BSA_VC_2_5_r2_t0.pdf Graphic file (type pdf)
  <use ./images/data/rawPlots/img_BSA_VC_2_5_r2_t0.pdf>
 Package pdftex.def Info: ./images/data/rawPlots/img_BSA_VC_2_5_r2_t0.pdf used o
 n input line 34.
-(pdftex.def)             Requested size: 220.22284pt x 146.81497pt.
+(pdftex.def)             Requested size: 200.65062pt x 133.76408pt.
 
 <./images/data/rawPlots/img_BSA_VC_2_5_r3_te.pdf, id=345, 990.70125pt x 660.467
 5pt>
@@ -4352,7 +4352,7 @@ File: ./images/data/rawPlots/img_BSA_VC_2_5_r3_te.pdf Graphic file (type pdf)
  <use ./images/data/rawPlots/img_BSA_VC_2_5_r3_te.pdf>
 Package pdftex.def Info: ./images/data/rawPlots/img_BSA_VC_2_5_r3_te.pdf used o
 n input line 41.
-(pdftex.def)             Requested size: 220.22284pt x 146.81497pt.
+(pdftex.def)             Requested size: 200.65062pt x 133.76408pt.
 
 <./images/data/rawPlots/img_BSA_VC_2_5_r3_t0.pdf, id=346, 990.70125pt x 660.467
 5pt>
@@ -4360,7 +4360,7 @@ File: ./images/data/rawPlots/img_BSA_VC_2_5_r3_t0.pdf Graphic file (type pdf)
  <use ./images/data/rawPlots/img_BSA_VC_2_5_r3_t0.pdf>
 Package pdftex.def Info: ./images/data/rawPlots/img_BSA_VC_2_5_r3_t0.pdf used o
 n input line 46.
-(pdftex.def)             Requested size: 220.22284pt x 146.81497pt.
+(pdftex.def)             Requested size: 200.65062pt x 133.76408pt.
 
 <./images/data/rawPlots/img_BSA_VC_3_5_r1_te.pdf, id=349, 990.70125pt x 660.467
 5pt>
@@ -4368,13 +4368,13 @@ File: ./images/data/rawPlots/img_BSA_VC_3_5_r1_te.pdf Graphic file (type pdf)
  <use ./images/data/rawPlots/img_BSA_VC_3_5_r1_te.pdf>
 Package pdftex.def Info: ./images/data/rawPlots/img_BSA_VC_3_5_r1_te.pdf used o
 n input line 63.
-(pdftex.def)             Requested size: 220.22284pt x 146.81497pt.
+(pdftex.def)             Requested size: 200.65062pt x 133.76408pt.
 File: ./images/data/rawPlots/img_BSA_VC_2_5_r1_t0.pdf Graphic file (type pdf)
 
 <use ./images/data/rawPlots/img_BSA_VC_2_5_r1_t0.pdf>
 Package pdftex.def Info: ./images/data/rawPlots/img_BSA_VC_2_5_r1_t0.pdf used o
 n input line 68.
-(pdftex.def)             Requested size: 220.22284pt x 146.88808pt.
+(pdftex.def)             Requested size: 200.65062pt x 133.8327pt.
 
 <./images/data/rawPlots/img_BSA_VC_3_5_r2_te.pdf, id=352, 990.70125pt x 660.467
 5pt>
@@ -4382,7 +4382,7 @@ File: ./images/data/rawPlots/img_BSA_VC_3_5_r2_te.pdf Graphic file (type pdf)
  <use ./images/data/rawPlots/img_BSA_VC_3_5_r2_te.pdf>
 Package pdftex.def Info: ./images/data/rawPlots/img_BSA_VC_3_5_r2_te.pdf used o
 n input line 75.
-(pdftex.def)             Requested size: 220.22284pt x 146.81497pt.
+(pdftex.def)             Requested size: 200.65062pt x 133.76408pt.
 
 <./images/data/rawPlots/img_BSA_VC_3_5_r2_t0.pdf, id=353, 990.70125pt x 660.467
 5pt>
@@ -4390,7 +4390,7 @@ File: ./images/data/rawPlots/img_BSA_VC_3_5_r2_t0.pdf Graphic file (type pdf)
  <use ./images/data/rawPlots/img_BSA_VC_3_5_r2_t0.pdf>
 Package pdftex.def Info: ./images/data/rawPlots/img_BSA_VC_3_5_r2_t0.pdf used o
 n input line 80.
-(pdftex.def)             Requested size: 220.22284pt x 146.81497pt.
+(pdftex.def)             Requested size: 200.65062pt x 133.76408pt.
 
 <./images/data/rawPlots/img_BSA_VC_3_5_r3_te.pdf, id=356, 990.70125pt x 660.467
 5pt>
@@ -4398,52 +4398,13 @@ File: ./images/data/rawPlots/img_BSA_VC_3_5_r3_te.pdf Graphic file (type pdf)
  <use ./images/data/rawPlots/img_BSA_VC_3_5_r3_te.pdf>
 Package pdftex.def Info: ./images/data/rawPlots/img_BSA_VC_3_5_r3_te.pdf used o
 n input line 87.
-(pdftex.def)             Requested size: 220.22284pt x 146.81497pt.
+(pdftex.def)             Requested size: 200.65062pt x 133.76408pt.
 File: ./images/data/rawPlots/img_BSA_VC_2_5_r3_t0.pdf Graphic file (type pdf)
 
 <use ./images/data/rawPlots/img_BSA_VC_2_5_r3_t0.pdf>
 Package pdftex.def Info: ./images/data/rawPlots/img_BSA_VC_2_5_r3_t0.pdf used o
 n input line 92.
-(pdftex.def)             Requested size: 220.22284pt x 146.81497pt.
-
-<./images/data/rawPlots/img_PS_VC_05_rep1_te_UV.pdf, id=359, 990.70125pt x 660.
-4675pt>
-File: ./images/data/rawPlots/img_PS_VC_05_rep1_te_UV.pdf Graphic file (type pdf
-)
- <use ./images/data/rawPlots/img_PS_VC_05_rep1_te_UV.pdf>
-Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep1_te_UV.pdf use
-d on input line 109.
-(pdftex.def)             Requested size: 220.22284pt x 146.81497pt.
-
-<./images/data/rawPlots/img_PS_VC_05_rep1_t0_UV.pdf, id=360, 990.70125pt x 660.
-4675pt>
-File: ./images/data/rawPlots/img_PS_VC_05_rep1_t0_UV.pdf Graphic file (type pdf
-)
- <use ./images/data/rawPlots/img_PS_VC_05_rep1_t0_UV.pdf>
-Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep1_t0_UV.pdf use
-d on input line 114.
-(pdftex.def)             Requested size: 220.22284pt x 146.81497pt.
-
-<./images/data/rawPlots/img_PS_VC_05_rep1_te_RI.pdf, id=363, 990.70125pt x 660.
-4675pt>
-File: ./images/data/rawPlots/img_PS_VC_05_rep1_te_RI.pdf Graphic file (type pdf
-)
- <use ./images/data/rawPlots/img_PS_VC_05_rep1_te_RI.pdf>
-Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep1_te_RI.pdf use
-d on input line 122.
-(pdftex.def)             Requested size: 220.22284pt x 146.81497pt.
-
-<./images/data/rawPlots/img_PS_VC_05_rep1_t0_RI.pdf, id=364, 990.70125pt x 660.
-4675pt>
-File: ./images/data/rawPlots/img_PS_VC_05_rep1_t0_RI.pdf Graphic file (type pdf
-)
- <use ./images/data/rawPlots/img_PS_VC_05_rep1_t0_RI.pdf>
-Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep1_t0_RI.pdf use
-d on input line 127.
-(pdftex.def)             Requested size: 220.22284pt x 146.81497pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+(pdftex.def)             Requested size: 200.65062pt x 133.76408pt.
  [22
 
 
@@ -4473,79 +4434,8 @@ ge
 pdfTeX warning: /usr/bin/pdflatex (file ./images/data/rawPlots/img_BSA_VC_2_5_r
 3_t0.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
 ge
->]
-<./images/data/rawPlots/img_PS_VC_05_rep2_te_UV.pdf, id=443, 990.70125pt x 660.
-4675pt>
-File: ./images/data/rawPlots/img_PS_VC_05_rep2_te_UV.pdf Graphic file (type pdf
-)
- <use ./images/data/rawPlots/img_PS_VC_05_rep2_te_UV.pdf>
-Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep2_te_UV.pdf use
-d on input line 144.
-(pdftex.def)             Requested size: 220.22284pt x 146.81497pt.
-
-<./images/data/rawPlots/img_PS_VC_05_rep2_t0_UV.pdf, id=444, 990.30548pt x 660.
-75427pt>
-File: ./images/data/rawPlots/img_PS_VC_05_rep2_t0_UV.pdf Graphic file (type pdf
-)
- <use ./images/data/rawPlots/img_PS_VC_05_rep2_t0_UV.pdf>
-Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep2_t0_UV.pdf use
-d on input line 149.
-(pdftex.def)             Requested size: 220.22284pt x 146.92914pt.
-
-<./images/data/rawPlots/img_PS_VC_05_rep2_te_RI.pdf, id=447, 990.70125pt x 660.
-4675pt>
-File: ./images/data/rawPlots/img_PS_VC_05_rep2_te_RI.pdf Graphic file (type pdf
-)
- <use ./images/data/rawPlots/img_PS_VC_05_rep2_te_RI.pdf>
-Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep2_te_RI.pdf use
-d on input line 157.
-(pdftex.def)             Requested size: 220.22284pt x 146.81497pt.
-
-<./images/data/rawPlots/img_PS_VC_05_rep2_t0_RI.pdf, id=448, 990.70125pt x 660.
-4675pt>
-File: ./images/data/rawPlots/img_PS_VC_05_rep2_t0_RI.pdf Graphic file (type pdf
-)
- <use ./images/data/rawPlots/img_PS_VC_05_rep2_t0_RI.pdf>
-Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep2_t0_RI.pdf use
-d on input line 162.
-(pdftex.def)             Requested size: 220.22284pt x 146.81497pt.
-File: ./images/data/rawPlots/img_PS_VC_05_rep2_te_UV.pdf Graphic file (type pdf
-)
-
-<use ./images/data/rawPlots/img_PS_VC_05_rep2_te_UV.pdf>
-Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep2_te_UV.pdf use
-d on input line 179.
-(pdftex.def)             Requested size: 220.22284pt x 146.81497pt.
-File: ./images/data/rawPlots/img_PS_VC_05_rep2_t0_UV.pdf Graphic file (type pdf
-)
-
-<use ./images/data/rawPlots/img_PS_VC_05_rep2_t0_UV.pdf>
-Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep2_t0_UV.pdf use
-d on input line 184.
-(pdftex.def)             Requested size: 220.22284pt x 146.92914pt.
-
-<./images/data/rawPlots/img_PS_VC_05_rep3_te_RI.pdf, id=453, 990.70125pt x 660.
-4675pt>
-File: ./images/data/rawPlots/img_PS_VC_05_rep3_te_RI.pdf Graphic file (type pdf
-)
- <use ./images/data/rawPlots/img_PS_VC_05_rep3_te_RI.pdf>
-Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep3_te_RI.pdf use
-d on input line 192.
-(pdftex.def)             Requested size: 220.22284pt x 146.81497pt.
-
-<./images/data/rawPlots/img_PS_VC_05_rep3_t0_RI.pdf, id=454, 990.70125pt x 660.
-4675pt>
-File: ./images/data/rawPlots/img_PS_VC_05_rep3_t0_RI.pdf Graphic file (type pdf
-)
- <use ./images/data/rawPlots/img_PS_VC_05_rep3_t0_RI.pdf>
-Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep3_t0_RI.pdf use
-d on input line 197.
-(pdftex.def)             Requested size: 220.22284pt x 146.81497pt.
-
-Underfull \vbox (badness 2310) has occurred while \output is active []
-
- [23 <./images/data/rawPlots/img_BSA_VC_3_5_r1_te.pdf> <./images/data/rawPlots/
-img_BSA_VC_3_5_r2_te.pdf
+>] [23 <./images/data/rawPlots/img_BSA_VC_3_5_r1_te.pdf> <./images/data/rawPlot
+s/img_BSA_VC_3_5_r2_te.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/data/rawPlots/img_BSA_VC_3_5_r
 2_te.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
@@ -4561,11 +4451,141 @@ pdfTeX warning: /usr/bin/pdflatex (file ./images/data/rawPlots/img_BSA_VC_3_5_r
 3_te.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
 ge
 >]
-Overfull \vbox (61.39828pt too high) has occurred while \output is active []
+<./images/data/rawPlots/img_PS_VC_05_rep1_te_UV.pdf, id=485, 990.70125pt x 660.
+4675pt>
+File: ./images/data/rawPlots/img_PS_VC_05_rep1_te_UV.pdf Graphic file (type pdf
+)
+ <use ./images/data/rawPlots/img_PS_VC_05_rep1_te_UV.pdf>
+Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep1_te_UV.pdf use
+d on input line 111.
+(pdftex.def)             Requested size: 200.65062pt x 133.76408pt.
 
 
-[24 <./images/data/rawPlots/img_PS_VC_05_rep1_te_UV.pdf> <./images/data/rawPlot
-s/img_PS_VC_05_rep1_t0_UV.pdf
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 112.
+See the caption package documentation for explanation.
+
+Package hyperref Info: bookmark level for unknown subfigure defaults to 0 on in
+put line 112.
+
+<./images/data/rawPlots/img_PS_VC_05_rep1_t0_UV.pdf, id=486, 990.70125pt x 660.
+4675pt>
+File: ./images/data/rawPlots/img_PS_VC_05_rep1_t0_UV.pdf Graphic file (type pdf
+)
+ <use ./images/data/rawPlots/img_PS_VC_05_rep1_t0_UV.pdf>
+Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep1_t0_UV.pdf use
+d on input line 116.
+(pdftex.def)             Requested size: 200.65062pt x 133.76408pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 118.
+See the caption package documentation for explanation.
+
+
+<./images/data/rawPlots/img_PS_VC_05_rep1_te_RI.pdf, id=489, 990.70125pt x 660.
+4675pt>
+File: ./images/data/rawPlots/img_PS_VC_05_rep1_te_RI.pdf Graphic file (type pdf
+)
+ <use ./images/data/rawPlots/img_PS_VC_05_rep1_te_RI.pdf>
+Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep1_te_RI.pdf use
+d on input line 124.
+(pdftex.def)             Requested size: 200.65062pt x 133.76408pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 125.
+See the caption package documentation for explanation.
+
+
+<./images/data/rawPlots/img_PS_VC_05_rep1_t0_RI.pdf, id=490, 990.70125pt x 660.
+4675pt>
+File: ./images/data/rawPlots/img_PS_VC_05_rep1_t0_RI.pdf Graphic file (type pdf
+)
+ <use ./images/data/rawPlots/img_PS_VC_05_rep1_t0_RI.pdf>
+Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep1_t0_RI.pdf use
+d on input line 129.
+(pdftex.def)             Requested size: 200.65062pt x 133.76408pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 131.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 137.
+See the caption package documentation for explanation.
+
+
+<./images/data/rawPlots/img_PS_VC_05_rep2_te_UV.pdf, id=493, 990.70125pt x 660.
+4675pt>
+File: ./images/data/rawPlots/img_PS_VC_05_rep2_te_UV.pdf Graphic file (type pdf
+)
+ <use ./images/data/rawPlots/img_PS_VC_05_rep2_te_UV.pdf>
+Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep2_te_UV.pdf use
+d on input line 147.
+(pdftex.def)             Requested size: 200.65062pt x 133.76408pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 148.
+See the caption package documentation for explanation.
+
+
+<./images/data/rawPlots/img_PS_VC_05_rep2_t0_UV.pdf, id=494, 990.30548pt x 660.
+75427pt>
+File: ./images/data/rawPlots/img_PS_VC_05_rep2_t0_UV.pdf Graphic file (type pdf
+)
+ <use ./images/data/rawPlots/img_PS_VC_05_rep2_t0_UV.pdf>
+Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep2_t0_UV.pdf use
+d on input line 152.
+(pdftex.def)             Requested size: 200.65062pt x 133.87257pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 154.
+See the caption package documentation for explanation.
+
+
+<./images/data/rawPlots/img_PS_VC_05_rep2_te_RI.pdf, id=497, 990.70125pt x 660.
+4675pt>
+File: ./images/data/rawPlots/img_PS_VC_05_rep2_te_RI.pdf Graphic file (type pdf
+)
+ <use ./images/data/rawPlots/img_PS_VC_05_rep2_te_RI.pdf>
+Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep2_te_RI.pdf use
+d on input line 160.
+(pdftex.def)             Requested size: 200.65062pt x 133.76408pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 161.
+See the caption package documentation for explanation.
+
+
+<./images/data/rawPlots/img_PS_VC_05_rep2_t0_RI.pdf, id=498, 990.70125pt x 660.
+4675pt>
+File: ./images/data/rawPlots/img_PS_VC_05_rep2_t0_RI.pdf Graphic file (type pdf
+)
+ <use ./images/data/rawPlots/img_PS_VC_05_rep2_t0_RI.pdf>
+Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep2_t0_RI.pdf use
+d on input line 165.
+(pdftex.def)             Requested size: 200.65062pt x 133.76408pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 167.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 173.
+See the caption package documentation for explanation.
+
+[24
+
+ <./images/data/rawPlots/img_PS_VC_05_rep1_te_UV.pdf> <./images/data/rawPlots/i
+mg_PS_VC_05_rep1_t0_UV.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/data/rawPlots/img_PS_VC_05_rep
 1_t0_UV.pdf): PDF inclusion: multiple pdfs with page group included in a single
@@ -4590,85 +4610,119 @@ pdfTeX warning: /usr/bin/pdflatex (file ./images/data/rawPlots/img_PS_VC_05_rep
 pdfTeX warning: /usr/bin/pdflatex (file ./images/data/rawPlots/img_PS_VC_05_rep
 2_t0_UV.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
-> <./images/data/rawPlots/img_PS_VC_05_rep3_te_RI.pdf
+> <./images/data/rawPlots/img_PS_VC_05_rep2_te_RI.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/data/rawPlots/img_PS_VC_05_rep
-3_te_RI.pdf): PDF inclusion: multiple pdfs with page group included in a single
+2_te_RI.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
-> <./images/data/rawPlots/img_PS_VC_05_rep3_t0_RI.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./images/data/rawPlots/img_PS_VC_05_rep
-3_t0_RI.pdf): PDF inclusion: multiple pdfs with page group included in a single
- page
->] [25 <./images/data/rawPlots/img_PS_VC_05_rep2_te_RI.pdf> <./images/data/rawP
-lots/img_PS_VC_05_rep2_t0_RI.pdf
+> <./images/data/rawPlots/img_PS_VC_05_rep2_t0_RI.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/data/rawPlots/img_PS_VC_05_rep
 2_t0_RI.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
 >]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 216.
+File: ./images/data/rawPlots/img_PS_VC_05_rep2_te_UV.pdf Graphic file (type pdf
+)
+ <use ./images/data/rawPlots/img_PS_VC_05_rep2_te_UV.pdf>
+Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep2_te_UV.pdf use
+d on input line 183.
+(pdftex.def)             Requested size: 200.65062pt x 133.76408pt.
+File: ./images/data/rawPlots/img_PS_VC_05_rep2_t0_UV.pdf Graphic file (type pdf
+)
 
-<./images/data/eval_own_p8/ownData_w_p8.pdf, id=632, 476.78125pt x 328.22626pt>
+<use ./images/data/rawPlots/img_PS_VC_05_rep2_t0_UV.pdf>
+Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep2_t0_UV.pdf use
+d on input line 188.
+(pdftex.def)             Requested size: 200.65062pt x 133.87257pt.
+
+<./images/data/rawPlots/img_PS_VC_05_rep3_te_RI.pdf, id=607, 990.70125pt x 660.
+4675pt>
+File: ./images/data/rawPlots/img_PS_VC_05_rep3_te_RI.pdf Graphic file (type pdf
+)
+ <use ./images/data/rawPlots/img_PS_VC_05_rep3_te_RI.pdf>
+Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep3_te_RI.pdf use
+d on input line 196.
+(pdftex.def)             Requested size: 200.65062pt x 133.76408pt.
+
+<./images/data/rawPlots/img_PS_VC_05_rep3_t0_RI.pdf, id=608, 990.70125pt x 660.
+4675pt>
+File: ./images/data/rawPlots/img_PS_VC_05_rep3_t0_RI.pdf Graphic file (type pdf
+)
+ <use ./images/data/rawPlots/img_PS_VC_05_rep3_t0_RI.pdf>
+Package pdftex.def Info: ./images/data/rawPlots/img_PS_VC_05_rep3_t0_RI.pdf use
+d on input line 201.
+(pdftex.def)             Requested size: 200.65062pt x 133.76408pt.
+ [25
+
+ <./images/data/rawPlots/img_PS_VC_05_rep3_te_RI.pdf> <./images/data/rawPlots/i
+mg_PS_VC_05_rep3_t0_RI.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./images/data/rawPlots/img_PS_VC_05_rep
+3_t0_RI.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 220.
+
+<./images/data/eval_own_p8/ownData_w_p8.pdf, id=640, 476.78125pt x 328.22626pt>
 File: ./images/data/eval_own_p8/ownData_w_p8.pdf Graphic file (type pdf)
 <use ./images/data/eval_own_p8/ownData_w_p8.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p8/ownData_w_p8.pdf used on inp
-ut line 227.
+ut line 231.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 
-<./images/data/eval_own_p8/ownData_V_p8.pdf, id=633, 476.78125pt x 329.23pt>
+<./images/data/eval_own_p8/ownData_V_p8.pdf, id=641, 476.78125pt x 329.23pt>
 File: ./images/data/eval_own_p8/ownData_V_p8.pdf Graphic file (type pdf)
 
 <use ./images/data/eval_own_p8/ownData_V_p8.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p8/ownData_V_p8.pdf used on inp
-ut line 232.
+ut line 236.
 (pdftex.def)             Requested size: 239.80252pt x 165.5942pt.
 
-<./images/data/eval_own_p12/ownData_w_p12.pdf, id=634, 476.78125pt x 328.22626p
+<./images/data/eval_own_p12/ownData_w_p12.pdf, id=642, 476.78125pt x 328.22626p
 t>
 File: ./images/data/eval_own_p12/ownData_w_p12.pdf Graphic file (type pdf)
  <use ./images/data/eval_own_p12/ownData_w_p12.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p12/ownData_w_p12.pdf used on i
-nput line 248.
+nput line 252.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 
-<./images/data/eval_own_p12/ownData_V_p12.pdf, id=635, 476.78125pt x 329.23pt>
+<./images/data/eval_own_p12/ownData_V_p12.pdf, id=643, 476.78125pt x 329.23pt>
 File: ./images/data/eval_own_p12/ownData_V_p12.pdf Graphic file (type pdf)
 
 <use ./images/data/eval_own_p12/ownData_V_p12.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p12/ownData_V_p12.pdf used on i
-nput line 253.
+nput line 257.
 (pdftex.def)             Requested size: 239.80252pt x 165.5942pt.
 File: ./images/data/eval_own_p12/ownData_w_p12.pdf Graphic file (type pdf)
 
 <use ./images/data/eval_own_p12/ownData_w_p12.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p12/ownData_w_p12.pdf used on i
-nput line 269.
+nput line 273.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 File: ./images/data/eval_own_p12/ownData_V_p12.pdf Graphic file (type pdf)
 
 <use ./images/data/eval_own_p12/ownData_V_p12.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p12/ownData_V_p12.pdf used on i
-nput line 274.
+nput line 278.
 (pdftex.def)             Requested size: 239.80252pt x 165.5942pt.
 
-<./images/data/eval_own_p8/calibW_BSA_VC_2_5_p8.pdf, id=636, 476.78125pt x 328.
+<./images/data/eval_own_p8/calibW_BSA_VC_2_5_p8.pdf, id=644, 476.78125pt x 328.
 22626pt>
 File: ./images/data/eval_own_p8/calibW_BSA_VC_2_5_p8.pdf Graphic file (type pdf
 )
  <use ./images/data/eval_own_p8/calibW_BSA_VC_2_5_p8.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p8/calibW_BSA_VC_2_5_p8.pdf use
-d on input line 301.
+d on input line 305.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 
-<./images/data/eval_own_p8/calibV_BSA_VC_2_5_p8.pdf, id=637, 476.78125pt x 328.
+<./images/data/eval_own_p8/calibV_BSA_VC_2_5_p8.pdf, id=645, 476.78125pt x 328.
 22626pt>
 File: ./images/data/eval_own_p8/calibV_BSA_VC_2_5_p8.pdf Graphic file (type pdf
 )
  <use ./images/data/eval_own_p8/calibV_BSA_VC_2_5_p8.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p8/calibV_BSA_VC_2_5_p8.pdf use
-d on input line 306.
+d on input line 310.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 
 Underfull \vbox (badness 1721) has occurred while \output is active []
@@ -4689,58 +4743,58 @@ pdfTeX warning: /usr/bin/pdflatex (file ./images/data/eval_own_p12/ownData_w_p1
 pdfTeX warning: /usr/bin/pdflatex (file ./images/data/eval_own_p12/ownData_V_p1
 2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<./images/data/eval_own_p8/calibW_BSA_VC_3_5_p8.pdf, id=889, 476.78125pt x 328.
+<./images/data/eval_own_p8/calibW_BSA_VC_3_5_p8.pdf, id=897, 476.78125pt x 328.
 22626pt>
 File: ./images/data/eval_own_p8/calibW_BSA_VC_3_5_p8.pdf Graphic file (type pdf
 )
  <use ./images/data/eval_own_p8/calibW_BSA_VC_3_5_p8.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p8/calibW_BSA_VC_3_5_p8.pdf use
-d on input line 324.
+d on input line 328.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 
-<./images/data/eval_own_p8/calibV_BSA_VC_3_5_p8.pdf, id=890, 476.78125pt x 328.
+<./images/data/eval_own_p8/calibV_BSA_VC_3_5_p8.pdf, id=898, 476.78125pt x 328.
 22626pt>
 File: ./images/data/eval_own_p8/calibV_BSA_VC_3_5_p8.pdf Graphic file (type pdf
 )
  <use ./images/data/eval_own_p8/calibV_BSA_VC_3_5_p8.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p8/calibV_BSA_VC_3_5_p8.pdf use
-d on input line 329.
+d on input line 333.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 
-<./images/data/eval_own_p8/calibW_PS_VC_0_5_p8.pdf, id=891, 476.78125pt x 328.2
+<./images/data/eval_own_p8/calibW_PS_VC_0_5_p8.pdf, id=899, 476.78125pt x 328.2
 2626pt>
 File: ./images/data/eval_own_p8/calibW_PS_VC_0_5_p8.pdf Graphic file (type pdf)
 
  <use ./images/data/eval_own_p8/calibW_PS_VC_0_5_p8.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p8/calibW_PS_VC_0_5_p8.pdf used
- on input line 347.
+ on input line 351.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 
-<./images/data/eval_own_p8/calibV_PS_VC_0_5_p8.pdf, id=892, 476.78125pt x 328.2
+<./images/data/eval_own_p8/calibV_PS_VC_0_5_p8.pdf, id=900, 476.78125pt x 328.2
 2626pt>
 File: ./images/data/eval_own_p8/calibV_PS_VC_0_5_p8.pdf Graphic file (type pdf)
 
  <use ./images/data/eval_own_p8/calibV_PS_VC_0_5_p8.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p8/calibV_PS_VC_0_5_p8.pdf used
- on input line 352.
+ on input line 356.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 
-<./images/data/eval_own_p12/calibW_BSA_VC_2_5_p12.pdf, id=893, 476.78125pt x 32
+<./images/data/eval_own_p12/calibW_BSA_VC_2_5_p12.pdf, id=901, 476.78125pt x 32
 8.22626pt>
 File: ./images/data/eval_own_p12/calibW_BSA_VC_2_5_p12.pdf Graphic file (type p
 df)
  <use ./images/data/eval_own_p12/calibW_BSA_VC_2_5_p12.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p12/calibW_BSA_VC_2_5_p12.pdf u
-sed on input line 381.
+sed on input line 385.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 
-<./images/data/eval_own_p12/calibV_BSA_VC_2_5_p12.pdf, id=894, 476.78125pt x 32
+<./images/data/eval_own_p12/calibV_BSA_VC_2_5_p12.pdf, id=902, 476.78125pt x 32
 8.22626pt>
 File: ./images/data/eval_own_p12/calibV_BSA_VC_2_5_p12.pdf Graphic file (type p
 df)
  <use ./images/data/eval_own_p12/calibV_BSA_VC_2_5_p12.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p12/calibV_BSA_VC_2_5_p12.pdf u
-sed on input line 386.
+sed on input line 390.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
  [27 <./images/data/eval_own_p8/calibW_BSA_VC_2_5_p8.pdf> <./images/data/eval_o
 wn_p8/calibV_BSA_VC_2_5_p8.pdf
@@ -4769,58 +4823,58 @@ pdfTeX warning: /usr/bin/pdflatex (file ./images/data/eval_own_p8/calibV_PS_VC_
 0_5_p8.pdf): PDF inclusion: multiple pdfs with page group included in a single 
 page
 >]
-<./images/data/eval_own_p12/calibW_BSA_VC_3_5_p12.pdf, id=1266, 476.78125pt x 3
+<./images/data/eval_own_p12/calibW_BSA_VC_3_5_p12.pdf, id=1274, 476.78125pt x 3
 28.22626pt>
 File: ./images/data/eval_own_p12/calibW_BSA_VC_3_5_p12.pdf Graphic file (type p
 df)
  <use ./images/data/eval_own_p12/calibW_BSA_VC_3_5_p12.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p12/calibW_BSA_VC_3_5_p12.pdf u
-sed on input line 404.
+sed on input line 408.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 
-<./images/data/eval_own_p12/calibV_BSA_VC_3_5_p12.pdf, id=1267, 476.78125pt x 3
+<./images/data/eval_own_p12/calibV_BSA_VC_3_5_p12.pdf, id=1275, 476.78125pt x 3
 28.22626pt>
 File: ./images/data/eval_own_p12/calibV_BSA_VC_3_5_p12.pdf Graphic file (type p
 df)
  <use ./images/data/eval_own_p12/calibV_BSA_VC_3_5_p12.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p12/calibV_BSA_VC_3_5_p12.pdf u
-sed on input line 409.
+sed on input line 413.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 
-<./images/data/eval_own_p12/calibW_PS_VC_0_5_p12.pdf, id=1268, 476.78125pt x 32
+<./images/data/eval_own_p12/calibW_PS_VC_0_5_p12.pdf, id=1276, 476.78125pt x 32
 8.22626pt>
 File: ./images/data/eval_own_p12/calibW_PS_VC_0_5_p12.pdf Graphic file (type pd
 f)
  <use ./images/data/eval_own_p12/calibW_PS_VC_0_5_p12.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p12/calibW_PS_VC_0_5_p12.pdf us
-ed on input line 427.
+ed on input line 431.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 
-<./images/data/eval_own_p12/calibV_PS_VC_0_5_p12.pdf, id=1269, 476.78125pt x 32
+<./images/data/eval_own_p12/calibV_PS_VC_0_5_p12.pdf, id=1277, 476.78125pt x 32
 8.22626pt>
 File: ./images/data/eval_own_p12/calibV_PS_VC_0_5_p12.pdf Graphic file (type pd
 f)
  <use ./images/data/eval_own_p12/calibV_PS_VC_0_5_p12.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p12/calibV_PS_VC_0_5_p12.pdf us
-ed on input line 432.
+ed on input line 436.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 
-<./images/data/eval_own_p16/calibW_BSA_VC_2_5_p16.pdf, id=1270, 476.78125pt x 3
+<./images/data/eval_own_p16/calibW_BSA_VC_2_5_p16.pdf, id=1278, 476.78125pt x 3
 28.22626pt>
 File: ./images/data/eval_own_p16/calibW_BSA_VC_2_5_p16.pdf Graphic file (type p
 df)
  <use ./images/data/eval_own_p16/calibW_BSA_VC_2_5_p16.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p16/calibW_BSA_VC_2_5_p16.pdf u
-sed on input line 462.
+sed on input line 466.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 
-<./images/data/eval_own_p16/calibV_BSA_VC_2_5_p16.pdf, id=1271, 476.78125pt x 3
+<./images/data/eval_own_p16/calibV_BSA_VC_2_5_p16.pdf, id=1279, 476.78125pt x 3
 28.22626pt>
 File: ./images/data/eval_own_p16/calibV_BSA_VC_2_5_p16.pdf Graphic file (type p
 df)
  <use ./images/data/eval_own_p16/calibV_BSA_VC_2_5_p16.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p16/calibV_BSA_VC_2_5_p16.pdf u
-sed on input line 467.
+sed on input line 471.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
  [28 <./images/data/eval_own_p12/calibW_BSA_VC_2_5_p12.pdf> <./images/data/eval
 _own_p12/calibV_BSA_VC_2_5_p12.pdf
@@ -4849,40 +4903,40 @@ pdfTeX warning: /usr/bin/pdflatex (file ./images/data/eval_own_p12/calibV_PS_VC
 _0_5_p12.pdf): PDF inclusion: multiple pdfs with page group included in a singl
 e page
 >]
-<./images/data/eval_own_p16/calibW_BSA_VC_3_5_p16.pdf, id=1644, 476.78125pt x 3
+<./images/data/eval_own_p16/calibW_BSA_VC_3_5_p16.pdf, id=1652, 476.78125pt x 3
 28.22626pt>
 File: ./images/data/eval_own_p16/calibW_BSA_VC_3_5_p16.pdf Graphic file (type p
 df)
  <use ./images/data/eval_own_p16/calibW_BSA_VC_3_5_p16.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p16/calibW_BSA_VC_3_5_p16.pdf u
-sed on input line 485.
+sed on input line 489.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 
-<./images/data/eval_own_p16/calibV_BSA_VC_3_5_p16.pdf, id=1645, 476.78125pt x 3
+<./images/data/eval_own_p16/calibV_BSA_VC_3_5_p16.pdf, id=1653, 476.78125pt x 3
 28.22626pt>
 File: ./images/data/eval_own_p16/calibV_BSA_VC_3_5_p16.pdf Graphic file (type p
 df)
  <use ./images/data/eval_own_p16/calibV_BSA_VC_3_5_p16.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p16/calibV_BSA_VC_3_5_p16.pdf u
-sed on input line 490.
+sed on input line 494.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 
-<./images/data/eval_own_p16/calibW_PS_VC_0_5_p16.pdf, id=1646, 476.78125pt x 32
+<./images/data/eval_own_p16/calibW_PS_VC_0_5_p16.pdf, id=1654, 476.78125pt x 32
 8.22626pt>
 File: ./images/data/eval_own_p16/calibW_PS_VC_0_5_p16.pdf Graphic file (type pd
 f)
  <use ./images/data/eval_own_p16/calibW_PS_VC_0_5_p16.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p16/calibW_PS_VC_0_5_p16.pdf us
-ed on input line 508.
+ed on input line 512.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
 
-<./images/data/eval_own_p16/calibV_PS_VC_0_5_p16.pdf, id=1647, 476.78125pt x 32
+<./images/data/eval_own_p16/calibV_PS_VC_0_5_p16.pdf, id=1655, 476.78125pt x 32
 8.22626pt>
 File: ./images/data/eval_own_p16/calibV_PS_VC_0_5_p16.pdf Graphic file (type pd
 f)
  <use ./images/data/eval_own_p16/calibV_PS_VC_0_5_p16.pdf>
 Package pdftex.def Info: ./images/data/eval_own_p16/calibV_PS_VC_0_5_p16.pdf us
-ed on input line 513.
+ed on input line 517.
 (pdftex.def)             Requested size: 239.80252pt x 165.08934pt.
  [29 <./images/data/eval_own_p16/calibW_BSA_VC_2_5_p16.pdf> <./images/data/eval
 _own_p16/calibV_BSA_VC_2_5_p16.pdf
@@ -4911,28 +4965,13 @@ pdfTeX warning: /usr/bin/pdflatex (file ./images/data/eval_own_p16/calibV_PS_VC
 _0_5_p16.pdf): PDF inclusion: multiple pdfs with page group included in a singl
 e page
 >]
-<./images/data/eval_lit_p8/Lit1Data_w_8p.pdf, id=2019, 826.08624pt x 328.22626p
+<./images/data/eval_lit_p8/Lit1Data_w_8p.pdf, id=2027, 826.08624pt x 328.22626p
 t>
 File: ./images/data/eval_lit_p8/Lit1Data_w_8p.pdf Graphic file (type pdf)
  <use ./images/data/eval_lit_p8/Lit1Data_w_8p.pdf>
 Package pdftex.def Info: ./images/data/eval_lit_p8/Lit1Data_w_8p.pdf used on in
-put line 539.
-(pdftex.def)             Requested size: 367.04056pt x 145.83734pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 540.
-See the caption package documentation for explanation.
-
-Package hyperref Info: bookmark level for unknown subfigure defaults to 0 on in
-put line 540.
-
-<./images/data/eval_lit_p8/Lit1Data_V_8p.pdf, id=2020, 856.357pt x 328.53091pt>
-File: ./images/data/eval_lit_p8/Lit1Data_V_8p.pdf Graphic file (type pdf)
-<use ./images/data/eval_lit_p8/Lit1Data_V_8p.pdf>
-Package pdftex.def Info: ./images/data/eval_lit_p8/Lit1Data_V_8p.pdf used on in
 put line 543.
-(pdftex.def)             Requested size: 367.04056pt x 140.80934pt.
+(pdftex.def)             Requested size: 367.04056pt x 145.83734pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
@@ -4940,13 +4979,12 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 
-<./images/data/eval_lit_p8/Lit2Data_w_8p.pdf, id=2021, 825.7485pt x 328.53091pt
->
-File: ./images/data/eval_lit_p8/Lit2Data_w_8p.pdf Graphic file (type pdf)
- <use ./images/data/eval_lit_p8/Lit2Data_w_8p.pdf>
-Package pdftex.def Info: ./images/data/eval_lit_p8/Lit2Data_w_8p.pdf used on in
+<./images/data/eval_lit_p8/Lit1Data_V_8p.pdf, id=2028, 856.357pt x 328.53091pt>
+File: ./images/data/eval_lit_p8/Lit1Data_V_8p.pdf Graphic file (type pdf)
+<use ./images/data/eval_lit_p8/Lit1Data_V_8p.pdf>
+Package pdftex.def Info: ./images/data/eval_lit_p8/Lit1Data_V_8p.pdf used on in
 put line 547.
-(pdftex.def)             Requested size: 367.04056pt x 146.03287pt.
+(pdftex.def)             Requested size: 367.04056pt x 140.80934pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
@@ -4954,13 +4992,13 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 
-<./images/data/eval_lit_p8/Lit2Data_V_8p.pdf, id=2022, 826.08624pt x 328.22626p
-t>
-File: ./images/data/eval_lit_p8/Lit2Data_V_8p.pdf Graphic file (type pdf)
- <use ./images/data/eval_lit_p8/Lit2Data_V_8p.pdf>
-Package pdftex.def Info: ./images/data/eval_lit_p8/Lit2Data_V_8p.pdf used on in
+<./images/data/eval_lit_p8/Lit2Data_w_8p.pdf, id=2029, 825.7485pt x 328.53091pt
+>
+File: ./images/data/eval_lit_p8/Lit2Data_w_8p.pdf Graphic file (type pdf)
+ <use ./images/data/eval_lit_p8/Lit2Data_w_8p.pdf>
+Package pdftex.def Info: ./images/data/eval_lit_p8/Lit2Data_w_8p.pdf used on in
 put line 551.
-(pdftex.def)             Requested size: 367.04056pt x 145.83734pt.
+(pdftex.def)             Requested size: 367.04056pt x 146.03287pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
@@ -4968,8 +5006,22 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 
+<./images/data/eval_lit_p8/Lit2Data_V_8p.pdf, id=2030, 826.08624pt x 328.22626p
+t>
+File: ./images/data/eval_lit_p8/Lit2Data_V_8p.pdf Graphic file (type pdf)
+ <use ./images/data/eval_lit_p8/Lit2Data_V_8p.pdf>
+Package pdftex.def Info: ./images/data/eval_lit_p8/Lit2Data_V_8p.pdf used on in
+put line 555.
+(pdftex.def)             Requested size: 367.04056pt x 145.83734pt.
+
+
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 557.
+(caption)                particular \caption on input line 556.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 561.
 See the caption package documentation for explanation.
 
 [30
@@ -4988,64 +5040,64 @@ pdfTeX warning: /usr/bin/pdflatex (file ./images/data/eval_lit_p8/Lit2Data_w_8p
 pdfTeX warning: /usr/bin/pdflatex (file ./images/data/eval_lit_p8/Lit2Data_V_8p
 .pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<./images/data/eval_lit_p16/Lit1Data_w_16p.pdf, id=2445, 826.08624pt x 328.2262
+<./images/data/eval_lit_p16/Lit1Data_w_16p.pdf, id=2453, 826.08624pt x 328.2262
 6pt>
 File: ./images/data/eval_lit_p16/Lit1Data_w_16p.pdf Graphic file (type pdf)
  <use ./images/data/eval_lit_p16/Lit1Data_w_16p.pdf>
 Package pdftex.def Info: ./images/data/eval_lit_p16/Lit1Data_w_16p.pdf used on 
-input line 573.
+input line 577.
 (pdftex.def)             Requested size: 367.04056pt x 145.83734pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 574.
+(caption)                particular \caption on input line 578.
 See the caption package documentation for explanation.
 
 
-<./images/data/eval_lit_p16/Lit1Data_V_16p.pdf, id=2446, 856.19875pt x 328.2262
+<./images/data/eval_lit_p16/Lit1Data_V_16p.pdf, id=2454, 856.19875pt x 328.2262
 6pt>
 File: ./images/data/eval_lit_p16/Lit1Data_V_16p.pdf Graphic file (type pdf)
  <use ./images/data/eval_lit_p16/Lit1Data_V_16p.pdf>
 Package pdftex.def Info: ./images/data/eval_lit_p16/Lit1Data_V_16p.pdf used on 
-input line 578.
+input line 582.
 (pdftex.def)             Requested size: 367.04056pt x 140.70381pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 579.
+(caption)                particular \caption on input line 583.
 See the caption package documentation for explanation.
 
 
-<./images/data/eval_lit_p16/Lit2Data_w_16p.pdf, id=2447, 826.08624pt x 328.2262
+<./images/data/eval_lit_p16/Lit2Data_w_16p.pdf, id=2455, 826.08624pt x 328.2262
 6pt>
 File: ./images/data/eval_lit_p16/Lit2Data_w_16p.pdf Graphic file (type pdf)
  <use ./images/data/eval_lit_p16/Lit2Data_w_16p.pdf>
 Package pdftex.def Info: ./images/data/eval_lit_p16/Lit2Data_w_16p.pdf used on 
-input line 583.
+input line 587.
 (pdftex.def)             Requested size: 367.04056pt x 145.83734pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 584.
+(caption)                particular \caption on input line 588.
 See the caption package documentation for explanation.
 
 
-<./images/data/eval_lit_p16/Lit2Data_V_16p.pdf, id=2448, 826.08624pt x 328.2262
+<./images/data/eval_lit_p16/Lit2Data_V_16p.pdf, id=2456, 826.08624pt x 328.2262
 6pt>
 File: ./images/data/eval_lit_p16/Lit2Data_V_16p.pdf Graphic file (type pdf)
  <use ./images/data/eval_lit_p16/Lit2Data_V_16p.pdf>
 Package pdftex.def Info: ./images/data/eval_lit_p16/Lit2Data_V_16p.pdf used on 
-input line 588.
+input line 592.
 (pdftex.def)             Requested size: 367.04056pt x 145.83734pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 590.
+(caption)                particular \caption on input line 594.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 594.
+(caption)                particular \caption on input line 598.
 See the caption package documentation for explanation.
 
 [31
@@ -5099,16 +5151,16 @@ pdfTeX warning: /usr/bin/pdflatex (file ./images/data/eval_lit_p16/Lit2Data_V_1
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- <./images/deltaAnalysis.pdf, id=2872, 4423.84335pt x 6315.08969pt>
+ <./images/deltaAnalysis.pdf, id=2880, 4423.84335pt x 6315.08969pt>
 File: ./images/deltaAnalysis.pdf Graphic file (type pdf)
 
 <use ./images/deltaAnalysis.pdf>
-Package pdftex.def Info: ./images/deltaAnalysis.pdf used on input line 605.
+Package pdftex.def Info: ./images/deltaAnalysis.pdf used on input line 609.
 (pdftex.def)             Requested size: 484.26735pt x 691.28941pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 610.
+(caption)                particular \caption on input line 614.
 See the caption package documentation for explanation.
 
 [32
@@ -5140,10 +5192,10 @@ Package logreq Info: Writing requests to 'suppInfoTVoid.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 53989 strings out of 493013
- 1051081 string characters out of 6135682
+ 53993 strings out of 493013
+ 1051061 string characters out of 6135682
  1573216 words of memory out of 5000000
- 56332 multiletter control sequences out of 15000+600000
+ 56328 multiletter control sequences out of 15000+600000
  133797 words of font info for 134 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  65i,22n,77p,10413b,1733s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -5165,10 +5217,10 @@ blic/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbol
 s/msam10.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qcsr.pfb>
-Output written on suppInfoTVoid.pdf (34 pages, 2544485 bytes).
+Output written on suppInfoTVoid.pdf (34 pages, 2544689 bytes).
 PDF statistics:
- 3566 PDF objects out of 3580 (max. 8388607)
- 2483 compressed objects within 25 object streams
- 207 named destinations out of 1000 (max. 500000)
+ 3575 PDF objects out of 3580 (max. 8388607)
+ 2492 compressed objects within 25 object streams
+ 215 named destinations out of 1000 (max. 500000)
  24428 words of extra memory for PDF output out of 24883 (max. 10000000)
 
